@@ -386,6 +386,20 @@ body {
     color: var(--text-secondary);
 }
 
+.data-freshness {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    padding: 5px 12px;
+    background: rgba(0, 201, 167, 0.08);
+    border: 1px solid rgba(0, 201, 167, 0.2);
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--green);
+}
+
 /* ============ CHARTS ============ */
 .charts-section {
     margin-bottom: 32px;

@@ -88,7 +88,8 @@
         <section id="chartsSection" class="charts-section tab-content" style="display:none;">
             <div class="section-header">
                 <h2 class="section-title">Analytics Overview</h2>
-                <p class="section-desc">Product and model number distribution by year and company</p>
+                <p class="section-desc">Product and model number distribution by year and company (last 5 years)</p>
+                <p id="dataFreshness" class="data-freshness"></p>
             </div>
             <div class="charts-grid">
                 <div class="chart-card">
@@ -107,6 +108,17 @@
                     </div>
                     <div class="chart-container">
                         <canvas id="modelChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="charts-grid" style="margin-top: 24px;">
+                <div class="chart-card chart-card-full">
+                    <div class="chart-header">
+                        <h3>Quarterly Product Count by Company</h3>
+                        <p>Number of new products added each quarter, grouped by company</p>
+                    </div>
+                    <div class="chart-container chart-container-wide">
+                        <canvas id="quarterlyChart"></canvas>
                     </div>
                 </div>
             </div>

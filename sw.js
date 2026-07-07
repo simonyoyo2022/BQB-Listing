@@ -2,13 +2,14 @@
    BQB Listing Dashboard — Service Worker for PWA
    ============================================================ */
 
-const CACHE_NAME = 'bqb-listing-v1';
+const CACHE_NAME = 'bqb-listing-v2';
 const STATIC_ASSETS = [
     './',
     './index.html',
     './style.css',
     './app.js',
-    './manifest.json'
+    './manifest.json',
+    './data/listings.json'
 ];
 
 // Install: cache static assets

@@ -1,9 +1,11 @@
 /* ============================================================
    BQB Listing Dashboard — Application Logic (PWA)
+   v2: Pre-fetched JSON, 5-year filter, quarterly analysis
    ============================================================ */
 
 // ── Configuration ──
 const API_URL = 'https://qualificationapi.bluetooth.com/api/Platform/Listings/Search';
+const DATA_JSON_URL = './data/listings.json';
 const COMPANIES = ['Airoha', 'Nordic', 'Silicon Labs', 'Telink', 'Realtek', 'Realsil'];
 const COMPANY_COLORS = {
     'Airoha':        { bg: 'rgba(0, 130, 252, 0.12)', border: '#0082FC', dot: '#0082FC', chart: '#0082FC' },
@@ -15,6 +17,7 @@ const COMPANY_COLORS = {
 };
 
 const PAGE_SIZE = 50;
+const YEARS_TO_KEEP = 5;
 
 // ── State ──
 let allProducts = [];
@@ -23,6 +26,7 @@ let currentPage = 1;
 let currentSort = { key: 'company', order: 'asc' };
 let chartInstances = {};
 let activeTab = 'charts';
+let dataFetchedAt = null;
 
 // ── DOM refs ──
 const $ = id => document.getElementById(id);
@@ -43,12 +47,15 @@ function switchTab(tab) {
     });
     if (tab === 'charts') {
         $('chartsSection').style.display = 'block';
+        // Resize charts so they render correctly when tab becomes visible
+        Object.values(chartInstances).forEach(c => c.resize());
     } else {
         $('tableSection').style.display = 'block';
     }
 }
 
 // ── Data Fetching ──
+// Strategy: try pre-fetched JSON first, fall back to live API
 async function fetchAllData() {
     const overlay = $('loadingOverlay');
     const statusEl = $('loadingStatus');
@@ -63,77 +70,63 @@ async function fetchAllData() {
     $('exportBtn').disabled = true;
 
     allProducts = [];
-    let companyResults = {};
-    const total = COMPANIES.length;
 
-    for (let i = 0; i < total; i++) {
-        const company = COMPANIES[i];
-        const pct = Math.round(((i) / total) * 100);
-        progressEl.style.width = pct + '%';
-        statusEl.textContent = `Fetching "${company}" ...  (${i + 1}/${total})`;
-        detailEl.textContent = '';
+    // Try loading pre-fetched JSON
+    statusEl.textContent = 'Loading cached data...';
+    progressEl.style.width = '20%';
 
-        try {
-            const data = await fetchCompanyListings(company);
-            companyResults[company] = data;
-            const count = data.length;
-            detailEl.textContent = `Found ${count} listing(s) for ${company}`;
-        } catch (err) {
-            console.error(`Error fetching ${company}:`, err);
-            detailEl.textContent = `Error fetching ${company}: ${err.message}`;
-            companyResults[company] = [];
-        }
-
-        // Small delay to avoid rate limiting
-        if (i < total - 1) {
-            await sleep(600);
-        }
-    }
-
-    progressEl.style.width = '100%';
-    statusEl.textContent = 'Processing data...';
-
-    // Process all results
-    for (const company of COMPANIES) {
-        const listings = companyResults[company] || [];
-        for (const listing of listings) {
-            if (listing.Products && listing.Products.length > 0) {
-                for (const prod of listing.Products) {
-                    allProducts.push({
-                        company: listing.CompanyName || company,
-                        searchCompany: company,
-                        productName: prod.MarketingName || '',
-                        description: prod.Description || '',
-                        modelNumber: prod.Model || '',
-                        listingId: listing.ListingId || '',
-                        listingDate: listing.ListingDate || prod.PublishDate || '',
-                        year: extractYear(listing.ListingDate || prod.PublishDate || '')
-                    });
-                }
+    let loaded = false;
+    try {
+        const resp = await fetch(DATA_JSON_URL + '?t=' + Date.now());
+        if (resp.ok) {
+            const json = await resp.json();
+            if (json.products && json.products.length > 0) {
+                allProducts = json.products;
+                dataFetchedAt = json.fetchedAt || null;
+                loaded = true;
+                progressEl.style.width = '90%';
+                statusEl.textContent = `Loaded ${allProducts.length} products from cache`;
+                detailEl.textContent = dataFetchedAt
+                    ? `Data fetched: ${new Date(dataFetchedAt).toLocaleDateString('zh-TW')}`
+                    : '';
             }
         }
+    } catch (e) {
+        console.warn('Pre-fetched JSON not available, falling back to API:', e.message);
     }
 
-    // De-duplicate by listingId + productName + modelNumber
-    const seen = new Set();
-    const deduped = [];
-    for (const p of allProducts) {
-        const key = `${p.listingId}|${p.productName}|${p.modelNumber}|${p.searchCompany}`;
-        if (!seen.has(key)) {
-            seen.add(key);
-            deduped.push(p);
+    // Fallback: fetch from API live
+    if (!loaded) {
+        statusEl.textContent = 'Fetching from BQB API...';
+        progressEl.style.width = '10%';
+        await fetchFromAPI(statusEl, progressEl, detailEl);
+        dataFetchedAt = new Date().toISOString();
+    }
+
+    // Apply 5-year filter (in case data includes older entries)
+    const cutoffYear = new Date().getFullYear() - YEARS_TO_KEEP + 1;
+    allProducts = allProducts.filter(p => {
+        if (p.year === 'Unknown') return false;
+        return parseInt(p.year) >= cutoffYear;
+    });
+
+    // Ensure quarter field exists
+    allProducts.forEach(p => {
+        if (!p.quarter && p.listingDate) {
+            p.quarter = extractQuarter(p.listingDate);
         }
-    }
-    allProducts = deduped;
+    });
 
-    statusEl.textContent = `Done! Loaded ${allProducts.length} products.`;
-    await sleep(500);
+    progressEl.style.width = '100%';
+    statusEl.textContent = `Ready! ${allProducts.length} products (last ${YEARS_TO_KEEP} years)`;
+    await sleep(400);
 
     // Render UI
     renderSummaryCards();
     renderCharts();
     populateFilters();
     filterTable();
+    updateDataFreshness();
 
     $('summarySection').style.display = 'block';
     $('tabNav').style.display = 'flex';
@@ -141,15 +134,63 @@ async function fetchAllData() {
     $('exportBtn').disabled = false;
 
     overlay.classList.add('hidden');
-
-    // Save to localStorage for offline quick view
-    try {
-        localStorage.setItem('bqb_cache_time', new Date().toISOString());
-        localStorage.setItem('bqb_data', JSON.stringify(allProducts));
-    } catch (e) { /* ignore quota errors */ }
 }
 
-async function fetchCompanyListings(companyName) {
+async function fetchFromAPI(statusEl, progressEl, detailEl) {
+    const total = COMPANIES.length;
+    const fiveYearsAgo = getDateFiveYearsAgo();
+
+    for (let i = 0; i < total; i++) {
+        const company = COMPANIES[i];
+        const pct = Math.round(10 + ((i) / total) * 80);
+        progressEl.style.width = pct + '%';
+        statusEl.textContent = `Fetching "${company}" ...  (${i + 1}/${total})`;
+
+        try {
+            const listings = await fetchCompanyListings(company, fiveYearsAgo);
+            let count = 0;
+
+            for (const listing of listings) {
+                if (listing.Products && listing.Products.length > 0) {
+                    for (const prod of listing.Products) {
+                        const dateStr = listing.ListingDate || prod.PublishDate || '';
+                        const key = `${listing.ListingId}|${prod.MarketingName || ''}|${prod.Model || ''}|${company}`;
+
+                        allProducts.push({
+                            company: listing.CompanyName || company,
+                            searchCompany: company,
+                            productName: prod.MarketingName || '',
+                            description: prod.Description || '',
+                            modelNumber: prod.Model || '',
+                            listingId: listing.ListingId || '',
+                            listingDate: dateStr,
+                            year: extractYear(dateStr),
+                            quarter: extractQuarter(dateStr)
+                        });
+                        count++;
+                    }
+                }
+            }
+            detailEl.textContent = `Found ${count} product(s) for ${company}`;
+        } catch (err) {
+            console.error(`Error fetching ${company}:`, err);
+            detailEl.textContent = `Error: ${err.message}`;
+        }
+
+        if (i < total - 1) await sleep(600);
+    }
+
+    // De-duplicate
+    const seen = new Set();
+    allProducts = allProducts.filter(p => {
+        const key = `${p.listingId}|${p.productName}|${p.modelNumber}|${p.searchCompany}`;
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+    });
+}
+
+async function fetchCompanyListings(companyName, dateFrom) {
     const searchCriteria = {
         MemberId: null,
         IcsItem: null,
@@ -163,7 +204,7 @@ async function fetchCompanyListings(companyName) {
         SpecNameText: '',
         BQAApprovalStatusId: -1,
         BQALockStatusId: -1,
-        ListingDateEarliest: null,
+        ListingDateEarliest: dateFrom,
         ListingDateLatest: null,
         Layers: [],
         SearchEndProductList: false,
@@ -173,49 +214,54 @@ async function fetchCompanyListings(companyName) {
 
     const response = await fetch(API_URL, {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        },
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify(searchCriteria)
     });
 
-    if (!response.ok) {
-        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-    }
-
+    if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
     const data = await response.json();
 
-    // Filter results to only include items matching the company name
     return data.filter(item => {
         const cn = (item.CompanyName || '').toLowerCase();
-        const searchTerm = companyName.toLowerCase();
-        if (companyName === 'Silicon Labs') {
-            return cn.includes('silicon lab');
-        }
-        if (companyName === 'Realsil') {
-            return cn.includes('realsil');
-        }
-        if (companyName === 'Realtek') {
-            return cn.includes('realtek');
-        }
-        if (companyName === 'Nordic') {
-            return cn.includes('nordic');
-        }
-        return cn.includes(searchTerm);
+        if (companyName === 'Silicon Labs') return cn.includes('silicon lab');
+        if (companyName === 'Realsil') return cn.includes('realsil');
+        if (companyName === 'Realtek') return cn.includes('realtek');
+        if (companyName === 'Nordic') return cn.includes('nordic');
+        return cn.includes(companyName.toLowerCase());
     });
 }
 
 // ── Helpers ──
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+function getDateFiveYearsAgo() {
+    const d = new Date();
+    d.setFullYear(d.getFullYear() - YEARS_TO_KEEP);
+    return d.toISOString().slice(0, 10);
 }
 
 function extractYear(dateStr) {
     if (!dateStr) return 'Unknown';
     const d = new Date(dateStr);
-    if (isNaN(d.getTime())) return 'Unknown';
-    return d.getFullYear().toString();
+    return isNaN(d.getTime()) ? 'Unknown' : d.getFullYear().toString();
+}
+
+function extractQuarter(dateStr) {
+    if (!dateStr) return null;
+    const d = new Date(dateStr);
+    if (isNaN(d.getTime())) return null;
+    return `${d.getFullYear()}-Q${Math.floor(d.getMonth() / 3) + 1}`;
+}
+
+function updateDataFreshness() {
+    const el = $('dataFreshness');
+    if (!el) return;
+    if (dataFetchedAt) {
+        const d = new Date(dataFetchedAt);
+        el.textContent = `🔄 Data updated: ${d.toLocaleDateString('zh-TW')} • Auto-updates monthly`;
+    } else {
+        el.textContent = '🔄 Live data from BQB API';
+    }
 }
 
 // ── Summary Cards ──
@@ -223,21 +269,17 @@ function renderSummaryCards() {
     const grid = $('summaryGrid');
     grid.innerHTML = '';
 
-    // Total products card
     grid.appendChild(createSummaryCard('Total Products', allProducts.length, 'All combined', '#0082FC'));
 
-    // Total unique models
     const uniqueModels = new Set(allProducts.map(p => p.modelNumber).filter(Boolean));
     grid.appendChild(createSummaryCard('Unique Models', uniqueModels.size, 'Distinct models', '#6C5CE7'));
 
-    // Year span
     const years = allProducts.map(p => p.year).filter(y => y !== 'Unknown').sort();
     const yearSpan = years.length > 0 ? `${years[0]}–${years[years.length - 1]}` : 'N/A';
     const yearsCard = createSummaryCard('Year Range', yearSpan, `${new Set(years).size} years`, '#00C9A7');
     yearsCard.querySelector('.card-value').style.fontSize = '18px';
     grid.appendChild(yearsCard);
 
-    // Per-company cards
     for (const company of COMPANIES) {
         const companyProducts = allProducts.filter(p => p.searchCompany === company);
         const color = COMPANY_COLORS[company]?.chart || '#888';
@@ -264,22 +306,16 @@ function renderCharts() {
 
     const yearCompanyData = buildYearCompanyData();
     const years = yearCompanyData.years;
+    const quarterData = buildQuarterlyData();
 
-    // Chart.js dark theme
     Chart.defaults.color = '#94a3b8';
     Chart.defaults.borderColor = 'rgba(255,255,255,0.06)';
     Chart.defaults.font.family = "'Inter', sans-serif";
 
     const tooltipStyle = {
-        backgroundColor: '#1a1f35',
-        titleColor: '#f0f2f5',
-        bodyColor: '#94a3b8',
-        borderColor: 'rgba(255,255,255,0.1)',
-        borderWidth: 1,
-        padding: 12,
-        cornerRadius: 8
+        backgroundColor: '#1a1f35', titleColor: '#f0f2f5', bodyColor: '#94a3b8',
+        borderColor: 'rgba(255,255,255,0.1)', borderWidth: 1, padding: 12, cornerRadius: 8
     };
-
     const legendStyle = {
         position: 'top',
         labels: { padding: 12, usePointStyle: true, pointStyle: 'rectRounded', font: { size: 10, weight: '600' } }
@@ -290,26 +326,16 @@ function renderCharts() {
         type: 'bar',
         data: {
             labels: years,
-            datasets: COMPANIES.map(company => ({
-                label: company,
-                data: years.map(y => yearCompanyData.productCounts[company]?.[y] || 0),
-                backgroundColor: COMPANY_COLORS[company]?.chart + '99',
-                borderColor: COMPANY_COLORS[company]?.chart,
-                borderWidth: 1,
-                borderRadius: 3,
-                hoverBackgroundColor: COMPANY_COLORS[company]?.chart
+            datasets: COMPANIES.map(c => ({
+                label: c,
+                data: years.map(y => yearCompanyData.productCounts[c]?.[y] || 0),
+                backgroundColor: COMPANY_COLORS[c].chart + '99',
+                borderColor: COMPANY_COLORS[c].chart,
+                borderWidth: 1, borderRadius: 3,
+                hoverBackgroundColor: COMPANY_COLORS[c].chart
             }))
         },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            interaction: { intersect: false, mode: 'index' },
-            plugins: { legend: legendStyle, tooltip: tooltipStyle },
-            scales: {
-                x: { grid: { display: false }, ticks: { font: { size: 10 }, maxRotation: 45 } },
-                y: { beginAtZero: true, ticks: { precision: 0, font: { size: 10 } } }
-            }
-        }
+        options: chartOptions(tooltipStyle, legendStyle)
     });
 
     // 2. Model Number Count by Year & Company
@@ -317,47 +343,51 @@ function renderCharts() {
         type: 'bar',
         data: {
             labels: years,
-            datasets: COMPANIES.map(company => ({
-                label: company,
-                data: years.map(y => yearCompanyData.modelCounts[company]?.[y] || 0),
-                backgroundColor: COMPANY_COLORS[company]?.chart + '99',
-                borderColor: COMPANY_COLORS[company]?.chart,
-                borderWidth: 1,
-                borderRadius: 3,
-                hoverBackgroundColor: COMPANY_COLORS[company]?.chart
+            datasets: COMPANIES.map(c => ({
+                label: c,
+                data: years.map(y => yearCompanyData.modelCounts[c]?.[y] || 0),
+                backgroundColor: COMPANY_COLORS[c].chart + '99',
+                borderColor: COMPANY_COLORS[c].chart,
+                borderWidth: 1, borderRadius: 3,
+                hoverBackgroundColor: COMPANY_COLORS[c].chart
             }))
         },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            interaction: { intersect: false, mode: 'index' },
-            plugins: { legend: legendStyle, tooltip: tooltipStyle },
-            scales: {
-                x: { grid: { display: false }, ticks: { font: { size: 10 }, maxRotation: 45 } },
-                y: { beginAtZero: true, ticks: { precision: 0, font: { size: 10 } } }
-            }
-        }
+        options: chartOptions(tooltipStyle, legendStyle)
     });
 
-    // 3. Stacked bar — Total Products Per Year
+    // 3. Quarterly Product Count by Company
+    chartInstances.quarterly = new Chart($('quarterlyChart'), {
+        type: 'bar',
+        data: {
+            labels: quarterData.quarters,
+            datasets: COMPANIES.map(c => ({
+                label: c,
+                data: quarterData.quarters.map(q => quarterData.counts[c]?.[q] || 0),
+                backgroundColor: COMPANY_COLORS[c].chart + '99',
+                borderColor: COMPANY_COLORS[c].chart,
+                borderWidth: 1, borderRadius: 3,
+                hoverBackgroundColor: COMPANY_COLORS[c].chart
+            }))
+        },
+        options: chartOptions(tooltipStyle, legendStyle)
+    });
+
+    // 4. Stacked bar — Total Per Year
     chartInstances.stacked = new Chart($('stackedChart'), {
         type: 'bar',
         data: {
             labels: years,
-            datasets: COMPANIES.map(company => ({
-                label: company,
-                data: years.map(y => yearCompanyData.productCounts[company]?.[y] || 0),
-                backgroundColor: COMPANY_COLORS[company]?.chart + 'CC',
-                borderColor: COMPANY_COLORS[company]?.chart,
+            datasets: COMPANIES.map(c => ({
+                label: c,
+                data: years.map(y => yearCompanyData.productCounts[c]?.[y] || 0),
+                backgroundColor: COMPANY_COLORS[c].chart + 'CC',
+                borderColor: COMPANY_COLORS[c].chart,
                 borderWidth: 1,
-                hoverBackgroundColor: COMPANY_COLORS[company]?.chart
+                hoverBackgroundColor: COMPANY_COLORS[c].chart
             }))
         },
         options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            interaction: { intersect: false, mode: 'index' },
-            plugins: { legend: legendStyle, tooltip: tooltipStyle },
+            ...chartOptions(tooltipStyle, legendStyle),
             scales: {
                 x: { stacked: true, grid: { display: false }, ticks: { font: { size: 10 }, maxRotation: 45 } },
                 y: { stacked: true, beginAtZero: true, ticks: { precision: 0, font: { size: 10 } } }
@@ -366,57 +396,77 @@ function renderCharts() {
     });
 }
 
+function chartOptions(tooltip, legend) {
+    return {
+        responsive: true, maintainAspectRatio: false,
+        interaction: { intersect: false, mode: 'index' },
+        plugins: { legend, tooltip },
+        scales: {
+            x: { grid: { display: false }, ticks: { font: { size: 10 }, maxRotation: 45 } },
+            y: { beginAtZero: true, ticks: { precision: 0, font: { size: 10 } } }
+        }
+    };
+}
+
 function buildYearCompanyData() {
     const yearSet = new Set();
     const productCounts = {};
     const modelCounts = {};
     const modelSets = {};
 
-    for (const company of COMPANIES) {
-        productCounts[company] = {};
-        modelCounts[company] = {};
-        modelSets[company] = {};
-    }
+    for (const c of COMPANIES) { productCounts[c] = {}; modelCounts[c] = {}; modelSets[c] = {}; }
 
     for (const p of allProducts) {
-        const company = p.searchCompany;
-        const year = p.year;
+        const { searchCompany: c, year, modelNumber } = p;
         if (year === 'Unknown') continue;
         yearSet.add(year);
-
-        productCounts[company][year] = (productCounts[company][year] || 0) + 1;
-
-        if (!modelSets[company][year]) modelSets[company][year] = new Set();
-        if (p.modelNumber) modelSets[company][year].add(p.modelNumber);
+        productCounts[c][year] = (productCounts[c][year] || 0) + 1;
+        if (!modelSets[c][year]) modelSets[c][year] = new Set();
+        if (modelNumber) modelSets[c][year].add(modelNumber);
     }
 
-    for (const company of COMPANIES) {
-        for (const year of yearSet) {
-            modelCounts[company][year] = modelSets[company][year]?.size || 0;
-        }
-    }
+    for (const c of COMPANIES)
+        for (const y of yearSet)
+            modelCounts[c][y] = modelSets[c][y]?.size || 0;
 
     return { years: Array.from(yearSet).sort(), productCounts, modelCounts };
+}
+
+function buildQuarterlyData() {
+    const quarterSet = new Set();
+    const counts = {};
+
+    for (const c of COMPANIES) counts[c] = {};
+
+    for (const p of allProducts) {
+        const q = p.quarter;
+        if (!q) continue;
+        quarterSet.add(q);
+        counts[p.searchCompany][q] = (counts[p.searchCompany][q] || 0) + 1;
+    }
+
+    // Sort quarters: "2022-Q1", "2022-Q2", ...
+    const quarters = Array.from(quarterSet).sort((a, b) => {
+        const [aY, aQ] = a.split('-Q').map(Number);
+        const [bY, bQ] = b.split('-Q').map(Number);
+        return aY !== bY ? aY - bY : aQ - bQ;
+    });
+
+    return { quarters, counts };
 }
 
 // ── Filters ──
 function populateFilters() {
     const companySelect = $('companyFilter');
     const yearSelect = $('yearFilter');
-
     companySelect.innerHTML = '<option value="">All Companies</option>';
     yearSelect.innerHTML = '<option value="">All Years</option>';
 
     const companySet = new Set(allProducts.map(p => p.searchCompany));
     const yearSet = new Set(allProducts.map(p => p.year).filter(y => y !== 'Unknown'));
 
-    Array.from(companySet).sort().forEach(c => {
-        companySelect.innerHTML += `<option value="${c}">${c}</option>`;
-    });
-
-    Array.from(yearSet).sort().forEach(y => {
-        yearSelect.innerHTML += `<option value="${y}">${y}</option>`;
-    });
+    Array.from(companySet).sort().forEach(c => { companySelect.innerHTML += `<option value="${c}">${c}</option>`; });
+    Array.from(yearSet).sort().forEach(y => { yearSelect.innerHTML += `<option value="${y}">${y}</option>`; });
 }
 
 // ── Table ──
@@ -429,8 +479,8 @@ function filterTable() {
         if (companyFilter && p.searchCompany !== companyFilter) return false;
         if (yearFilter && p.year !== yearFilter) return false;
         if (search) {
-            const searchStr = `${p.company} ${p.productName} ${p.description} ${p.modelNumber} ${p.listingId}`.toLowerCase();
-            if (!searchStr.includes(search)) return false;
+            const s = `${p.company} ${p.productName} ${p.description} ${p.modelNumber} ${p.listingId}`.toLowerCase();
+            if (!s.includes(search)) return false;
         }
         return true;
     });
@@ -441,12 +491,8 @@ function filterTable() {
 }
 
 function sortTable(key) {
-    if (currentSort.key === key) {
-        currentSort.order = currentSort.order === 'asc' ? 'desc' : 'asc';
-    } else {
-        currentSort.key = key;
-        currentSort.order = 'asc';
-    }
+    if (currentSort.key === key) currentSort.order = currentSort.order === 'asc' ? 'desc' : 'asc';
+    else { currentSort.key = key; currentSort.order = 'asc'; }
     sortData();
     renderTable();
 }
@@ -454,9 +500,7 @@ function sortTable(key) {
 function sortData() {
     const { key, order } = currentSort;
     filteredProducts.sort((a, b) => {
-        const aVal = (a[key] || '').toString().toLowerCase();
-        const bVal = (b[key] || '').toString().toLowerCase();
-        const cmp = aVal.localeCompare(bVal);
+        const cmp = (a[key] || '').toString().toLowerCase().localeCompare((b[key] || '').toString().toLowerCase());
         return order === 'asc' ? cmp : -cmp;
     });
 }
@@ -469,23 +513,18 @@ function renderTable() {
     const pageItems = filteredProducts.slice(start, end);
 
     $('tableCount').textContent = filteredProducts.length > 0
-        ? `${start + 1}–${end} of ${filteredProducts.length}`
-        : '0 results';
+        ? `${start + 1}–${end} of ${filteredProducts.length}` : '0 results';
 
     tbody.innerHTML = pageItems.map((p, i) => {
         const colors = COMPANY_COLORS[p.searchCompany] || COMPANY_COLORS['Airoha'];
-        return `
-        <tr>
+        return `<tr>
             <td>${start + i + 1}</td>
-            <td>
-                <span class="company-badge" style="background:${colors.bg};border:1px solid ${colors.border}33;color:${colors.chart}">
-                    <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:${colors.dot}"></span>
-                    ${escapeHtml(p.company)}
-                </span>
-            </td>
-            <td title="${escapeHtml(p.productName)}">${escapeHtml(p.productName) || '—'}</td>
-            <td title="${escapeHtml(p.description)}">${escapeHtml(p.description) || '—'}</td>
-            <td>${escapeHtml(p.modelNumber) || '—'}</td>
+            <td><span class="company-badge" style="background:${colors.bg};border:1px solid ${colors.border}33;color:${colors.chart}">
+                <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:${colors.dot}"></span>
+                ${esc(p.company)}</span></td>
+            <td title="${esc(p.productName)}">${esc(p.productName) || '—'}</td>
+            <td title="${esc(p.description)}">${esc(p.description) || '—'}</td>
+            <td>${esc(p.modelNumber) || '—'}</td>
             <td><a href="https://qualification.bluetooth.com/ListingDetails/${p.listingId}" target="_blank" rel="noopener">${p.listingId || '—'}</a></td>
         </tr>`;
     }).join('');
@@ -494,43 +533,29 @@ function renderTable() {
 }
 
 function renderPagination(totalPages) {
-    const container = $('pagination');
-    if (totalPages <= 1) { container.innerHTML = ''; return; }
-
-    let html = `<button ${currentPage === 1 ? 'disabled' : ''} onclick="goToPage(${currentPage - 1})">‹</button>`;
-
-    const pages = getPaginationPages(currentPage, totalPages);
-    for (const p of pages) {
-        if (p === '...') {
-            html += `<span class="page-info">…</span>`;
-        } else {
-            html += `<button class="${p === currentPage ? 'active' : ''}" onclick="goToPage(${p})">${p}</button>`;
-        }
+    const c = $('pagination');
+    if (totalPages <= 1) { c.innerHTML = ''; return; }
+    let h = `<button ${currentPage === 1 ? 'disabled' : ''} onclick="goToPage(${currentPage - 1})">‹</button>`;
+    for (const p of getPagPages(currentPage, totalPages)) {
+        h += p === '...' ? `<span class="page-info">…</span>` : `<button class="${p === currentPage ? 'active' : ''}" onclick="goToPage(${p})">${p}</button>`;
     }
-
-    html += `<button ${currentPage === totalPages ? 'disabled' : ''} onclick="goToPage(${currentPage + 1})">›</button>`;
-    container.innerHTML = html;
+    h += `<button ${currentPage === totalPages ? 'disabled' : ''} onclick="goToPage(${currentPage + 1})">›</button>`;
+    c.innerHTML = h;
 }
 
-function getPaginationPages(current, total) {
-    const pages = [];
-    if (total <= 7) {
-        for (let i = 1; i <= total; i++) pages.push(i);
-    } else {
-        pages.push(1);
-        if (current > 3) pages.push('...');
-        const s = Math.max(2, current - 1);
-        const e = Math.min(total - 1, current + 1);
-        for (let i = s; i <= e; i++) pages.push(i);
-        if (current < total - 2) pages.push('...');
-        pages.push(total);
-    }
-    return pages;
+function getPagPages(cur, tot) {
+    if (tot <= 7) return Array.from({ length: tot }, (_, i) => i + 1);
+    const p = [1];
+    if (cur > 3) p.push('...');
+    for (let i = Math.max(2, cur - 1); i <= Math.min(tot - 1, cur + 1); i++) p.push(i);
+    if (cur < tot - 2) p.push('...');
+    p.push(tot);
+    return p;
 }
 
 function goToPage(page) {
-    const totalPages = Math.ceil(filteredProducts.length / PAGE_SIZE);
-    if (page < 1 || page > totalPages) return;
+    const tot = Math.ceil(filteredProducts.length / PAGE_SIZE);
+    if (page < 1 || page > tot) return;
     currentPage = page;
     renderTable();
     $('tableSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -539,22 +564,14 @@ function goToPage(page) {
 // ── Export CSV ──
 function exportCSV() {
     if (allProducts.length === 0) return;
-
-    const headers = ['Company', 'Product Name', 'Product Description', 'Model Number', 'Listing ID', 'Year'];
+    const headers = ['Company', 'Product Name', 'Product Description', 'Model Number', 'Listing ID', 'Year', 'Quarter'];
     const rows = allProducts.map(p => [
-        csvEscape(p.company),
-        csvEscape(p.productName),
-        csvEscape(p.description),
-        csvEscape(p.modelNumber),
-        csvEscape(p.listingId),
-        p.year
+        csvEsc(p.company), csvEsc(p.productName), csvEsc(p.description),
+        csvEsc(p.modelNumber), csvEsc(p.listingId), p.year, p.quarter || ''
     ]);
-
-    const bom = '\uFEFF';
-    const csv = bom + [headers.join(','), ...rows.map(r => r.join(','))].join('\n');
+    const csv = '\uFEFF' + [headers.join(','), ...rows.map(r => r.join(','))].join('\n');
     const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
-
     const a = document.createElement('a');
     a.href = url;
     a.download = `BQB_Listings_${new Date().toISOString().slice(0, 10)}.csv`;
@@ -564,14 +581,13 @@ function exportCSV() {
     URL.revokeObjectURL(url);
 }
 
-function csvEscape(str) {
-    if (!str) return '';
-    str = str.replace(/"/g, '""');
-    if (str.includes(',') || str.includes('"') || str.includes('\n')) return `"${str}"`;
-    return str;
+function csvEsc(s) {
+    if (!s) return '';
+    s = s.replace(/"/g, '""');
+    return /[,"\n]/.test(s) ? `"${s}"` : s;
 }
 
-function escapeHtml(str) {
-    if (!str) return '';
-    return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+function esc(s) {
+    if (!s) return '';
+    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
