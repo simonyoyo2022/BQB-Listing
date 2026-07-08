@@ -210,7 +210,7 @@ body {
     overflow: hidden; text-overflow: ellipsis;
 }
 .chart-box {
-    flex: 1; position: relative; min-height: 0;
+    flex: 1; position: relative; min-height: 120px;
 }
 
 /* ── TABLE ── */
@@ -306,13 +306,18 @@ body {
     .summary-card .card-value { font-size: 18px; }
     .summary-card .card-label { font-size: 7px; }
 
-    .charts-section { max-height: none; }
-    .charts-flex { height: auto; min-height: 400px; }
+    .charts-section { max-height: none; overflow-y: auto; }
+    .charts-flex { height: auto; min-height: auto; }
     .chart-row { flex-direction: column; }
+    .chart-card { min-height: 200px; }
+    .chart-box { min-height: 160px; }
     .chart-title { font-size: 10px; }
 
     .cust-summary-grid { grid-template-columns: repeat(3, 1fr); }
     .cust-summary-card .cust-value { font-size: 16px; }
+
+    .customer-analytics .chart-card { min-height: 220px; }
+    .customer-analytics .chart-box { min-height: 180px; }
 }
 
 /* ── RESPONSIVE: LANDSCAPE (wide + short) ── */
@@ -334,10 +339,11 @@ body {
     .tab-btn { padding: 5px; font-size: 12px; }
 
     .data-freshness-bar { margin-bottom: 4px; }
-    .charts-section { max-height: calc(100dvh - 100px); }
-    .charts-flex { height: auto; min-height: 200px; gap: 4px; }
-    .chart-row { gap: 4px; }
-    .chart-card { padding: 6px; }
+    .charts-section { max-height: calc(100dvh - 100px); overflow-y: auto; }
+    .charts-flex { height: auto; min-height: auto; gap: 4px; }
+    .chart-row { gap: 4px; flex-direction: row; }
+    .chart-card { padding: 6px; min-height: 140px; }
+    .chart-box { min-height: 100px; }
     .chart-title { font-size: 9px; margin-bottom: 3px; }
 
     .cust-summary-grid { grid-template-columns: repeat(6, 1fr); gap: 3px; }
@@ -345,6 +351,10 @@ body {
     .cust-summary-card .cust-value { font-size: 14px; }
     .cust-summary-card .cust-sub { display: none; }
     .section-title { font-size: 11px; margin-bottom: 4px; }
+
+    .customer-analytics .chart-row { flex-direction: row; }
+    .customer-analytics .chart-card { min-height: 160px; }
+    .customer-analytics .chart-box { min-height: 120px; }
 
     .table-wrapper { max-height: calc(100dvh - 150px); }
     .footer { padding: 6px; font-size: 9px; }

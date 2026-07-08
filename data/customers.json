@@ -3073,9 +3073,9 @@
         "nRFSDK host subsystem v2.6.x",
         "mesh 1.1 with NCS v2.5.0"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "United States",
+      "continent": "North America",
+      "subRegion": "North America"
     },
     {
       "company": "Acer Inc.",
@@ -4867,9 +4867,9 @@
       "designs": [
         "nRF52 Series with S132 v7.0.1 q-c"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "Spain",
+      "continent": "Europe",
+      "subRegion": "Europe"
     },
     {
       "company": "Canary Medical USA LLC",
@@ -5312,9 +5312,9 @@
       "designs": [
         "nRF52 Series with S132 v7.0.1 q-c"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "Israel",
+      "continent": "Asia",
+      "subRegion": "Other Asia"
     },
     {
       "company": "Code Corporation",
@@ -5700,9 +5700,9 @@
       "designs": [
         "RF-PHY v5.4 Component Qualification of the EFR32BG22 and EFR32MG22 SoCs, and related PCB modules"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "United States",
+      "continent": "North America",
+      "subRegion": "North America"
     },
     {
       "company": "CPAC Systems AB",
@@ -7059,9 +7059,9 @@
         "MT2822_BT5.2_With_New_TCRL",
         "Airoha BT5.2 Dual Mode Component"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "Japan",
+      "continent": "Asia",
+      "subRegion": "Japan"
     },
     {
       "company": "FinDreams Technology Company Limited",
@@ -7077,9 +7077,9 @@
       "designs": [
         "RF-PHY v5.4 Component Qualification of the EFR32BG22 and EFR32MG22 SoCs, and related PCB modules"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "China",
+      "continent": "Asia",
+      "subRegion": "China"
     },
     {
       "company": "Fine Triumph Technology Corp.,ltd.",
@@ -7099,9 +7099,9 @@
         "Telink BLE Controller Subsystem",
         "Telink Enhanced 5.2  BLE Host Subsystem"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "China",
+      "continent": "Asia",
+      "subRegion": "China"
     },
     {
       "company": "Fintie LLC",
@@ -7117,9 +7117,9 @@
       "designs": [
         "nRF52810 with S112 v6.1.1"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "United States",
+      "continent": "North America",
+      "subRegion": "North America"
     },
     {
       "company": "FIOR & GENTZ",
@@ -7136,9 +7136,9 @@
         "nrf connect sdk host conformance ncs 2.4",
         "NCS_SD_controller_multirole_TCRL_2022_2 nRF5340 ncs 2.4.0 qc"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "Germany",
+      "continent": "Europe",
+      "subRegion": "Europe"
     },
     {
       "company": "Fitshop GmbH",
@@ -7174,9 +7174,9 @@
       "designs": [
         "nRF52 Series with S113 v7.0.1 q-c"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "Czech Republic",
+      "continent": "Europe",
+      "subRegion": "Europe"
     },
     {
       "company": "FJ Westcott",
@@ -7627,9 +7627,9 @@
         "Telink BLE Controller Subsystem",
         "Telink Enhanced 5.2  BLE Host Subsystem"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "United States",
+      "continent": "North America",
+      "subRegion": "North America"
     },
     {
       "company": "GEMS SENSORS INC.",
@@ -9623,9 +9623,9 @@
         "NCS 1.4.1 host TCRL 2019-2 q-c",
         "1.3.1 controller subsystem 5.2 core spec TCRL 2019-2 - qc"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "Netherlands",
+      "continent": "Europe",
+      "subRegion": "Europe"
     },
     {
       "company": "IRES Infrarot Energie Systeme GmbH",
@@ -10223,9 +10223,9 @@
         "Telink Enhanced 5.2  BLE Host Subsystem",
         "Telink BLE Controller Subsystem"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "Japan",
+      "continent": "Asia",
+      "subRegion": "Japan"
     },
     {
       "company": "Kohler Company",
@@ -10446,9 +10446,9 @@
       "designs": [
         "1.3.1 controller subsystem 5.2 core spec TCRL 2019-2 - qc"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "Denmark",
+      "continent": "Europe",
+      "subRegion": "Europe"
     },
     {
       "company": "Laerdal Medical AS",
@@ -10481,9 +10481,9 @@
         "nRF52 Series with S132 v7.0.1 q-c",
         "nRF52 with S132 5.0.0"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "Norway",
+      "continent": "Europe",
+      "subRegion": "Europe"
     },
     {
       "company": "LANSITEC Technology Co., Ltd.",
@@ -11717,9 +11717,9 @@
       "designs": [
         "nRF51 with S13x 2.0.0"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "China",
+      "continent": "Asia",
+      "subRegion": "China"
     },
     {
       "company": "Mitsubishi Electric Corporation",
@@ -12751,9 +12751,9 @@
       "designs": [
         "NCS 2.5 component nRF52"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "Germany",
+      "continent": "Europe",
+      "subRegion": "Europe"
     },
     {
       "company": "OFIVE LIMITED",
@@ -12799,9 +12799,9 @@
         "Telink Bluetooth 5 LE Host",
         "BLE5.3 Controller BQB"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "Japan",
+      "continent": "Asia",
+      "subRegion": "Japan"
     },
     {
       "company": "OMRON HEALTHCARE Co., Ltd.",
@@ -12859,9 +12859,9 @@
         "nRF52 Series with S112 v7.0.1 q-c",
         "nRF51 with S13x 2.0.0"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "United States",
+      "continent": "North America",
+      "subRegion": "North America"
     },
     {
       "company": "ONWARD Medical SA",
@@ -13707,9 +13707,9 @@
       "designs": [
         "Realtek Bluetooth 5.1 solution"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "China",
+      "continent": "Asia",
+      "subRegion": "China"
     },
     {
       "company": "RABO, Inc.",
@@ -14048,9 +14048,9 @@
         "Realtek BlueZ Host Stack 5.2",
         "Realtek Bluetooth 5.1 solution"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "China",
+      "continent": "Asia",
+      "subRegion": "China"
     },
     {
       "company": "RESIDEO TECHNOLOGIES, INC.",
@@ -14092,9 +14092,9 @@
         "nRF53 series LE controller v2.6.x",
         "nRFSDK host subsystem v2.6.x"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "United States",
+      "continent": "North America",
+      "subRegion": "North America"
     },
     {
       "company": "RICKARD AIR DIFFUSION (PTY) LTD",
@@ -15085,9 +15085,9 @@
         "nRF52 series NCS 2.0 non-AoA controller subsystem qc",
         "sdk_nrf_host_2.2.0_qc"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "China",
+      "continent": "Asia",
+      "subRegion": "China"
     },
     {
       "company": "Shenzhen Deepsea Innovation Technology Co., Ltd.",
@@ -15149,9 +15149,9 @@
         "Telink BLE Host 5.2",
         "Telink BLE Controller"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "China",
+      "continent": "Asia",
+      "subRegion": "China"
     },
     {
       "company": "Shenzhen Intellirocks Tech. Co., Ltd.",
@@ -15566,9 +15566,9 @@
         "nRF52 series LE controller v2.6.x qc",
         "nRFSDK host subsystem v2.6.x"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "China",
+      "continent": "Asia",
+      "subRegion": "China"
     },
     {
       "company": "Shenzhen Xiteng Technology Limited.",
@@ -15612,9 +15612,9 @@
         "MT2833",
         "Airoha BT5.3 Dual Mode Component"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "China",
+      "continent": "Asia",
+      "subRegion": "China"
     },
     {
       "company": "Shenzhen Zhuoyu Technology Co., Ltd.",
@@ -15891,9 +15891,9 @@
         "SDC_CS_multirole",
         "NCS Host v3.0.0"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "China",
+      "continent": "Asia",
+      "subRegion": "China"
     },
     {
       "company": "Singsun Electronic Tech Co., Ltd.",
@@ -16937,9 +16937,9 @@
       "designs": [
         "nRF52840 with S140 v6.1.1"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "Switzerland",
+      "continent": "Europe",
+      "subRegion": "Europe"
     },
     {
       "company": "tado GmbH",
@@ -16985,9 +16985,9 @@
         "nRF53 series LE controller v2.6.x",
         "nRFSDK host subsystem v2.6.x"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "United States",
+      "continent": "North America",
+      "subRegion": "North America"
     },
     {
       "company": "TagMaster Aktiebolag",
@@ -17632,9 +17632,9 @@
       "designs": [
         "Realtek Bluetooth BT6.0 Controller Solution"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "Singapore",
+      "continent": "Asia",
+      "subRegion": "Singapore"
     },
     {
       "company": "TPV Technology Limited",
@@ -17748,9 +17748,9 @@
       "designs": [
         "nRF52810 with S112 v6.1.1"
       ],
-      "country": "Unknown",
-      "continent": "Unknown",
-      "subRegion": "Unknown"
+      "country": "India",
+      "continent": "Asia",
+      "subRegion": "India"
     },
     {
       "company": "Trek Bicycle",
