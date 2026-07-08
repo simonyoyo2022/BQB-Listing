@@ -3,7 +3,7 @@
    Network-first for all app files to ensure updates propagate
    ============================================================ */
 
-const CACHE_NAME = 'bqb-listing-v5';
+const CACHE_NAME = 'bqb-listing-v6';
 const STATIC_ASSETS = [
     './',
     './index.html',

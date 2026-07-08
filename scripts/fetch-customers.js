@@ -25,7 +25,12 @@ const SEARCH_TERMS = [
     'pen', 'stylus', 'meter', 'scale'
 ];
 
-const DATE_FROM = '2022-01-01';
+function getDateFiveYearsAgo() {
+    const d = new Date();
+    d.setFullYear(d.getFullYear() - 5);
+    return d.toISOString().slice(0, 10);
+}
+const DATE_FROM = getDateFiveYearsAgo();
 
 async function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
