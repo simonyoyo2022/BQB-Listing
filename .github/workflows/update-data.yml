@@ -27,12 +27,15 @@ jobs:
       - name: Fetch BQB Data
         run: node scripts/fetch-data.js
 
+      - name: Fetch Customer Data
+        run: node scripts/fetch-customers.js
+
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/listings.json
-          git diff --cached --quiet || git commit -m "data: monthly BQB listing update $(date -u +%Y-%m-%d)"
+          git add data/listings.json data/customers.json
+          git diff --cached --quiet || git commit -m "data: monthly BQB listing + customer update $(date -u +%Y-%m-%d)"
           git push
 
   deploy:

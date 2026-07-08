@@ -3,14 +3,15 @@
    Network-first for all app files to ensure updates propagate
    ============================================================ */
 
-const CACHE_NAME = 'bqb-listing-v3';
+const CACHE_NAME = 'bqb-listing-v4';
 const STATIC_ASSETS = [
     './',
     './index.html',
     './style.css',
     './app.js',
     './manifest.json',
-    './data/listings.json'
+    './data/listings.json',
+    './data/customers.json'
 ];
 
 // Install: cache static assets, force immediate activation

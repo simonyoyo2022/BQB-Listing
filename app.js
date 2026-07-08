@@ -51,6 +51,8 @@ function switchTab(tab) {
     if (tab === 'charts') {
         $('chartsSection').style.display = 'flex';
         setTimeout(() => Object.values(chartInstances).forEach(c => c.resize()), 50);
+    } else if (tab === 'customers') {
+        $('customersSection').style.display = 'block';
     } else {
         $('tableSection').style.display = 'block';
     }
@@ -68,6 +70,7 @@ async function fetchAllData() {
     $('tabNav').style.display = 'none';
     $('chartsSection').style.display = 'none';
     $('tableSection').style.display = 'none';
+    $('customersSection').style.display = 'none';
     $('exportBtn').disabled = true;
 
     allProducts = [];
@@ -116,6 +119,7 @@ async function fetchAllData() {
     populateFilters();
     filterTable();
     updateDataFreshness();
+    loadCustomerData();
 
     $('summarySection').style.display = 'block';
     $('tabNav').style.display = 'flex';
@@ -491,3 +495,124 @@ function exportCSV() {
 }
 function ce(s) { if (!s) return ''; s = s.replace(/"/g, '""'); return /[,"\n]/.test(s) ? `"${s}"` : s; }
 function esc(s) { if (!s) return ''; return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+
+// ══════════════════════════════════════════════
+// CUSTOMER TAB
+// ══════════════════════════════════════════════
+const CUST_JSON_URL = './data/customers.json';
+const CUST_PAGE_SIZE = 30;
+let allCustomers = [];
+let filteredCustomers = [];
+let custPage = 1;
+let custSort = { key: 'company', order: 'asc' };
+
+// Load customer data (called after main data loads)
+async function loadCustomerData() {
+    try {
+        const resp = await fetch(CUST_JSON_URL + '?t=' + Date.now());
+        if (!resp.ok) return;
+        const json = await resp.json();
+        if (json.customers) {
+            allCustomers = json.customers;
+            populateCustFilters();
+            filterCustomers();
+        }
+    } catch (e) {
+        console.warn('Customer data not available:', e.message);
+    }
+}
+
+function populateCustFilters() {
+    const vf = $('custVendorFilter');
+    if (!vf) return;
+    vf.innerHTML = '<option value="">All IC Vendors</option>';
+    const vendors = new Set(allCustomers.flatMap(c => c.icVendors));
+    [...vendors].sort().forEach(v => { vf.innerHTML += `<option value="${v}">${v}</option>`; });
+}
+
+function filterCustomers() {
+    const search = ($('custSearch')?.value || '').toLowerCase();
+    const vendorFilter = $('custVendorFilter')?.value || '';
+
+    filteredCustomers = allCustomers.filter(c => {
+        if (vendorFilter && !c.icVendors.includes(vendorFilter)) return false;
+        if (search) {
+            const s = `${c.company} ${c.icVendors.join(' ')} ${c.products.join(' ')} ${c.applications.join(' ')}`.toLowerCase();
+            if (!s.includes(search)) return false;
+        }
+        return true;
+    });
+    sortCustData();
+    custPage = 1;
+    renderCustomers();
+}
+
+function sortCustomers(key) {
+    if (custSort.key === key) custSort.order = custSort.order === 'asc' ? 'desc' : 'asc';
+    else { custSort.key = key; custSort.order = 'asc'; }
+    sortCustData();
+    renderCustomers();
+}
+
+function sortCustData() {
+    const { key, order } = custSort;
+    filteredCustomers.sort((a, b) => {
+        let aVal, bVal;
+        if (key === 'icVendors') { aVal = a.icVendors.join(','); bVal = b.icVendors.join(','); }
+        else { aVal = a[key] || ''; bVal = b[key] || ''; }
+        const cmp = aVal.toString().toLowerCase().localeCompare(bVal.toString().toLowerCase());
+        return order === 'asc' ? cmp : -cmp;
+    });
+}
+
+function renderCustomers() {
+    const tbody = $('custBody');
+    if (!tbody) return;
+    const tp = Math.ceil(filteredCustomers.length / CUST_PAGE_SIZE);
+    const s = (custPage - 1) * CUST_PAGE_SIZE;
+    const e = Math.min(s + CUST_PAGE_SIZE, filteredCustomers.length);
+    const items = filteredCustomers.slice(s, e);
+
+    $('custCount').textContent = filteredCustomers.length > 0 ? `${s + 1}–${e} / ${filteredCustomers.length} companies` : '0';
+
+    tbody.innerHTML = items.map((c, i) => {
+        const vendorBadges = c.icVendors.map(v => {
+            const cl = COMPANY_COLORS[v] || { bg: 'rgba(100,100,100,0.12)', border: '#888', chart: '#888' };
+            return `<span class="company-badge" style="background:${cl.bg};border:1px solid ${cl.border}33;color:${cl.chart}">
+                <span style="display:inline-block;width:5px;height:5px;border-radius:50%;background:${cl.chart}"></span>
+                ${esc(v)}</span>`;
+        }).join(' ');
+
+        const prodList = c.products.slice(0, 3).map(p => esc(p)).join('<br>');
+        const appList = c.applications.slice(0, 2).map(a => `<span style="color:var(--muted);font-size:10px">${esc(a)}</span>`).join('<br>');
+        const designList = c.designs.slice(0, 3).map(d => esc(d)).join(', ');
+
+        return `<tr>
+            <td>${s + i + 1}</td>
+            <td title="${esc(c.company)}">${esc(c.company)}</td>
+            <td>${vendorBadges}</td>
+            <td style="white-space:normal;max-width:200px;">${prodList}${appList ? '<br>' + appList : ''}</td>
+            <td title="${esc(c.designs.join(', '))}" style="font-size:10px;color:var(--muted)">${designList || '—'}</td>
+        </tr>`;
+    }).join('');
+
+    renderCustPagination(tp);
+}
+
+function renderCustPagination(tp) {
+    const c = $('custPagination');
+    if (!c) return;
+    if (tp <= 1) { c.innerHTML = ''; return; }
+    let h = `<button ${custPage === 1 ? 'disabled' : ''} onclick="goToCustPage(${custPage - 1})">‹</button>`;
+    for (const p of pagPages(custPage, tp))
+        h += p === '...' ? '<span class="page-info">…</span>' : `<button class="${p === custPage ? 'active' : ''}" onclick="goToCustPage(${p})">${p}</button>`;
+    h += `<button ${custPage === tp ? 'disabled' : ''} onclick="goToCustPage(${custPage + 1})">›</button>`;
+    c.innerHTML = h;
+}
+
+function goToCustPage(p) {
+    const t = Math.ceil(filteredCustomers.length / CUST_PAGE_SIZE);
+    if (p < 1 || p > t) return;
+    custPage = p; renderCustomers();
+    $('customersSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
