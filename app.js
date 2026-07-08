@@ -497,7 +497,7 @@ function ce(s) { if (!s) return ''; s = s.replace(/"/g, '""'); return /[,"\n]/.t
 function esc(s) { if (!s) return ''; return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
 
 // ══════════════════════════════════════════════
-// CUSTOMER TAB
+// CUSTOMER TAB + ANALYTICS
 // ══════════════════════════════════════════════
 const CUST_JSON_URL = './data/customers.json';
 const CUST_PAGE_SIZE = 30;
@@ -505,6 +505,20 @@ let allCustomers = [];
 let filteredCustomers = [];
 let custPage = 1;
 let custSort = { key: 'company', order: 'asc' };
+let custChartInstances = {};
+
+const CONTINENT_ORDER = ['Asia', 'Europe', 'North America', 'South America', 'Oceania', 'Africa', 'Unknown'];
+const CONTINENT_COLORS = {
+    'Asia':           '#F77F00',
+    'Europe':         '#6C5CE7',
+    'North America':  '#0082FC',
+    'South America':  '#00C9A7',
+    'Oceania':        '#38bdf8',
+    'Africa':         '#EF4444',
+    'Unknown':        '#64748b'
+};
+const ASIA_COUNTRIES = ['China', 'Japan', 'South Korea', 'India', 'Vietnam', 'Thailand', 'Malaysia', 'Singapore', 'Indonesia', 'Philippines', 'Other Asia'];
+const ASIA_COLORS = ['#EF4444', '#F77F00', '#6C5CE7', '#00C9A7', '#0082FC', '#38bdf8', '#facc15', '#f472b6', '#a78bfa', '#34d399', '#94a3b8'];
 
 // Load customer data (called after main data loads)
 async function loadCustomerData() {
@@ -516,6 +530,7 @@ async function loadCustomerData() {
             allCustomers = json.customers;
             populateCustFilters();
             filterCustomers();
+            renderCustomerAnalytics();
         }
     } catch (e) {
         console.warn('Customer data not available:', e.message);
@@ -524,20 +539,42 @@ async function loadCustomerData() {
 
 function populateCustFilters() {
     const vf = $('custVendorFilter');
+    const rf = $('custRegionFilter');
     if (!vf) return;
     vf.innerHTML = '<option value="">All IC Vendors</option>';
     const vendors = new Set(allCustomers.flatMap(c => c.icVendors));
     [...vendors].sort().forEach(v => { vf.innerHTML += `<option value="${v}">${v}</option>`; });
+
+    if (!rf) return;
+    rf.innerHTML = '<option value="">All Regions</option>';
+    // Group: continents first, then Asia sub-regions
+    const continents = new Set(allCustomers.map(c => c.continent).filter(Boolean));
+    const asiaSubRegions = new Set(allCustomers.filter(c => c.continent === 'Asia').map(c => c.subRegion).filter(Boolean));
+
+    CONTINENT_ORDER.filter(co => continents.has(co)).forEach(co => {
+        rf.innerHTML += `<option value="continent:${co}">🌍 ${co}</option>`;
+    });
+    ASIA_COUNTRIES.filter(ac => asiaSubRegions.has(ac)).forEach(ac => {
+        rf.innerHTML += `<option value="asia:${ac}">　└ ${ac}</option>`;
+    });
 }
 
 function filterCustomers() {
     const search = ($('custSearch')?.value || '').toLowerCase();
     const vendorFilter = $('custVendorFilter')?.value || '';
+    const regionFilter = $('custRegionFilter')?.value || '';
 
     filteredCustomers = allCustomers.filter(c => {
         if (vendorFilter && !c.icVendors.includes(vendorFilter)) return false;
+        if (regionFilter) {
+            if (regionFilter.startsWith('continent:')) {
+                if (c.continent !== regionFilter.split(':')[1]) return false;
+            } else if (regionFilter.startsWith('asia:')) {
+                if (c.subRegion !== regionFilter.split(':')[1]) return false;
+            }
+        }
         if (search) {
-            const s = `${c.company} ${c.icVendors.join(' ')} ${c.products.join(' ')} ${c.applications.join(' ')}`.toLowerCase();
+            const s = `${c.company} ${c.icVendors.join(' ')} ${c.products.join(' ')} ${c.applications.join(' ')} ${c.country || ''} ${c.continent || ''}`.toLowerCase();
             if (!s.includes(search)) return false;
         }
         return true;
@@ -583,6 +620,10 @@ function renderCustomers() {
                 ${esc(v)}</span>`;
         }).join(' ');
 
+        const regionLabel = c.continent === 'Asia' && c.subRegion && c.subRegion !== 'Other Asia'
+            ? `${c.subRegion}` : (c.continent || '—');
+        const regionColor = CONTINENT_COLORS[c.continent] || '#64748b';
+
         const prodList = c.products.slice(0, 3).map(p => esc(p)).join('<br>');
         const appList = c.applications.slice(0, 2).map(a => `<span style="color:var(--muted);font-size:10px">${esc(a)}</span>`).join('<br>');
         const designList = c.designs.slice(0, 3).map(d => esc(d)).join(', ');
@@ -591,6 +632,7 @@ function renderCustomers() {
             <td>${s + i + 1}</td>
             <td title="${esc(c.company)}">${esc(c.company)}</td>
             <td>${vendorBadges}</td>
+            <td style="white-space:nowrap;font-size:11px;color:${regionColor}" title="${esc(c.country || '')}">${regionLabel}</td>
             <td style="white-space:normal;max-width:200px;">${prodList}${appList ? '<br>' + appList : ''}</td>
             <td title="${esc(c.designs.join(', '))}" style="font-size:10px;color:var(--muted)">${designList || '—'}</td>
         </tr>`;
@@ -615,4 +657,90 @@ function goToCustPage(p) {
     if (p < 1 || p > t) return;
     custPage = p; renderCustomers();
     $('customersSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// ── Customer Analytics (Dashboard) ──
+function renderCustomerAnalytics() {
+    if (!allCustomers.length) return;
+    const section = $('customerAnalytics');
+    if (!section) return;
+    section.style.display = 'block';
+
+    // 1. Per-vendor customer count cards
+    const vendorCounts = {};
+    let totalUnique = allCustomers.length;
+    for (const v of DISPLAY_COMPANIES) vendorCounts[v] = 0;
+    for (const c of allCustomers) {
+        for (const v of c.icVendors) {
+            if (vendorCounts[v] !== undefined) vendorCounts[v]++;
+        }
+    }
+
+    const grid = $('custSummaryGrid');
+    grid.innerHTML = `<div class="cust-summary-card">
+        <div class="cust-label">Total Customers</div>
+        <div class="cust-value" style="color:var(--accent2)">${totalUnique}</div>
+        <div class="cust-sub">unique companies</div>
+    </div>` + DISPLAY_COMPANIES.map(v => {
+        const cl = COMPANY_COLORS[v];
+        return `<div class="cust-summary-card">
+            <div class="cust-label">${v}</div>
+            <div class="cust-value" style="color:${cl.chart}">${vendorCounts[v]}</div>
+            <div class="cust-sub">customers</div>
+        </div>`;
+    }).join('');
+
+    // 2. Continent chart
+    const continentCounts = {};
+    for (const c of allCustomers) {
+        const co = c.continent || 'Unknown';
+        continentCounts[co] = (continentCounts[co] || 0) + 1;
+    }
+    const cLabels = CONTINENT_ORDER.filter(co => continentCounts[co]);
+    const cData = cLabels.map(co => continentCounts[co]);
+    const cColors = cLabels.map(co => CONTINENT_COLORS[co]);
+
+    if (custChartInstances.continent) custChartInstances.continent.destroy();
+    custChartInstances.continent = new Chart($('continentChart'), {
+        type: 'doughnut',
+        data: {
+            labels: cLabels,
+            datasets: [{ data: cData, backgroundColor: cColors, borderColor: '#1a1f35', borderWidth: 2 }]
+        },
+        options: {
+            responsive: true, maintainAspectRatio: false,
+            plugins: {
+                legend: { position: 'right', labels: { color: '#94a3b8', font: { size: 10 }, padding: 6, boxWidth: 10 } }
+            }
+        }
+    });
+
+    // 3. Asia breakdown chart
+    const asiaCounts = {};
+    for (const c of allCustomers) {
+        if (c.continent === 'Asia') {
+            const sr = c.subRegion || 'Other Asia';
+            asiaCounts[sr] = (asiaCounts[sr] || 0) + 1;
+        }
+    }
+    const aLabels = ASIA_COUNTRIES.filter(ac => asiaCounts[ac]);
+    const aData = aLabels.map(ac => asiaCounts[ac]);
+    const aColors = aLabels.map((_, i) => ASIA_COLORS[i % ASIA_COLORS.length]);
+
+    if (custChartInstances.asia) custChartInstances.asia.destroy();
+    custChartInstances.asia = new Chart($('asiaChart'), {
+        type: 'bar',
+        data: {
+            labels: aLabels,
+            datasets: [{ label: 'Customers', data: aData, backgroundColor: aColors, borderRadius: 4 }]
+        },
+        options: {
+            responsive: true, maintainAspectRatio: false, indexAxis: 'y',
+            plugins: { legend: { display: false } },
+            scales: {
+                x: { grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { color: '#94a3b8', font: { size: 10 } } },
+                y: { grid: { display: false }, ticks: { color: '#f0f2f5', font: { size: 10 } } }
+            }
+        }
+    });
 }

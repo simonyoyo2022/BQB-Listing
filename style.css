@@ -157,7 +157,38 @@ body {
 /* ── CHARTS — ONE PAGE LAYOUT ── */
 .charts-section {
     flex-direction: column;
+    overflow-y: auto;
+    max-height: calc(100dvh - 140px);
 }
+
+/* ── CUSTOMER ANALYTICS ── */
+.customer-analytics {
+    margin-top: 10px; padding-top: 10px;
+    border-top: 1px solid var(--brd);
+}
+.section-title {
+    font-size: 14px; font-weight: 700; color: var(--text);
+    margin-bottom: 8px;
+}
+.cust-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 6px;
+    margin-bottom: 8px;
+}
+.cust-summary-card {
+    padding: 8px 6px; border-radius: 8px;
+    background: var(--card); border: 1px solid var(--brd);
+    text-align: center; overflow: hidden;
+}
+.cust-summary-card .cust-label {
+    font-size: 8px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.3px; color: var(--muted);
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    margin-bottom: 2px;
+}
+.cust-summary-card .cust-value { font-size: 20px; font-weight: 800; letter-spacing: -0.5px; line-height: 1.1; }
+.cust-summary-card .cust-sub { font-size: 9px; color: var(--text2); }
 .charts-flex {
     display: flex; flex-direction: column; gap: 8px;
     /* Fill remaining viewport height below header+summary+tabs */
@@ -275,9 +306,13 @@ body {
     .summary-card .card-value { font-size: 18px; }
     .summary-card .card-label { font-size: 7px; }
 
-    .charts-flex { height: calc(100dvh - 180px); }
+    .charts-section { max-height: none; }
+    .charts-flex { height: auto; min-height: 400px; }
     .chart-row { flex-direction: column; }
     .chart-title { font-size: 10px; }
+
+    .cust-summary-grid { grid-template-columns: repeat(3, 1fr); }
+    .cust-summary-card .cust-value { font-size: 16px; }
 }
 
 /* ── RESPONSIVE: LANDSCAPE (wide + short) ── */
@@ -299,10 +334,17 @@ body {
     .tab-btn { padding: 5px; font-size: 12px; }
 
     .data-freshness-bar { margin-bottom: 4px; }
-    .charts-flex { height: calc(100dvh - 120px); min-height: 200px; gap: 4px; }
+    .charts-section { max-height: calc(100dvh - 100px); }
+    .charts-flex { height: auto; min-height: 200px; gap: 4px; }
     .chart-row { gap: 4px; }
     .chart-card { padding: 6px; }
     .chart-title { font-size: 9px; margin-bottom: 3px; }
+
+    .cust-summary-grid { grid-template-columns: repeat(6, 1fr); gap: 3px; }
+    .cust-summary-card { padding: 4px 3px; }
+    .cust-summary-card .cust-value { font-size: 14px; }
+    .cust-summary-card .cust-sub { display: none; }
+    .section-title { font-size: 11px; margin-bottom: 4px; }
 
     .table-wrapper { max-height: calc(100dvh - 150px); }
     .footer { padding: 6px; font-size: 9px; }

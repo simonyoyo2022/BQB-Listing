@@ -96,6 +96,22 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Customer Analytics -->
+            <div id="customerAnalytics" class="customer-analytics" style="display:none;">
+                <h3 class="section-title">🏢 Customer Analytics</h3>
+                <div class="cust-summary-grid" id="custSummaryGrid"></div>
+                <div class="chart-row" style="margin-top:8px;">
+                    <div class="chart-card">
+                        <h3 class="chart-title">Customers by Continent</h3>
+                        <div class="chart-box"><canvas id="continentChart"></canvas></div>
+                    </div>
+                    <div class="chart-card">
+                        <h3 class="chart-title">Asia Breakdown by Country</h3>
+                        <div class="chart-box"><canvas id="asiaChart"></canvas></div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Table -->
@@ -136,6 +152,7 @@
                 </div>
                 <div class="filter-group">
                     <select id="custVendorFilter" onchange="filterCustomers()"><option value="">All IC Vendors</option></select>
+                    <select id="custRegionFilter" onchange="filterCustomers()"><option value="">All Regions</option></select>
                 </div>
                 <span id="custCount" class="table-count"></span>
             </div>
@@ -145,6 +162,7 @@
                         <th>#</th>
                         <th onclick="sortCustomers('company')">Company ⇅</th>
                         <th onclick="sortCustomers('icVendors')">IC Vendor(s) ⇅</th>
+                        <th onclick="sortCustomers('continent')">Region ⇅</th>
                         <th>Products / Applications</th>
                         <th>Designs Referenced</th>
                     </tr></thead>

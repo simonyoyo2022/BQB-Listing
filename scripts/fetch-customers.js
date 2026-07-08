@@ -137,7 +137,11 @@ async function main() {
                 if (isICVendorCompany(companyName)) continue;
 
                 if (!customers.has(companyName)) {
-                    customers.set(companyName, { vendors: new Set(), products: new Set(), designs: new Set(), applications: new Set() });
+                    customers.set(companyName, { vendors: new Set(), products: new Set(), designs: new Set(), applications: new Set(), country: '' });
+                }
+                // Capture country from listing detail (first seen wins)
+                if (!customers.get(companyName).country && det.ContactCountry) {
+                    customers.get(companyName).country = det.ContactCountry.trim();
                 }
                 const entry = customers.get(companyName);
                 entry.vendors.add(vendor);
@@ -168,12 +172,17 @@ async function main() {
     };
 
     for (const [company, data] of customers) {
+        const country = data.country || 'Unknown';
+        const region = mapCountryToRegion(country);
         output.customers.push({
             company,
             icVendors: [...data.vendors].sort(),
             products: [...data.products].slice(0, 20),
             applications: [...data.applications].slice(0, 10),
-            designs: [...data.designs].slice(0, 20)
+            designs: [...data.designs].slice(0, 20),
+            country,
+            continent: region.continent,
+            subRegion: region.subRegion
         });
     }
 
@@ -194,6 +203,54 @@ async function main() {
     output.customers.slice(0, 30).forEach(c => {
         console.log(`${c.company} | IC Vendors: ${c.icVendors.join(', ')} | Products: ${c.products.slice(0, 3).join(', ')}`);
     });
+}
+
+// ── Continent / Region Mapping ──
+function mapCountryToRegion(country) {
+    const c = (country || '').toLowerCase().trim();
+
+    // Asia — specific countries
+    const asiaMap = {
+        'china': 'China', 'cn': 'China', 'prc': 'China', 'hong kong': 'China', 'macau': 'China', 'macao': 'China', 'taiwan': 'China',
+        'india': 'India', 'in': 'India',
+        'japan': 'Japan', 'jp': 'Japan',
+        'korea': 'South Korea', 'south korea': 'South Korea', 'republic of korea': 'South Korea', 'kr': 'South Korea',
+        'vietnam': 'Vietnam', 'viet nam': 'Vietnam', 'vn': 'Vietnam',
+        'thailand': 'Thailand', 'th': 'Thailand',
+        'malaysia': 'Malaysia', 'my': 'Malaysia',
+        'singapore': 'Singapore', 'sg': 'Singapore',
+        'indonesia': 'Indonesia', 'id': 'Indonesia',
+        'philippines': 'Philippines', 'ph': 'Philippines',
+    };
+    for (const [key, label] of Object.entries(asiaMap)) {
+        if (c.includes(key)) return { continent: 'Asia', subRegion: label };
+    }
+
+    // Other Asia
+    const otherAsia = ['bangladesh', 'pakistan', 'sri lanka', 'myanmar', 'cambodia', 'laos', 'nepal', 'brunei', 'mongolia', 'uzbekistan', 'kazakhstan', 'israel', 'united arab emirates', 'uae', 'saudi arabia', 'qatar', 'bahrain', 'kuwait', 'oman', 'jordan', 'lebanon', 'iraq', 'iran', 'turkey', 'turkiye', 'armenia', 'georgia', 'azerbaijan'];
+    if (otherAsia.some(a => c.includes(a))) return { continent: 'Asia', subRegion: 'Other Asia' };
+
+    // Europe
+    const europe = ['germany', 'france', 'united kingdom', 'uk', 'england', 'italy', 'spain', 'netherlands', 'belgium', 'switzerland', 'austria', 'sweden', 'norway', 'denmark', 'finland', 'poland', 'czech', 'portugal', 'ireland', 'hungary', 'romania', 'greece', 'croatia', 'slovakia', 'slovenia', 'bulgaria', 'serbia', 'estonia', 'latvia', 'lithuania', 'luxembourg', 'malta', 'iceland', 'cyprus', 'ukraine', 'russia', 'belarus', 'moldova', 'albania', 'bosnia', 'montenegro', 'north macedonia', 'kosovo', 'scotland', 'wales', 'great britain', 'liechtenstein', 'monaco', 'andorra', 'san marino'];
+    if (europe.some(e => c.includes(e))) return { continent: 'Europe', subRegion: 'Europe' };
+
+    // North America
+    const northAm = ['united states', 'usa', 'us', 'canada', 'mexico', 'costa rica', 'panama', 'guatemala', 'honduras', 'el salvador', 'nicaragua', 'belize', 'jamaica', 'cuba', 'dominican', 'puerto rico', 'trinidad', 'bahamas', 'barbados', 'haiti'];
+    if (northAm.some(n => c.includes(n)) || c === 'us') return { continent: 'North America', subRegion: 'North America' };
+
+    // South America
+    const southAm = ['brazil', 'argentina', 'chile', 'colombia', 'peru', 'venezuela', 'ecuador', 'bolivia', 'paraguay', 'uruguay', 'guyana', 'suriname'];
+    if (southAm.some(s => c.includes(s))) return { continent: 'South America', subRegion: 'South America' };
+
+    // Oceania
+    const oceania = ['australia', 'new zealand', 'fiji', 'papua new guinea', 'samoa', 'tonga'];
+    if (oceania.some(o => c.includes(o))) return { continent: 'Oceania', subRegion: 'Oceania' };
+
+    // Africa
+    const africa = ['south africa', 'nigeria', 'kenya', 'egypt', 'morocco', 'ghana', 'ethiopia', 'tanzania', 'uganda', 'algeria', 'tunisia', 'senegal', 'cameroon', 'ivory coast', 'zimbabwe', 'mozambique', 'madagascar', 'rwanda', 'mauritius'];
+    if (africa.some(a => c.includes(a))) return { continent: 'Africa', subRegion: 'Africa' };
+
+    return { continent: 'Unknown', subRegion: 'Unknown' };
 }
 
 main().catch(err => { console.error('Fatal:', err); process.exit(1); });
