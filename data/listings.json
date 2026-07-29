@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-07-07T13:20:47.534Z",
+  "fetchedAt": "2026-07-28T23:50:12.749Z",
   "dateRange": {
-    "from": "2021-07-07",
-    "to": "2026-07-07"
+    "from": "2021-07-28",
+    "to": "2026-07-28"
   },
-  "totalProducts": 1569,
+  "totalProducts": 1587,
   "products": [
     {
       "company": "Airoha Technology Corp.",
@@ -1120,10 +1120,10 @@
     {
       "company": "Airoha Technology Corp.",
       "searchCompany": "Airoha",
-      "productName": "Airoha Hummingbird Duo 5.3 earbuds",
-      "description": "Airoha BT Host earbuds SW",
-      "modelNumber": "Airoha Hummingbird Duo 5.3 earbuds",
-      "listingId": 232771,
+      "productName": "Airoha Hummingbird Duo 5.3 headset",
+      "description": "Airoha BT Host headset SW",
+      "modelNumber": "Airoha Hummingbird Duo 5.3 headset",
+      "listingId": 232854,
       "listingDate": "2024-09-20T00:00:00",
       "year": "2024",
       "quarter": "2024-Q3"
@@ -1142,10 +1142,10 @@
     {
       "company": "Airoha Technology Corp.",
       "searchCompany": "Airoha",
-      "productName": "Airoha Hummingbird Duo 5.3 headset",
-      "description": "Airoha BT Host headset SW",
-      "modelNumber": "Airoha Hummingbird Duo 5.3 headset",
-      "listingId": 232854,
+      "productName": "Airoha Hummingbird Duo 5.3 earbuds",
+      "description": "Airoha BT Host earbuds SW",
+      "modelNumber": "Airoha Hummingbird Duo 5.3 earbuds",
+      "listingId": 232771,
       "listingDate": "2024-09-20T00:00:00",
       "year": "2024",
       "quarter": "2024-Q3"
@@ -2407,10 +2407,10 @@
     {
       "company": "Nordic Semiconductor ASA",
       "searchCompany": "Nordic",
-      "productName": "SoftDevice Controller component for nRF53",
-      "description": "LE Controller for nRF53 series utilizing the Nordic SoftDevice controller design based on the NCS tag 3.2.x. Refer to the relevant nRF Connect SDK documentation at docs.nordicsemi.com for specific applicability of this controller and the role support available for each nRF53 device in the series.",
-      "modelNumber": "Controller component for nRF53",
-      "listingId": 323723,
+      "productName": "Softdevice S116 peripheral subset design",
+      "description": "Host and controller subset for S116 SoftDevice, release 9.0.x. Support for indicated features in RFPHY, LL, LESEC, GAP, GATT, ATT, L2CAP and SM. Future releases as 9.0.x may share the same ICS selections and DN. Check www.nordicsemi.com for further information and applicability of this design. S116 is supported on nRF52 series devices.",
+      "modelNumber": "S116 v9.0.x",
+      "listingId": 324558,
       "listingDate": "2026-01-23T00:00:00",
       "year": "2026",
       "quarter": "2026-Q1"
@@ -2418,10 +2418,10 @@
     {
       "company": "Nordic Semiconductor ASA",
       "searchCompany": "Nordic",
-      "productName": "Softdevice S116 peripheral subset design",
-      "description": "Host and controller subset for S116 SoftDevice, release 9.0.x. Support for indicated features in RFPHY, LL, LESEC, GAP, GATT, ATT, L2CAP and SM. Future releases as 9.0.x may share the same ICS selections and DN. Check www.nordicsemi.com for further information and applicability of this design. S116 is supported on nRF52 series devices.",
-      "modelNumber": "S116 v9.0.x",
-      "listingId": 324558,
+      "productName": "SoftDevice Controller component for nRF53",
+      "description": "LE Controller for nRF53 series utilizing the Nordic SoftDevice controller design based on the NCS tag 3.2.x. Refer to the relevant nRF Connect SDK documentation at docs.nordicsemi.com for specific applicability of this controller and the role support available for each nRF53 device in the series.",
+      "modelNumber": "Controller component for nRF53",
+      "listingId": 323723,
       "listingDate": "2026-01-23T00:00:00",
       "year": "2026",
       "quarter": "2026-Q1"
@@ -2550,10 +2550,10 @@
     {
       "company": "Nordic Semiconductor ASA",
       "searchCompany": "Nordic",
-      "productName": "Softdevice S115 Host subset v9.0.x",
-      "description": "Host implementation subset for S115 SoftDevice, release 9.0.0.  LE Host component with support for indicated features in GAP, GATT, ATT, L2CAP and SM. Future releases as 9.0.x may share the same ICS selections and DN. Check www.nordicsemi.com for further information and applicability of this host component. ",
-      "modelNumber": "S115",
-      "listingId": 320371,
+      "productName": "Softdevice S145 Host Superset v9.0.x",
+      "description": "Host implementation superset for S145 SoftDevice, release 9.0.0.  LE Host component with support for indicated features in GAP, GATT, ATT, L2CAP and SM. Future releases as 9.0.x may share the same ICS selections and DN. Check www.nordicsemi.com for further information and applicability of this host component. ",
+      "modelNumber": "S145",
+      "listingId": 320337,
       "listingDate": "2025-12-10T00:00:00",
       "year": "2025",
       "quarter": "2025-Q4"
@@ -2561,10 +2561,10 @@
     {
       "company": "Nordic Semiconductor ASA",
       "searchCompany": "Nordic",
-      "productName": "Softdevice S145 Host Superset v9.0.x",
-      "description": "Host implementation superset for S145 SoftDevice, release 9.0.0.  LE Host component with support for indicated features in GAP, GATT, ATT, L2CAP and SM. Future releases as 9.0.x may share the same ICS selections and DN. Check www.nordicsemi.com for further information and applicability of this host component. ",
-      "modelNumber": "S145",
-      "listingId": 320337,
+      "productName": "Softdevice S115 Host subset v9.0.x",
+      "description": "Host implementation subset for S115 SoftDevice, release 9.0.0.  LE Host component with support for indicated features in GAP, GATT, ATT, L2CAP and SM. Future releases as 9.0.x may share the same ICS selections and DN. Check www.nordicsemi.com for further information and applicability of this host component. ",
+      "modelNumber": "S115",
+      "listingId": 320371,
       "listingDate": "2025-12-10T00:00:00",
       "year": "2025",
       "quarter": "2025-Q4"
@@ -3965,6 +3965,391 @@
       "listingDate": "2024-12-20T00:00:00",
       "year": "2024",
       "quarter": "2024-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32BG22C222F352GM40",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32BG22C222F352GM40",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32BG22C224F512GM40 (QFN40)",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32BG22C224F512GM40",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32BG22C224F512GM32 (QFN32)",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32BG22C224F512GM32",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32BG22C222F352GM32 (QFN32)",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32BG22C222F352GM32",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs Radio Board with xG22 - RB-BRD4402C",
+      "description": "Development Board with ordering code of RB-BRD4402C and board ID of BRD4402C, having the EFR32BG22C224F512GM40-F on-board for evaluation and application development.",
+      "modelNumber": "RB-BRD4402C",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs Radio Board with xG22 - RB-BRD4403C",
+      "description": "Development Board with ordering code of RB-BRD4403C and board ID of BRD4403C, having the EFR32BG22C224F512GM32-F on-board for evaluation and application development.",
+      "modelNumber": "RB-BRD4403C",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32BG22L122F352GM32",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32BG22L122F352GM32",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32BG22C222F352GM32",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32BG22C222F352GM32",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32BG22C112F352GM32",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32BG22C112F352GM32",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32BG22C222F352GN32",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32BG22C222F352GN32",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32BG22C224F512GM32",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32BG22C224F512GM32",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32BG22C224F512GM40",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32BG22C224F512GM40",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32BG22C224F512GN32",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32BG22C224F512GN32",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32BG22C224F512IM32",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32BG22C224F512IM32",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32BG22C224F512IM40",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32BG22C224F512IM40",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32MG22 Series 2 Wireless SoC - EFR32MG22C224F512GN32",
+      "description": "Secure, power-efficient, and low-cost radio-equipped multi-protocol SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32MG22C224F512GN32",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32MG22 Series 2 Wireless SoC - EFR32MG22C224F512IM32",
+      "description": "Secure, power-efficient, and low-cost radio-equipped multi-protocol SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32MG22C224F512IM32",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32MG22 Series 2 Wireless SoC - EFR32MG22C224F512IM40",
+      "description": "Secure, power-efficient, and low-cost radio-equipped multi-protocol SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32MG22C224F512IM40",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs BGM220P module",
+      "description": "Secure, power-efficient, and low-cost PCB radio module with ordering code of BGM220PC22WGA, based on the EFR32BG22 Wireless Gecko SoC and supporting Bluetooth Low Energy technology with 2M PHY, for interoperable, high-volume, and battery-powered IoT products.",
+      "modelNumber": "BGM220P22A",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs BGM220P enhanced module",
+      "description": "Secure, power-efficient, and low-cost PCB radio module with ordering code of BGM220PC22HNA, based on the EFR32BG22 Wireless Gecko SoC and supporting Bluetooth Low Energy technology with 2M and Coded PHYs. This module operates over an extended temperature range, up to 105°C, and comes with larger Flash memory allowing among others Mesh (LPN) and Direction Finding applications, for interoperable, high-volume, and battery-powered IoT products.",
+      "modelNumber": "BGM220P22A",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs BGX220P module for serial cable replacement",
+      "description": "Secure, power-efficient, and low-cost PCB radio module with ordering code of BGX220P22HNA, based on the EFR32BG22 Wireless Gecko SoC and supporting Bluetooth Low Energy technology with 2M and Coded PHYs. Designed specifically for short-range wireless serial cable replacement over Bluetooth, this module operates over an extended temperature range, up to 105°C, for interoperable, high-volume, and battery-powered IoT products.",
+      "modelNumber": "BGX220P22A",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs MGM220P multi-protocol enhanced module",
+      "description": "Secure, power-efficient, and low-cost multi-protocol PCB radio module with ordering code of MGM220PC22HNA, based on the EFR32MG22 Wireless Gecko SoC and supporting Bluetooth Low Energy technology with 2M and Coded PHYs. This module operates over an extended temperature range, up to 105°C, and comes with larger Flash memory allowing among others Mesh (LPN) and Direction Finding applications, for interoperable, high-volume, and battery-powered IoT products.",
+      "modelNumber": "MGM220P22A",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32MG22 Radio Board - SLWRB4182A",
+      "description": "Development Board with ordering code of SLWRB4182A and board ID of BRD4182A, having the EFR32MG22C224F512IM40 on-board for evaluation and application development.",
+      "modelNumber": "SLWRB4182A",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32MG22 Radio Board - SLWRB4183A",
+      "description": "Development Board with ordering code of SLWRB4183A and board ID of BRD4183A, having the EFR32MG22C224F512IM32 on-board for evaluation and application development.",
+      "modelNumber": "SLWRB4183A",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32MG22 Radio Board - SLWRB4183C",
+      "description": "Development Board with ordering code of SLWRB4183C and board ID of BRD4183C, having the EFR32MG22C224F512IM32 on-board for evaluation and application development.",
+      "modelNumber": "SLWRB4183C",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Radio Board",
+      "description": "Development Board for Direction Finding with ordering code of SLWRB4185A and board ID of BRD4185A, having the EFR32BG22C224F512IM40 on-board for evaluation and application development.",
+      "modelNumber": "SLWRB4185A",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs BGM220P Radio Board",
+      "description": "Development Board with ordering code of SLWRB4311A and board ID of BRD4311A, having the BGM220PC22HNA on-board for evaluation and application development.",
+      "modelNumber": "SLWRB4311A",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs MGM220P Radio Board",
+      "description": "Development Board with ordering code of SLWRB4311B and board ID of BRD4311B, having the MGM220PC22HNA on-board for evaluation and application development.",
+      "modelNumber": "SLWRB4311B",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs BGX220P Radio Board",
+      "description": "Development Expansion Board with ordering code of SLEXP8031A and board ID of BRD8031A, having the BGX220P22HNA on-board for evaluation and application development.",
+      "modelNumber": "SLEXP8031A",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32MG22 Starter Kit",
+      "description": "Development Kit with ordering code of SLWSTK6021A, containing the SLWRB4182A and SLWRB4183A Radio Boards.",
+      "modelNumber": "SLWSTK6021A",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs MGM220P Starter Kit",
+      "description": "Development Kit with ordering code of SLWSTK6104A, containing the SLWRB4311B Radio Board.",
+      "modelNumber": "SLWSTK6104A",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs BGM220P Starter Kit",
+      "description": "Development Kit with ordering code of SLWSTK6103A, containing the SLWRB4311A Radio Board.",
+      "modelNumber": "SLWSTK6103A",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Explorer Kit",
+      "description": "Explorer Kit with ordering code of BG22-EK4108A and board ID of BRD4108A, based on the EFR32BG22C224F512IM40 SoC. This is an ultra-low-cost, small form factor development and evaluation platform.",
+      "modelNumber": "BG22-EK4108A",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs BGM220P Explorer Kit",
+      "description": "Explorer Kit with ordering code of BGM220-EK4314A and board ID of BRD4314A, based on the BGM220PC22HNA module. This is an ultra-low-cost, small form factor development and evaluation platform.",
+      "modelNumber": "BGM220-EK4314A",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Thunderboard BG22 Kit",
+      "description": "Advanced IoT Development Kit with ordering code of SLTB010A. This is a compact, feature-packed, battery-powered development platform, where the mainboard with ID of BRD4184A (or revised BRD4184B) combines a set of sensors with the powerful EFR32BG22C224F512IM40 SoC.",
+      "modelNumber": "SLTB010A",
+      "listingId": 341865,
+      "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
     },
     {
       "company": "Silicon Laboratories",
@@ -11557,39 +11942,6 @@
       "quarter": "2025-Q2"
     },
     {
-      "company": "Silicon Laboratories",
-      "searchCompany": "Silicon Labs",
-      "productName": "Silicon Labs BT122 radio module",
-      "description": "The Bluetooth Dual-mode BR/EDR and Low Energy PCB radio module with model name and ordering code of BT121-A is targeted for applications requiring connectivity to legacy devices that only support SPP or  iAP2 profiles as well as to devices that support Bluetooth Low Energy. It integrates a high-performance Bluetooth radio, a low\npower ARM Cortex micro-controller and a Silicon Labs Dual Mode stack software. It can be used as a modem together with a separate host MCU, but applications can also be embedded into the MCU with the Silicon Labs BGScript™ scripting language.",
-      "modelNumber": "BT122-A",
-      "listingId": 131549,
-      "listingDate": "2021-08-06T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q3"
-    },
-    {
-      "company": "Silicon Laboratories",
-      "searchCompany": "Silicon Labs",
-      "productName": "Silicon Labs BT122 Development Kit",
-      "description": "Development Kit with ordering code of BT122-DK4315A, containing the BT122 Bluetooth Dual-mode BR/EDR and Low Energy radio module, for evaluation and application development.",
-      "modelNumber": "BT122-DK4315A",
-      "listingId": 131549,
-      "listingDate": "2021-08-06T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q3"
-    },
-    {
-      "company": "Silicon Laboratories",
-      "searchCompany": "Silicon Labs",
-      "productName": "Silicon Labs BT122 Development Kit",
-      "description": "Development Kit with ordering code of BT122-DK4315B, containing the BT122 Bluetooth Dual-mode BR/EDR and Low Energy radio module, for evaluation and application development.",
-      "modelNumber": "BT122-DK4315B",
-      "listingId": 131549,
-      "listingDate": "2022-12-19T00:00:00",
-      "year": "2022",
-      "quarter": "2022-Q4"
-    },
-    {
       "company": "Telink Semiconductor (Shanghai) Co., Ltd",
       "searchCompany": "Telink",
       "productName": "Telink loT Module Series",
@@ -13649,6 +14001,17 @@
     {
       "company": "Realtek Semiconductor Corporation",
       "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth BT6.0 LE Controller Solution",
+      "description": "Realtek Bluetooth 6.0 Controller Solution supports multiple RFPHYs, and latest Bluetooth Core Spec protocol for various applicaitons.",
+      "modelNumber": "RTL87 Series",
+      "listingId": 323976,
+      "listingDate": "2026-07-22T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
       "productName": "Realtek BLE 5.4 Application Solution（No LE 2M PHY)",
       "description": "Realtek Bluetooth 5 Low Energy Solution integrates RealBlue BLE stack to supporting BLE GATT Stack base Profile for verticals as sporting and fitness, Phone accessory, wearable, Remote Controller, smart home sensor, Mesh, IOT device application",
       "modelNumber": "RTL8721 Series",
@@ -13924,6 +14287,17 @@
     {
       "company": "Realtek Semiconductor Corporation",
       "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.0 Legacy Headset solution",
+      "description": "Realtek Bluetooth 6.0  Legacy Headset solution",
+      "modelNumber": "RTL87 series",
+      "listingId": 297484,
+      "listingDate": "2025-05-26T00:00:00",
+      "year": "2025",
+      "quarter": "2025-Q2"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
       "productName": "Realtek Bluetooth BT5.4 Controller solution",
       "description": "Realtek Bluetooth BT5.4 Controller solution(LE 1M, 2M)",
       "modelNumber": "RTL8763E",
@@ -13953,17 +14327,6 @@
       "listingDate": "2025-09-08T00:00:00",
       "year": "2025",
       "quarter": "2025-Q3"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "Realtek Bluetooth 6.0 Legacy Headset solution",
-      "description": "Realtek Bluetooth 6.0  Legacy Headset solution",
-      "modelNumber": "RTL87 series",
-      "listingId": 297484,
-      "listingDate": "2025-05-26T00:00:00",
-      "year": "2025",
-      "quarter": "2025-Q2"
     },
     {
       "company": "Realtek Semiconductor Corporation",
@@ -16868,171 +17231,6 @@
       "listingDate": "2021-11-26T00:00:00",
       "year": "2021",
       "quarter": "2021-Q4"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "Realtek RM73CF BT5.2 Audio Solution",
-      "description": "Realtek BT5.2 Hybrid ANC module with SDK/Configure tool for Over-ear headphone/speaker and TWS application",
-      "modelNumber": "RM73CF module",
-      "listingId": 131246,
-      "listingDate": "2021-07-09T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q3"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "Realtek Bluetooth 5.2 Audio Solution",
-      "description": "Bluetooth dual mode audio SoC",
-      "modelNumber": "RTL8763BM",
-      "listingId": 131246,
-      "listingDate": "2021-09-10T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q3"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "Realtek Bluetooth 5.2 Audio Solution",
-      "description": "Bluetooth dual mode audio SoC",
-      "modelNumber": "RTL8763B",
-      "listingId": 131246,
-      "listingDate": "2021-09-10T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q3"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "Realtek Bluetooth 5.2 Audio Solution",
-      "description": "Bluetooth dual mode audio SoC",
-      "modelNumber": "RTL8763BF",
-      "listingId": 131246,
-      "listingDate": "2021-09-10T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q3"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "Realtek Bluetooth 5.2 Audio Solution",
-      "description": "Bluetooth dual mode audio SoC",
-      "modelNumber": "RTL8763BFR",
-      "listingId": 131246,
-      "listingDate": "2021-09-10T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q3"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "Realtek Bluetooth 5.2 Audio Solution",
-      "description": "Bluetooth dual mode audio SoC",
-      "modelNumber": "RTL8763BS",
-      "listingId": 131246,
-      "listingDate": "2021-09-10T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q3"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "Realtek Bluetooth 5.2 Audio Solution",
-      "description": "Bluetooth dual mode audio SoC",
-      "modelNumber": "RTL8763BA",
-      "listingId": 131246,
-      "listingDate": "2021-09-10T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q3"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "The Realtek Bluetooth BT5.2 Audio Solution",
-      "description": "HQ3710-CG",
-      "modelNumber": "HQ3710-CG",
-      "listingId": 131246,
-      "listingDate": "2021-09-14T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q3"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "The Realtek Bluetooth BT5.2 Audio Solution",
-      "description": "HQ3700-CG",
-      "modelNumber": "HQ3700-CG",
-      "listingId": 131246,
-      "listingDate": "2021-09-14T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q3"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "The Realtek Bluetooth BT5.2 Audio Solution",
-      "description": "XM3010--CG",
-      "modelNumber": "XM3010--CG",
-      "listingId": 131246,
-      "listingDate": "2021-09-14T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q3"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "The Realtek Bluetooth BT5.2 Audio Solution",
-      "description": "HQ3000-CG",
-      "modelNumber": "HQ3000-CG",
-      "listingId": 131246,
-      "listingDate": "2021-09-14T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q3"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "Realtek Bluetooth 5.2 Audio Solution",
-      "description": "Realtek Bluetooth 5.2 Audio Solution",
-      "modelNumber": "RTL8753",
-      "listingId": 131246,
-      "listingDate": "2021-09-16T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q3"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "Realtek Bluetooth 5.2 Audio Solution",
-      "description": "Realtek Bluetooth 5.2 Audio Solution",
-      "modelNumber": "RTL8763",
-      "listingId": 131246,
-      "listingDate": "2021-09-16T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q3"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "Realtek Bluetooth 5.2 Audio Solution",
-      "description": "Realtek Bluetooth 5.2 Audio Solution",
-      "modelNumber": "RTL8773",
-      "listingId": 131246,
-      "listingDate": "2021-09-16T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q3"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "The Realtek Bluetooth BT5.2 Audio Solution",
-      "description": "The Realtek Bluetooth BT5.2  Solution",
-      "modelNumber": "RTL8753BFR",
-      "listingId": 131246,
-      "listingDate": "2023-06-14T00:00:00",
-      "year": "2023",
-      "quarter": "2023-Q2"
     },
     {
       "company": "Realsil Microelectronics (Suzhou) Co.,Ltd.",
