@@ -126,6 +126,34 @@ async function main() {
 
     console.log(`\nTotal: ${allProducts.length} products`);
 
+    // ── Build monthly stats per display company ──
+    // Used by dashboard to show month-over-month diff
+    function toDisplay(sc) { return (sc === 'Realtek' || sc === 'Realsil') ? 'Realtek/Realsil' : sc; }
+    const DISPLAY = ['Airoha', 'Nordic', 'Silicon Labs', 'Telink', 'Realtek/Realsil'];
+
+    // Collect unique listingIds per company per YYYY-MM
+    const monthMap = {}; // { 'YYYY-MM': { company: Set<listingId> } }
+    for (const p of allProducts) {
+        if (!p.listingDate) continue;
+        const ym = p.listingDate.slice(0, 7); // YYYY-MM
+        if (!monthMap[ym]) monthMap[ym] = {};
+        const dc = toDisplay(p.searchCompany);
+        if (!monthMap[ym][dc]) monthMap[ym][dc] = new Set();
+        monthMap[ym][dc].add(p.listingId);
+        // total
+        if (!monthMap[ym]['_total']) monthMap[ym]['_total'] = new Set();
+        monthMap[ym]['_total'].add(p.listingId);
+    }
+
+    // Convert Sets to counts
+    const monthlyStats = {};
+    for (const [ym, companies] of Object.entries(monthMap)) {
+        monthlyStats[ym] = {};
+        for (const [company, ids] of Object.entries(companies)) {
+            monthlyStats[ym][company] = ids.size;
+        }
+    }
+
     // Write output
     const fs = await import('fs');
     const path = await import('path');
@@ -136,6 +164,7 @@ async function main() {
         fetchedAt: new Date().toISOString(),
         dateRange: { from: getDateFiveYearsAgo(), to: new Date().toISOString().slice(0, 10) },
         totalProducts: allProducts.length,
+        monthlyStats,
         products: allProducts
     };
 

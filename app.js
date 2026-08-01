@@ -32,6 +32,8 @@ let currentSort = { key: 'displayCompany', order: 'asc' };
 let chartInstances = {};
 let activeTab = 'charts';
 let dataFetchedAt = null;
+let monthlyStats = null; // { 'YYYY-MM': { company: count, _total: count } }
+let customerData = null; // stored for MoM customer diff
 
 const $ = id => document.getElementById(id);
 
@@ -86,6 +88,7 @@ async function fetchAllData() {
             if (json.products && json.products.length > 0) {
                 allProducts = json.products;
                 dataFetchedAt = json.fetchedAt || null;
+                monthlyStats = json.monthlyStats || null;
                 loaded = true;
                 progressEl.style.width = '90%';
                 statusEl.textContent = `Loaded ${allProducts.length} products`;
@@ -119,6 +122,7 @@ async function fetchAllData() {
     populateFilters();
     filterTable();
     updateDataFreshness();
+    renderMomDiff();
     loadCustomerData();
 
     $('summarySection').style.display = 'block';
@@ -257,6 +261,64 @@ function createSummaryCard(label, value, sub, color) {
         <div class="card-sub">${sub}</div>`;
     card.style.borderTop = `3px solid ${color}`;
     return card;
+}
+
+// ── Month-over-Month Diff ──
+function renderMomDiff() {
+    const bar = $('momDiffBar');
+    if (!bar || !monthlyStats) return;
+
+    // Find the two most recent months with data
+    const months = Object.keys(monthlyStats).sort();
+    if (months.length < 2) return;
+
+    const curMonth = months[months.length - 1];
+    const prevMonth = months[months.length - 2];
+    const cur = monthlyStats[curMonth];
+    const prev = monthlyStats[prevMonth];
+
+    // Format month label: 'YYYY-MM' → 'Jul 2026'
+    function fmtMonth(ym) {
+        const [y, m] = ym.split('-');
+        return new Date(+y, +m - 1, 1).toLocaleDateString('en', { month: 'short', year: 'numeric' });
+    }
+
+    function diffBadge(cur, prev, suffix = '') {
+        const diff = (cur || 0) - (prev || 0);
+        if (diff === 0) return `<span class="diff-badge diff-neutral">0 ${suffix}</span>`;
+        const sign = diff > 0 ? '+' : '';
+        const cls = diff > 0 ? 'diff-up' : 'diff-down';
+        const arrow = diff > 0 ? '↑' : '↓';
+        return `<span class="diff-badge ${cls}">${arrow}${sign}${diff}${suffix ? ' '+suffix : ''}</span>`;
+    }
+
+    // Build items: total + each company
+    const DISPLAY = ['Airoha', 'Nordic', 'Silicon Labs', 'Telink', 'Realtek/Realsil'];
+    const items = [
+        { label: 'Total Listings', cur: cur._total || 0, prev: prev._total || 0, color: '#0082FC' },
+        ...DISPLAY.map(dc => ({
+            label: dc,
+            cur: cur[dc] || 0,
+            prev: prev[dc] || 0,
+            color: COMPANY_COLORS[dc]?.chart || '#888'
+        }))
+    ];
+
+    bar.innerHTML = `
+        <div class="mom-diff-header">
+            <span class="mom-diff-title">📅 vs Last Month</span>
+            <span class="mom-diff-months">${fmtMonth(prevMonth)} → ${fmtMonth(curMonth)}</span>
+        </div>
+        <div class="mom-diff-items">
+            ${items.map(it => `
+                <div class="mom-diff-item">
+                    <span class="mom-diff-label" style="color:${it.color}">${it.label}</span>
+                    <span class="mom-diff-cur">${it.cur}</span>
+                    ${diffBadge(it.cur, it.prev)}
+                </div>
+            `).join('')}
+        </div>`;
+    bar.style.display = 'block';
 }
 
 // ── Charts ──

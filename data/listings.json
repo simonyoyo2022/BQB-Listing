@@ -17463,5 +17463,347 @@
       "year": "2023",
       "quarter": "2023-Q2"
     }
-  ]
+  ],
+  "monthlyStats": {
+    "2025-12": {
+      "Airoha": 2,
+      "_total": 16,
+      "Nordic": 8,
+      "Silicon Labs": 1,
+      "Telink": 1,
+      "Realtek/Realsil": 4
+    },
+    "2026-04": {
+      "Airoha": 2,
+      "_total": 11,
+      "Realtek/Realsil": 9
+    },
+    "2025-10": {
+      "Airoha": 1,
+      "_total": 6,
+      "Silicon Labs": 1,
+      "Realtek/Realsil": 4
+    },
+    "2025-07": {
+      "Airoha": 1,
+      "_total": 7,
+      "Telink": 5,
+      "Realtek/Realsil": 1
+    },
+    "2025-09": {
+      "Airoha": 1,
+      "_total": 5,
+      "Telink": 1,
+      "Realtek/Realsil": 3
+    },
+    "2026-03": {
+      "Airoha": 1,
+      "_total": 10,
+      "Nordic": 1,
+      "Realtek/Realsil": 8
+    },
+    "2026-06": {
+      "Airoha": 2,
+      "_total": 15,
+      "Nordic": 3,
+      "Telink": 2,
+      "Realtek/Realsil": 8
+    },
+    "2025-05": {
+      "Airoha": 2,
+      "_total": 9,
+      "Nordic": 2,
+      "Realtek/Realsil": 5
+    },
+    "2026-05": {
+      "Airoha": 1,
+      "_total": 7,
+      "Silicon Labs": 3,
+      "Realtek/Realsil": 3
+    },
+    "2025-02": {
+      "Airoha": 1,
+      "_total": 7,
+      "Silicon Labs": 2,
+      "Realtek/Realsil": 4
+    },
+    "2025-01": {
+      "Airoha": 1,
+      "_total": 10,
+      "Nordic": 4,
+      "Silicon Labs": 3,
+      "Realtek/Realsil": 2
+    },
+    "2024-12": {
+      "Airoha": 1,
+      "_total": 12,
+      "Nordic": 3,
+      "Telink": 2,
+      "Realtek/Realsil": 6
+    },
+    "2024-10": {
+      "Airoha": 3,
+      "_total": 8,
+      "Nordic": 1,
+      "Silicon Labs": 1,
+      "Realtek/Realsil": 3
+    },
+    "2024-09": {
+      "Airoha": 4,
+      "_total": 9,
+      "Silicon Labs": 1,
+      "Telink": 3,
+      "Realtek/Realsil": 1
+    },
+    "2022-08": {
+      "Airoha": 1,
+      "_total": 3,
+      "Realtek/Realsil": 2
+    },
+    "2022-06": {
+      "Airoha": 1,
+      "_total": 8,
+      "Nordic": 5,
+      "Realtek/Realsil": 2
+    },
+    "2022-03": {
+      "Airoha": 2,
+      "_total": 6,
+      "Nordic": 2,
+      "Silicon Labs": 2
+    },
+    "2023-08": {
+      "Airoha": 1,
+      "_total": 3,
+      "Silicon Labs": 1,
+      "Realtek/Realsil": 1
+    },
+    "2023-10": {
+      "Airoha": 1,
+      "_total": 3,
+      "Nordic": 2
+    },
+    "2023-12": {
+      "Airoha": 2,
+      "_total": 2
+    },
+    "2024-01": {
+      "Airoha": 1,
+      "_total": 4,
+      "Nordic": 1,
+      "Realtek/Realsil": 2
+    },
+    "2024-04": {
+      "Airoha": 1,
+      "_total": 10,
+      "Nordic": 6,
+      "Telink": 2,
+      "Realtek/Realsil": 1
+    },
+    "2024-07": {
+      "Airoha": 1,
+      "_total": 5,
+      "Silicon Labs": 1,
+      "Realtek/Realsil": 3
+    },
+    "2022-01": {
+      "Airoha": 2,
+      "_total": 4,
+      "Nordic": 2
+    },
+    "2021-12": {
+      "Airoha": 2,
+      "_total": 7,
+      "Nordic": 3,
+      "Telink": 1,
+      "Realtek/Realsil": 1
+    },
+    "2022-02": {
+      "Airoha": 1,
+      "_total": 3,
+      "Nordic": 1,
+      "Realtek/Realsil": 1
+    },
+    "2026-02": {
+      "Nordic": 1,
+      "_total": 6,
+      "Realtek/Realsil": 5
+    },
+    "2026-01": {
+      "Nordic": 13,
+      "_total": 20,
+      "Realtek/Realsil": 7
+    },
+    "2025-08": {
+      "Nordic": 6,
+      "_total": 13,
+      "Telink": 4,
+      "Realtek/Realsil": 3
+    },
+    "2025-06": {
+      "Nordic": 2,
+      "_total": 16,
+      "Silicon Labs": 7,
+      "Telink": 2,
+      "Realtek/Realsil": 5
+    },
+    "2025-04": {
+      "Nordic": 10,
+      "_total": 26,
+      "Silicon Labs": 1,
+      "Telink": 6,
+      "Realtek/Realsil": 9
+    },
+    "2024-11": {
+      "Nordic": 7,
+      "_total": 13,
+      "Silicon Labs": 3,
+      "Telink": 1,
+      "Realtek/Realsil": 2
+    },
+    "2023-11": {
+      "Nordic": 6,
+      "_total": 12,
+      "Telink": 3,
+      "Realtek/Realsil": 3
+    },
+    "2024-05": {
+      "Nordic": 2,
+      "_total": 4,
+      "Telink": 2
+    },
+    "2024-08": {
+      "Nordic": 1,
+      "_total": 6,
+      "Silicon Labs": 2,
+      "Realtek/Realsil": 3
+    },
+    "2023-07": {
+      "Nordic": 1,
+      "_total": 4,
+      "Telink": 2,
+      "Realtek/Realsil": 1
+    },
+    "2023-06": {
+      "Nordic": 4,
+      "_total": 6,
+      "Silicon Labs": 1,
+      "Realtek/Realsil": 1
+    },
+    "2024-02": {
+      "Nordic": 1,
+      "_total": 4,
+      "Silicon Labs": 2,
+      "Realtek/Realsil": 1
+    },
+    "2023-04": {
+      "Nordic": 5,
+      "_total": 6,
+      "Realtek/Realsil": 1
+    },
+    "2023-01": {
+      "Nordic": 1,
+      "_total": 2,
+      "Realtek/Realsil": 1
+    },
+    "2022-12": {
+      "Nordic": 4,
+      "_total": 8,
+      "Silicon Labs": 2,
+      "Telink": 1,
+      "Realtek/Realsil": 1
+    },
+    "2022-09": {
+      "Nordic": 5,
+      "_total": 10,
+      "Silicon Labs": 1,
+      "Telink": 2,
+      "Realtek/Realsil": 2
+    },
+    "2022-11": {
+      "Nordic": 2,
+      "_total": 3,
+      "Realtek/Realsil": 1
+    },
+    "2022-10": {
+      "Nordic": 1,
+      "_total": 2,
+      "Telink": 1
+    },
+    "2022-04": {
+      "Nordic": 1,
+      "_total": 1
+    },
+    "2021-11": {
+      "Nordic": 5,
+      "_total": 10,
+      "Silicon Labs": 2,
+      "Telink": 1,
+      "Realtek/Realsil": 2
+    },
+    "2022-07": {
+      "Nordic": 1,
+      "_total": 4,
+      "Realtek/Realsil": 3
+    },
+    "2021-08": {
+      "Nordic": 1,
+      "_total": 2,
+      "Silicon Labs": 1
+    },
+    "2025-03": {
+      "Silicon Labs": 4,
+      "_total": 9,
+      "Realtek/Realsil": 5
+    },
+    "2024-06": {
+      "Silicon Labs": 2,
+      "_total": 2
+    },
+    "2023-09": {
+      "Silicon Labs": 1,
+      "_total": 5,
+      "Telink": 2,
+      "Realtek/Realsil": 2
+    },
+    "2025-11": {
+      "Telink": 1,
+      "_total": 4,
+      "Realtek/Realsil": 3
+    },
+    "2024-03": {
+      "Telink": 2,
+      "_total": 2
+    },
+    "2023-02": {
+      "Telink": 1,
+      "_total": 1
+    },
+    "2023-03": {
+      "Telink": 1,
+      "_total": 2,
+      "Realtek/Realsil": 1
+    },
+    "2022-05": {
+      "Telink": 1,
+      "_total": 2,
+      "Realtek/Realsil": 1
+    },
+    "2021-10": {
+      "Realtek/Realsil": 1,
+      "_total": 1
+    },
+    "2021-07": {
+      "Realtek/Realsil": 1,
+      "_total": 1
+    },
+    "2021-09": {
+      "Realtek/Realsil": 1,
+      "_total": 1
+    },
+    "2023-05": {
+      "Realtek/Realsil": 1,
+      "_total": 1
+    }
+  }
 }
