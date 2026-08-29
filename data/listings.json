@@ -1,10 +1,350 @@
 {
-  "fetchedAt": "2026-07-28T23:50:12.749Z",
+  "fetchedAt": "2026-08-29T03:57:12.289Z",
   "dateRange": {
-    "from": "2021-07-28",
-    "to": "2026-07-28"
+    "from": "2021-08-29",
+    "to": "2026-08-29"
   },
-  "totalProducts": 1587,
+  "totalProducts": 1626,
+  "monthlyStats": {
+    "2025-12": {
+      "Airoha": 2,
+      "_total": 16,
+      "Nordic": 8,
+      "Silicon Labs": 1,
+      "Telink": 1,
+      "Realtek/Realsil": 4
+    },
+    "2026-04": {
+      "Airoha": 2,
+      "_total": 11,
+      "Realtek/Realsil": 9
+    },
+    "2025-10": {
+      "Airoha": 1,
+      "_total": 6,
+      "Silicon Labs": 1,
+      "Realtek/Realsil": 4
+    },
+    "2025-07": {
+      "Airoha": 1,
+      "_total": 7,
+      "Telink": 5,
+      "Realtek/Realsil": 1
+    },
+    "2025-09": {
+      "Airoha": 1,
+      "_total": 5,
+      "Telink": 1,
+      "Realtek/Realsil": 3
+    },
+    "2026-03": {
+      "Airoha": 1,
+      "_total": 10,
+      "Nordic": 1,
+      "Realtek/Realsil": 8
+    },
+    "2026-06": {
+      "Airoha": 2,
+      "_total": 15,
+      "Nordic": 3,
+      "Telink": 2,
+      "Realtek/Realsil": 8
+    },
+    "2025-05": {
+      "Airoha": 2,
+      "_total": 9,
+      "Nordic": 2,
+      "Realtek/Realsil": 5
+    },
+    "2026-05": {
+      "Airoha": 1,
+      "_total": 7,
+      "Silicon Labs": 3,
+      "Realtek/Realsil": 3
+    },
+    "2025-02": {
+      "Airoha": 1,
+      "_total": 7,
+      "Silicon Labs": 2,
+      "Realtek/Realsil": 4
+    },
+    "2025-01": {
+      "Airoha": 1,
+      "_total": 10,
+      "Nordic": 4,
+      "Silicon Labs": 3,
+      "Realtek/Realsil": 2
+    },
+    "2024-12": {
+      "Airoha": 1,
+      "_total": 11,
+      "Nordic": 2,
+      "Telink": 2,
+      "Realtek/Realsil": 6
+    },
+    "2024-10": {
+      "Airoha": 3,
+      "_total": 8,
+      "Nordic": 1,
+      "Silicon Labs": 1,
+      "Realtek/Realsil": 3
+    },
+    "2024-09": {
+      "Airoha": 4,
+      "_total": 9,
+      "Silicon Labs": 1,
+      "Telink": 3,
+      "Realtek/Realsil": 1
+    },
+    "2022-08": {
+      "Airoha": 1,
+      "_total": 3,
+      "Realtek/Realsil": 2
+    },
+    "2022-06": {
+      "Airoha": 1,
+      "_total": 8,
+      "Nordic": 5,
+      "Realtek/Realsil": 2
+    },
+    "2022-03": {
+      "Airoha": 2,
+      "_total": 6,
+      "Nordic": 2,
+      "Silicon Labs": 2
+    },
+    "2023-08": {
+      "Airoha": 1,
+      "_total": 3,
+      "Silicon Labs": 1,
+      "Realtek/Realsil": 1
+    },
+    "2023-10": {
+      "Airoha": 1,
+      "_total": 3,
+      "Nordic": 2
+    },
+    "2023-12": {
+      "Airoha": 2,
+      "_total": 2
+    },
+    "2024-01": {
+      "Airoha": 1,
+      "_total": 4,
+      "Nordic": 1,
+      "Realtek/Realsil": 2
+    },
+    "2024-04": {
+      "Airoha": 1,
+      "_total": 10,
+      "Nordic": 6,
+      "Telink": 2,
+      "Realtek/Realsil": 1
+    },
+    "2024-07": {
+      "Airoha": 1,
+      "_total": 5,
+      "Silicon Labs": 1,
+      "Realtek/Realsil": 3
+    },
+    "2022-01": {
+      "Airoha": 2,
+      "_total": 4,
+      "Nordic": 2
+    },
+    "2021-12": {
+      "Airoha": 2,
+      "_total": 7,
+      "Nordic": 3,
+      "Telink": 1,
+      "Realtek/Realsil": 1
+    },
+    "2022-02": {
+      "Airoha": 1,
+      "_total": 3,
+      "Nordic": 1,
+      "Realtek/Realsil": 1
+    },
+    "2026-08": {
+      "Nordic": 1,
+      "_total": 17,
+      "Silicon Labs": 3,
+      "Realtek/Realsil": 13
+    },
+    "2026-07": {
+      "Nordic": 2,
+      "_total": 4,
+      "Silicon Labs": 1,
+      "Realtek/Realsil": 1
+    },
+    "2026-02": {
+      "Nordic": 1,
+      "_total": 6,
+      "Realtek/Realsil": 5
+    },
+    "2026-01": {
+      "Nordic": 13,
+      "_total": 20,
+      "Realtek/Realsil": 7
+    },
+    "2025-08": {
+      "Nordic": 6,
+      "_total": 13,
+      "Telink": 4,
+      "Realtek/Realsil": 3
+    },
+    "2025-06": {
+      "Nordic": 2,
+      "_total": 16,
+      "Silicon Labs": 7,
+      "Telink": 2,
+      "Realtek/Realsil": 5
+    },
+    "2025-04": {
+      "Nordic": 10,
+      "_total": 26,
+      "Silicon Labs": 1,
+      "Telink": 6,
+      "Realtek/Realsil": 9
+    },
+    "2024-11": {
+      "Nordic": 7,
+      "_total": 13,
+      "Silicon Labs": 3,
+      "Telink": 1,
+      "Realtek/Realsil": 2
+    },
+    "2023-11": {
+      "Nordic": 6,
+      "_total": 12,
+      "Telink": 3,
+      "Realtek/Realsil": 3
+    },
+    "2024-05": {
+      "Nordic": 2,
+      "_total": 4,
+      "Telink": 2
+    },
+    "2024-08": {
+      "Nordic": 1,
+      "_total": 6,
+      "Silicon Labs": 2,
+      "Realtek/Realsil": 3
+    },
+    "2023-07": {
+      "Nordic": 1,
+      "_total": 4,
+      "Telink": 2,
+      "Realtek/Realsil": 1
+    },
+    "2023-06": {
+      "Nordic": 4,
+      "_total": 5,
+      "Silicon Labs": 1
+    },
+    "2024-02": {
+      "Nordic": 1,
+      "_total": 4,
+      "Silicon Labs": 2,
+      "Realtek/Realsil": 1
+    },
+    "2023-04": {
+      "Nordic": 4,
+      "_total": 5,
+      "Realtek/Realsil": 1
+    },
+    "2023-01": {
+      "Nordic": 1,
+      "_total": 2,
+      "Realtek/Realsil": 1
+    },
+    "2022-12": {
+      "Nordic": 4,
+      "_total": 7,
+      "Silicon Labs": 1,
+      "Telink": 1,
+      "Realtek/Realsil": 1
+    },
+    "2022-09": {
+      "Nordic": 5,
+      "_total": 10,
+      "Silicon Labs": 1,
+      "Telink": 2,
+      "Realtek/Realsil": 2
+    },
+    "2022-11": {
+      "Nordic": 2,
+      "_total": 3,
+      "Realtek/Realsil": 1
+    },
+    "2022-10": {
+      "Nordic": 1,
+      "_total": 2,
+      "Telink": 1
+    },
+    "2022-04": {
+      "Nordic": 1,
+      "_total": 1
+    },
+    "2021-11": {
+      "Nordic": 5,
+      "_total": 10,
+      "Silicon Labs": 2,
+      "Telink": 1,
+      "Realtek/Realsil": 2
+    },
+    "2022-07": {
+      "Nordic": 1,
+      "_total": 4,
+      "Realtek/Realsil": 3
+    },
+    "2025-03": {
+      "Silicon Labs": 4,
+      "_total": 9,
+      "Realtek/Realsil": 5
+    },
+    "2024-06": {
+      "Silicon Labs": 2,
+      "_total": 2
+    },
+    "2023-09": {
+      "Silicon Labs": 1,
+      "_total": 5,
+      "Telink": 2,
+      "Realtek/Realsil": 2
+    },
+    "2025-11": {
+      "Telink": 1,
+      "_total": 4,
+      "Realtek/Realsil": 3
+    },
+    "2024-03": {
+      "Telink": 2,
+      "_total": 2
+    },
+    "2023-02": {
+      "Telink": 1,
+      "_total": 1
+    },
+    "2023-03": {
+      "Telink": 1,
+      "_total": 2,
+      "Realtek/Realsil": 1
+    },
+    "2022-05": {
+      "Telink": 1,
+      "_total": 2,
+      "Realtek/Realsil": 1
+    },
+    "2021-10": {
+      "Realtek/Realsil": 1,
+      "_total": 1
+    },
+    "2023-05": {
+      "Realtek/Realsil": 1,
+      "_total": 1
+    }
+  },
   "products": [
     {
       "company": "Airoha Technology Corp.",
@@ -1120,10 +1460,10 @@
     {
       "company": "Airoha Technology Corp.",
       "searchCompany": "Airoha",
-      "productName": "Airoha Hummingbird Duo 5.3 headset",
-      "description": "Airoha BT Host headset SW",
-      "modelNumber": "Airoha Hummingbird Duo 5.3 headset",
-      "listingId": 232854,
+      "productName": "Airoha Hummingbird Duo 5.3 earbuds",
+      "description": "Airoha BT Host earbuds SW",
+      "modelNumber": "Airoha Hummingbird Duo 5.3 earbuds",
+      "listingId": 232771,
       "listingDate": "2024-09-20T00:00:00",
       "year": "2024",
       "quarter": "2024-Q3"
@@ -1142,10 +1482,10 @@
     {
       "company": "Airoha Technology Corp.",
       "searchCompany": "Airoha",
-      "productName": "Airoha Hummingbird Duo 5.3 earbuds",
-      "description": "Airoha BT Host earbuds SW",
-      "modelNumber": "Airoha Hummingbird Duo 5.3 earbuds",
-      "listingId": 232771,
+      "productName": "Airoha Hummingbird Duo 5.3 headset",
+      "description": "Airoha BT Host headset SW",
+      "modelNumber": "Airoha Hummingbird Duo 5.3 headset",
+      "listingId": 232854,
       "listingDate": "2024-09-20T00:00:00",
       "year": "2024",
       "quarter": "2024-Q3"
@@ -2319,6 +2659,39 @@
     {
       "company": "Nordic Semiconductor ASA",
       "searchCompany": "Nordic",
+      "productName": "SoftDevice Controller for nRF54H20",
+      "description": "LE Core-Controller for the nRF54H20 device utilizing the Nordic SoftDevice controller design based on the NCS tag 3.3.1. Refer to the relevant nRF Connect SDK documentation at docs.nordicsemi.com for specific applicability of this controller and the role support available for the nRF54H20 device",
+      "modelNumber": "nRF54H20 SDC",
+      "listingId": 344038,
+      "listingDate": "2026-08-01T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Nordic Semiconductor ASA",
+      "searchCompany": "Nordic",
+      "productName": "SoftDevice Controller for nRF5340",
+      "description": "LE Core-Controller for the nRF5340 device utilizing the Nordic SoftDevice controller design based on the NCS tag 3.3.1. Refer to the relevant nRF Connect SDK documentation at docs.nordicsemi.com for specific applicability of this controller and the role support available for the nRF5340 device",
+      "modelNumber": "nRF5340 SDC",
+      "listingId": 340359,
+      "listingDate": "2026-07-31T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Nordic Semiconductor ASA",
+      "searchCompany": "Nordic",
+      "productName": "SoftDevice Controller for nRF54Lxx, base feature set",
+      "description": "Core-complete Controller for nRF54Lxx series devices utilizing the Nordic SoftDevice controller design based on the nRF Connect SDK tag 3.3.1. Refer to the relevant nRF Connect SDK documentation at docs.nordicsemi.com for specific applicability of this controller and the role support available for each nRF54Lxx device in the series.",
+      "modelNumber": "nRF54Lxx SDC",
+      "listingId": 343664,
+      "listingDate": "2026-07-29T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Nordic Semiconductor ASA",
+      "searchCompany": "Nordic",
       "productName": "nRF Connect SDK Host component v3.3.1",
       "description": "LE Host component with support for indicated features in GAP, GATT, ATT, L2CAP and SM. Future releases may share the same ICS selections and DN. Check www.nordicsemi.com for further information and applicability of this host component. This host version includes support for the Channel Sounding feature in GAP.",
       "modelNumber": "3.3.1 CS",
@@ -2484,10 +2857,10 @@
     {
       "company": "Nordic Semiconductor ASA",
       "searchCompany": "Nordic",
-      "productName": "SoftDevice Controller component for nRF54H ",
-      "description": "LE Controller for nRF54H series utilizing the Nordic SoftDevice controller design based on the NCS tag 3.2.x. Refer to the relevant nRF Connect SDK documentation at docs.nordicsemi.com for specific applicability of this controller and the role support available for each nRF54H device in the series.",
-      "modelNumber": "Controller component for nRF54H",
-      "listingId": 323349,
+      "productName": "SoftDevice Controller component subset for nRF Connect SDK v3.2.x",
+      "description": "LE component for utilizing the Nordic SoftDevice controller design based on the nRF Connect SDK v3.2.x. Refer to the relevant nRF Connect SDK documentation at docs.nordicsemi.com for specific applicability of this controller and the role support available for each applicable Nordic device. This version includes support for Channel Sounding. The RFPHY layer is not included in this component.",
+      "modelNumber": "SDC stack SDK v3.2.x",
+      "listingId": 323462,
       "listingDate": "2026-01-12T00:00:00",
       "year": "2026",
       "quarter": "2026-Q1"
@@ -2495,10 +2868,10 @@
     {
       "company": "Nordic Semiconductor ASA",
       "searchCompany": "Nordic",
-      "productName": "SoftDevice Controller component subset for nRF Connect SDK v3.2.x",
-      "description": "LE component for utilizing the Nordic SoftDevice controller design based on the nRF Connect SDK v3.2.x. Refer to the relevant nRF Connect SDK documentation at docs.nordicsemi.com for specific applicability of this controller and the role support available for each applicable Nordic device. This version includes support for Channel Sounding. The RFPHY layer is not included in this component.",
-      "modelNumber": "SDC stack SDK v3.2.x",
-      "listingId": 323462,
+      "productName": "SoftDevice Controller component for nRF54H ",
+      "description": "LE Controller for nRF54H series utilizing the Nordic SoftDevice controller design based on the NCS tag 3.2.x. Refer to the relevant nRF Connect SDK documentation at docs.nordicsemi.com for specific applicability of this controller and the role support available for each nRF54H device in the series.",
+      "modelNumber": "Controller component for nRF54H",
+      "listingId": 323349,
       "listingDate": "2026-01-12T00:00:00",
       "year": "2026",
       "quarter": "2026-Q1"
@@ -2550,10 +2923,10 @@
     {
       "company": "Nordic Semiconductor ASA",
       "searchCompany": "Nordic",
-      "productName": "Softdevice S145 Host Superset v9.0.x",
-      "description": "Host implementation superset for S145 SoftDevice, release 9.0.0.  LE Host component with support for indicated features in GAP, GATT, ATT, L2CAP and SM. Future releases as 9.0.x may share the same ICS selections and DN. Check www.nordicsemi.com for further information and applicability of this host component. ",
-      "modelNumber": "S145",
-      "listingId": 320337,
+      "productName": "Softdevice S115 Host subset v9.0.x",
+      "description": "Host implementation subset for S115 SoftDevice, release 9.0.0.  LE Host component with support for indicated features in GAP, GATT, ATT, L2CAP and SM. Future releases as 9.0.x may share the same ICS selections and DN. Check www.nordicsemi.com for further information and applicability of this host component. ",
+      "modelNumber": "S115",
+      "listingId": 320371,
       "listingDate": "2025-12-10T00:00:00",
       "year": "2025",
       "quarter": "2025-Q4"
@@ -2561,10 +2934,10 @@
     {
       "company": "Nordic Semiconductor ASA",
       "searchCompany": "Nordic",
-      "productName": "Softdevice S115 Host subset v9.0.x",
-      "description": "Host implementation subset for S115 SoftDevice, release 9.0.0.  LE Host component with support for indicated features in GAP, GATT, ATT, L2CAP and SM. Future releases as 9.0.x may share the same ICS selections and DN. Check www.nordicsemi.com for further information and applicability of this host component. ",
-      "modelNumber": "S115",
-      "listingId": 320371,
+      "productName": "Softdevice S145 Host Superset v9.0.x",
+      "description": "Host implementation superset for S145 SoftDevice, release 9.0.0.  LE Host component with support for indicated features in GAP, GATT, ATT, L2CAP and SM. Future releases as 9.0.x may share the same ICS selections and DN. Check www.nordicsemi.com for further information and applicability of this host component. ",
+      "modelNumber": "S145",
+      "listingId": 320337,
       "listingDate": "2025-12-10T00:00:00",
       "year": "2025",
       "quarter": "2025-Q4"
@@ -2990,17 +3363,6 @@
     {
       "company": "Nordic Semiconductor ASA",
       "searchCompany": "Nordic",
-      "productName": "SoftDevice Controller Subsystem for nRF52",
-      "description": "LE Controller Subsystem for nRF52 series utilizing the Nordic SoftDevice controller design based on the NCS tag 2.6.0. Refer to the relevant nRF Connect SDK documentation at docs.nordicsemi.com for specific applicability of this subsystem and the role support available for each nRF52 device in the series.",
-      "modelNumber": "Controller Subsystem for nRF52",
-      "listingId": 212609,
-      "listingDate": "2024-04-05T00:00:00",
-      "year": "2024",
-      "quarter": "2024-Q2"
-    },
-    {
-      "company": "Nordic Semiconductor ASA",
-      "searchCompany": "Nordic",
       "productName": "SoftDevice Controller Subsystem for nRF53",
       "description": "LE Controller Subsystem for nRF53 series utilizing the Nordic SoftDevice controller design based on the NCS tag 2.6.0. Refer to the relevant nRF Connect SDK documentation at docs.nordicsemi.com for specific applicability of this subsystem and the role support available for each nRF53 device in the series.",
       "modelNumber": "Controller Subsystem for nRF53",
@@ -3016,6 +3378,17 @@
       "description": "LE Controller Subsystem for nRF52833 utilizing the Nordic SoftDevice controller design based on the NCS tag 2.6.0. Refer to the relevant nRF Connect SDK documentation at docs.nordicsemi.com for specific applicability of this subsystem",
       "modelNumber": "nRF Connect SDK v2.6.0",
       "listingId": 212664,
+      "listingDate": "2024-04-05T00:00:00",
+      "year": "2024",
+      "quarter": "2024-Q2"
+    },
+    {
+      "company": "Nordic Semiconductor ASA",
+      "searchCompany": "Nordic",
+      "productName": "SoftDevice Controller Subsystem for nRF52",
+      "description": "LE Controller Subsystem for nRF52 series utilizing the Nordic SoftDevice controller design based on the NCS tag 2.6.0. Refer to the relevant nRF Connect SDK documentation at docs.nordicsemi.com for specific applicability of this subsystem and the role support available for each nRF52 device in the series.",
+      "modelNumber": "Controller Subsystem for nRF52",
+      "listingId": 212609,
       "listingDate": "2024-04-05T00:00:00",
       "year": "2024",
       "quarter": "2024-Q2"
@@ -3901,72 +4274,6 @@
       "quarter": "2022-Q1"
     },
     {
-      "company": "Nordic Semiconductor ASA",
-      "searchCompany": "Nordic",
-      "productName": "nRF5340 DK",
-      "description": "The nRF5340 DK is the development kit for the nRF5340 System-on-Chip (SoC), containing everything needed to get started with development, on a single board. The DK supports development with an extensive range of wireless protocols. It supports Bluetooth Low Energy with features such as high-throughput 2 Mbps, Advertising Extensions and Long Range. Mesh protocols like Bluetooth mesh, Thread and Zigbee can run concurrently with Bluetooth Low Energy, enabling smartphones to provision, commission, configure and control mesh nodes. NFC, ANT, 802.15.4 and 2.4 GHz proprietary protocols are also supported.",
-      "modelNumber": "nRF5340 DK",
-      "listingId": 135413,
-      "listingDate": "2021-08-09T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q3"
-    },
-    {
-      "company": "Nordic Semiconductor ASA",
-      "searchCompany": "Nordic",
-      "productName": "nRF5340 DK",
-      "description": "Development kit for the nRF5340, a dual-core Bluetooth 5.3 SoC supporting Bluetooth Low Energy, Bluetooth mesh, NFC, Matter, Thread and Zigbee",
-      "modelNumber": "NRF5340-DK",
-      "listingId": 135413,
-      "listingDate": "2023-04-17T00:00:00",
-      "year": "2023",
-      "quarter": "2023-Q2"
-    },
-    {
-      "company": "Nordic Semiconductor ASA",
-      "searchCompany": "Nordic",
-      "productName": "nRF5340 Audio DK",
-      "description": "Our nRF5340 Audio Development Kit (DK) is the recommended platform for Bluetooth LE Audio products and contains everything needed to start development. It supports all Auracast™ features.",
-      "modelNumber": "nRF5340-Audio-DK",
-      "listingId": 135413,
-      "listingDate": "2023-04-21T00:00:00",
-      "year": "2023",
-      "quarter": "2023-Q2"
-    },
-    {
-      "company": "Nordic Semiconductor ASA",
-      "searchCompany": "Nordic",
-      "productName": "Nordic Thingy:53",
-      "description": "The Nordic Thingy:53 is a multi-sensor prototyping platform for Matter,\nembedded machine learning (ML) and other wireless IoT products. It is\nbased on the nRF5340 System-on-Chip (SoC). With integrated sensors for motion, sound, light and environmental\nfactors, it is the perfect platform for building proof-of-concepts and\ndeveloping new prototypes in a very short time.",
-      "modelNumber": "Thingy-53",
-      "listingId": 135413,
-      "listingDate": "2023-04-21T00:00:00",
-      "year": "2023",
-      "quarter": "2023-Q2"
-    },
-    {
-      "company": "Nordic Semiconductor ASA",
-      "searchCompany": "Nordic",
-      "productName": "nRF7002 DK",
-      "description": "\nThe nRF7002 DK is the development kit for the nRF7002 Wi-Fi 6 Companion IC. It contains everything needed to get started developing on a single board. The DK features an nRF5340 multiprotocol System-on-Chip (SoC) as a host processor for the nRF7002.",
-      "modelNumber": "NRF7002-DK",
-      "listingId": 135413,
-      "listingDate": "2023-04-21T00:00:00",
-      "year": "2023",
-      "quarter": "2023-Q2"
-    },
-    {
-      "company": "Nordic Semiconductor ASA",
-      "searchCompany": "Nordic",
-      "productName": "Nordic Thingy:91 X",
-      "description": "Prototyping platform designed for the development of cellular IoT applications.",
-      "modelNumber": "Thingy 91 X",
-      "listingId": 135413,
-      "listingDate": "2024-12-20T00:00:00",
-      "year": "2024",
-      "quarter": "2024-Q4"
-    },
-    {
       "company": "Silicon Laboratories",
       "searchCompany": "Silicon Labs",
       "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32BG22C222F352GM40",
@@ -4348,6 +4655,50 @@
       "modelNumber": "SLTB010A",
       "listingId": 341865,
       "listingDate": "2026-07-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32BG22E224F512IM40",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32BG22E224F512IM40",
+      "listingId": 341865,
+      "listingDate": "2026-08-28T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32BG22E224F512IM32",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32BG22E224F512IM32",
+      "listingId": 341865,
+      "listingDate": "2026-08-28T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32MG22E224F512IM40",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32MG22E224F512IM40",
+      "listingId": 341865,
+      "listingDate": "2026-08-28T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32MG22E224F512IM32",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32MG22E224F512IM32",
+      "listingId": 341865,
+      "listingDate": "2026-08-28T00:00:00",
       "year": "2026",
       "quarter": "2026-Q3"
     },
@@ -8919,6 +9270,50 @@
     {
       "company": "Silicon Laboratories",
       "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32BG22E224F512IM40",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32BG22E224F512IM40",
+      "listingId": 203537,
+      "listingDate": "2026-08-28T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32BG22E224F512IM32",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32BG22E224F512IM32",
+      "listingId": 203537,
+      "listingDate": "2026-08-28T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32MG22E224F512IM40",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32MG22E224F512IM40",
+      "listingId": 203537,
+      "listingDate": "2026-08-28T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32MG22E224F512IM32",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32MG22E224F512IM32",
+      "listingId": 203537,
+      "listingDate": "2026-08-28T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
       "productName": "Silicon Labs EFR32BG21 Series 2 Wireless SoC - EFR32BG21B010F512IM32",
       "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with 2M and Coded PHYs, and with Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
       "modelNumber": "EFR32BG21B010F512IM32",
@@ -11942,6 +12337,50 @@
       "quarter": "2025-Q2"
     },
     {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32BG22E224F512IM40",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32BG22E224F512IM40",
+      "listingId": 141476,
+      "listingDate": "2026-08-28T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32BG22E224F512IM32",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32BG22E224F512IM32",
+      "listingId": 141476,
+      "listingDate": "2026-08-28T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32MG22E224F512IM40",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32MG22E224F512IM40",
+      "listingId": 141476,
+      "listingDate": "2026-08-28T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG22 Series 2 Wireless SoC - EFR32MG22E224F512IM32",
+      "description": "Secure, power-efficient, and low-cost radio-equipped SoC (System-on-Chip), optimized for wireless communications and implementing the Bluetooth Low Energy technology with Direction Finding and Mesh capabilities, for interoperable, high-volume, and battery-powered loT products.",
+      "modelNumber": "EFR32MG22E224F512IM32",
+      "listingId": 141476,
+      "listingDate": "2026-08-28T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
       "company": "Telink Semiconductor (Shanghai) Co., Ltd",
       "searchCompany": "Telink",
       "productName": "Telink loT Module Series",
@@ -13682,6 +14121,303 @@
     {
       "company": "Realtek Semiconductor Corporation",
       "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth BT5.4 Controller LE Only solution",
+      "description": "Realtek Bluetooth BT5.4 Controller LE Only solution",
+      "modelNumber": "RTL8821",
+      "listingId": 346548,
+      "listingDate": "2026-08-26T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.0 Dual Mode Audio solution",
+      "description": "Realtek Bluetooth 6.0 Dual Mode audio solution support full scope BLE audio profiles and services as well as auracast(TM) capability, featured with multiple RFPHYs and LC3 codec will be implemented for next Bluetooth audio generation in various use cases.",
+      "modelNumber": "RTL8773DFL",
+      "listingId": 346092,
+      "listingDate": "2026-08-25T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.2 Application Solutions",
+      "description": "RTL 6.2 full scoped controller",
+      "modelNumber": "RTL8761 Series",
+      "listingId": 341124,
+      "listingDate": "2026-08-18T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.2 Application Solutions",
+      "description": "Realtek Bluetooth 6 2 Bluetooth Application Solutions implemnet rich application and capabilities of the latest Bluetooth key features asLE audio, Auracast, PawR, AoX, Channel Sounding and advancded HDT which help to integrate Bluetooth stack to supporting GATT Stack base Profile for verticals as sporting and fitness, Phone accessory, wearable, Remote Controller, smart home sensor, Find My , positioning Mesh and IOT device application",
+      "modelNumber": "Realtek Bluetooth 6.2 Application Solutions- RTL87/RTL88/RTL89/RX722 series",
+      "listingId": 341124,
+      "listingDate": "2026-08-18T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.2 Application Solutions",
+      "description": "RTL 6.2 full scoped controller",
+      "modelNumber": "RTL8762 Series",
+      "listingId": 341124,
+      "listingDate": "2026-08-18T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.2 Application Solutions",
+      "description": "RTL 6.2 full scoped controller",
+      "modelNumber": "RTL8763 Series",
+      "listingId": 341124,
+      "listingDate": "2026-08-18T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.2 Application Solutions",
+      "description": "RTL 6.2 full scoped controller",
+      "modelNumber": "RTL8764 Series",
+      "listingId": 341124,
+      "listingDate": "2026-08-18T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.2 Application Solutions",
+      "description": "RTL 6.2 full scoped controller",
+      "modelNumber": "RTL8772 series",
+      "listingId": 341124,
+      "listingDate": "2026-08-18T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.2 Application Solutions",
+      "description": "RTL 6.2 full scoped controller",
+      "modelNumber": "RTL8773 series",
+      "listingId": 341124,
+      "listingDate": "2026-08-18T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.2 Application Solutions",
+      "description": "RTL 6.2 full scoped controller",
+      "modelNumber": "RTL8783 Series",
+      "listingId": 341124,
+      "listingDate": "2026-08-18T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.2 Application Solutions",
+      "description": "RTL 6.2 full scoped controller",
+      "modelNumber": "RTL8852 Series",
+      "listingId": 341124,
+      "listingDate": "2026-08-18T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.2 Application Solutions",
+      "description": "RTL 6.2 full scoped controller",
+      "modelNumber": "RTL8821 Series",
+      "listingId": 341124,
+      "listingDate": "2026-08-18T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.2 Application Solutions",
+      "description": "RTL 6.2 full scoped controller",
+      "modelNumber": "RTL8822 Series",
+      "listingId": 341124,
+      "listingDate": "2026-08-18T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.2 Application Solutions",
+      "description": "RTL 6.2 full scoped controller",
+      "modelNumber": "RTL8723 Series",
+      "listingId": 341124,
+      "listingDate": "2026-08-18T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.2 Application Solutions",
+      "description": "RTL 6.2 full scoped controller",
+      "modelNumber": "RTL8922 Series",
+      "listingId": 341124,
+      "listingDate": "2026-08-18T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.2 Application Solutions",
+      "description": "RTL 6.2 full scoped controller",
+      "modelNumber": "RTL8733 Series",
+      "listingId": 341124,
+      "listingDate": "2026-08-18T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.2 Application Solutions",
+      "description": "RTL 6.2 full scoped controller",
+      "modelNumber": "RTL8862 Series",
+      "listingId": 341124,
+      "listingDate": "2026-08-18T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.2 Application Solutions",
+      "description": "RTL 6.2 full scoped controller",
+      "modelNumber": "RTL8962 Series",
+      "listingId": 341124,
+      "listingDate": "2026-08-18T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.2 Application Solutions",
+      "description": "RTL 6.2 full scoped controller",
+      "modelNumber": "RX722 Series",
+      "listingId": 341124,
+      "listingDate": "2026-08-18T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.2 Application Solutions",
+      "description": "RTL 6.2 full scoped controller",
+      "modelNumber": "RTL8961 Series",
+      "listingId": 341124,
+      "listingDate": "2026-08-18T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.0 Dual Mode Audio solution",
+      "description": "Realtek Bluetooth 6.0 Dual Mode audio solution support full scope BLE audio profiles and services as well as auracast(TM) capability, featured with multiple RFPHYs and LC3 codec will be implemented for next Bluetooth audio generation in various use cases.",
+      "modelNumber": "RTL8773DFL",
+      "listingId": 344287,
+      "listingDate": "2026-08-11T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.0 Dual Mode Audio solution(Headset)",
+      "description": "Realtek Bluetooth 6.0 Dual Mode audio solution support full scope BLE audio profiles and services as well as auracast(TM) capability, featured with multiple RFPHYs and LC3 codec will be implemented for next Bluetooth audio generation in various use cases.",
+      "modelNumber": "RTL8773DFL",
+      "listingId": 344832,
+      "listingDate": "2026-08-10T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.0 Dual Mode Audio solution (Headset)",
+      "description": "Realtek Bluetooth 6.0 Dual Mode audio solution support full scope BLE audio profiles and services as well as auracast(TM) capability, featured with multiple RFPHYs and LC3 codec will be implemented for next Bluetooth audio generation in various use cases.",
+      "modelNumber": "RTL8773DO",
+      "listingId": 344876,
+      "listingDate": "2026-08-10T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.0 Dual Mode Audio solution (Headset)",
+      "description": "Realtek Bluetooth 6.0 Dual Mode audio solution support full scope BLE audio profiles and services as well as auracast(TM) capability, featured with multiple RFPHYs and LC3 codec will be implemented for next Bluetooth audio generation in various use cases.",
+      "modelNumber": "RTL8773DO",
+      "listingId": 344450,
+      "listingDate": "2026-08-05T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek BLE 6.0 Application Solution（ATT）",
+      "description": "Realtek Bluetooth 6 Low Energy Solution integrates RealBlue BLE stack to supporting BLE GATT Stack base Profile for verticals as sporting and fitness, Phone accessory, wearable, Remote Controller, smart home sensor, Mesh, IOT device application",
+      "modelNumber": "RTL87 series",
+      "listingId": 344292,
+      "listingDate": "2026-08-04T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek BLE 6.0 Application Solution(FMP)",
+      "description": "Realtek Bluetooth 6 Low Energy Solution integrates RealBlue BLE stack to supporting BLE GATT Stack base Profile for verticals as sporting and fitness, Phone accessory, wearable, Remote Controller, smart home sensor, Mesh, IOT device application",
+      "modelNumber": "RTL87 series",
+      "listingId": 344306,
+      "listingDate": "2026-08-04T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek BLE 6.0 Application Solution PXP",
+      "description": "Realtek Bluetooth 6 Low Energy Solution integrates RealBlue BLE stack to supporting BLE GATT Stack base Profile for verticals as sporting and fitness, Phone accessory, wearable, Remote Controller, smart home sensor, Mesh, IOT device application",
+      "modelNumber": "RTL87 series",
+      "listingId": 344309,
+      "listingDate": "2026-08-04T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
       "productName": "Realtek Bluetooth 5.3 Controller Subsystem Module",
       "description": "Realtek Bluetooth 5.3 Module Solution",
       "modelNumber": "RTL8852BE",
@@ -14210,6 +14946,17 @@
     {
       "company": "Realtek Semiconductor Corporation",
       "searchCompany": "Realtek",
+      "productName": "Realtek BlueZ Host Stack V6.0",
+      "description": "Realtek BlueZ Host Stack V6.0 is a design of Linux based Bluetooth protocol stack,and solution to provide supports on various product portfolio and verticals. This outstanding Realtek BlueZ Host Stack enables profiles and functionality with streamlined user interface features which deploys the Bluetooth 6.0 features",
+      "modelNumber": "RTL87/RTL88/RTL89/RX722 series",
+      "listingId": 307689,
+      "listingDate": "2026-08-10T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
       "productName": "Realtek Bluetooth 6.0 Legacy Speaker Audio solution",
       "description": "Realtek Bluetooth 6.0 Dual Mode audio solution support full scope BLE audio profiles and services as well as auracast(TM) capability, featured with multiple RFPHYs and LC3 codec will be implemented for next Bluetooth audio generation in various use cases.",
       "modelNumber": "RTL8763EWS",
@@ -14294,6 +15041,17 @@
       "listingDate": "2025-05-26T00:00:00",
       "year": "2025",
       "quarter": "2025-Q2"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 6.0 Dual Mode Audio solution w/o LEA",
+      "description": "Realtek Bluetooth 6.0 Dual Mode audio solution w/o LEA",
+      "modelNumber": "RTL8713",
+      "listingId": 297484,
+      "listingDate": "2026-08-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
     },
     {
       "company": "Realtek Semiconductor Corporation",
@@ -15427,6 +16185,17 @@
       "listingDate": "2026-02-05T00:00:00",
       "year": "2026",
       "quarter": "2026-Q1"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek BLE 5.4 Application Solution",
+      "description": "Realtek Bluetooth 5 Low Energy Solution integrates RealBlue BLE stack to supporting BLE GATT Stack base Profile for verticals as sporting and fitness, Phone accessory, wearable, Remote Controller, smart home sensor, Mesh, IOT device applicationshow less",
+      "modelNumber": "RTL8721 Series",
+      "listingId": 213908,
+      "listingDate": "2026-08-10T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
     },
     {
       "company": "Realtek Semiconductor Corporation",
@@ -17463,347 +18232,5 @@
       "year": "2023",
       "quarter": "2023-Q2"
     }
-  ],
-  "monthlyStats": {
-    "2025-12": {
-      "Airoha": 2,
-      "_total": 16,
-      "Nordic": 8,
-      "Silicon Labs": 1,
-      "Telink": 1,
-      "Realtek/Realsil": 4
-    },
-    "2026-04": {
-      "Airoha": 2,
-      "_total": 11,
-      "Realtek/Realsil": 9
-    },
-    "2025-10": {
-      "Airoha": 1,
-      "_total": 6,
-      "Silicon Labs": 1,
-      "Realtek/Realsil": 4
-    },
-    "2025-07": {
-      "Airoha": 1,
-      "_total": 7,
-      "Telink": 5,
-      "Realtek/Realsil": 1
-    },
-    "2025-09": {
-      "Airoha": 1,
-      "_total": 5,
-      "Telink": 1,
-      "Realtek/Realsil": 3
-    },
-    "2026-03": {
-      "Airoha": 1,
-      "_total": 10,
-      "Nordic": 1,
-      "Realtek/Realsil": 8
-    },
-    "2026-06": {
-      "Airoha": 2,
-      "_total": 15,
-      "Nordic": 3,
-      "Telink": 2,
-      "Realtek/Realsil": 8
-    },
-    "2025-05": {
-      "Airoha": 2,
-      "_total": 9,
-      "Nordic": 2,
-      "Realtek/Realsil": 5
-    },
-    "2026-05": {
-      "Airoha": 1,
-      "_total": 7,
-      "Silicon Labs": 3,
-      "Realtek/Realsil": 3
-    },
-    "2025-02": {
-      "Airoha": 1,
-      "_total": 7,
-      "Silicon Labs": 2,
-      "Realtek/Realsil": 4
-    },
-    "2025-01": {
-      "Airoha": 1,
-      "_total": 10,
-      "Nordic": 4,
-      "Silicon Labs": 3,
-      "Realtek/Realsil": 2
-    },
-    "2024-12": {
-      "Airoha": 1,
-      "_total": 12,
-      "Nordic": 3,
-      "Telink": 2,
-      "Realtek/Realsil": 6
-    },
-    "2024-10": {
-      "Airoha": 3,
-      "_total": 8,
-      "Nordic": 1,
-      "Silicon Labs": 1,
-      "Realtek/Realsil": 3
-    },
-    "2024-09": {
-      "Airoha": 4,
-      "_total": 9,
-      "Silicon Labs": 1,
-      "Telink": 3,
-      "Realtek/Realsil": 1
-    },
-    "2022-08": {
-      "Airoha": 1,
-      "_total": 3,
-      "Realtek/Realsil": 2
-    },
-    "2022-06": {
-      "Airoha": 1,
-      "_total": 8,
-      "Nordic": 5,
-      "Realtek/Realsil": 2
-    },
-    "2022-03": {
-      "Airoha": 2,
-      "_total": 6,
-      "Nordic": 2,
-      "Silicon Labs": 2
-    },
-    "2023-08": {
-      "Airoha": 1,
-      "_total": 3,
-      "Silicon Labs": 1,
-      "Realtek/Realsil": 1
-    },
-    "2023-10": {
-      "Airoha": 1,
-      "_total": 3,
-      "Nordic": 2
-    },
-    "2023-12": {
-      "Airoha": 2,
-      "_total": 2
-    },
-    "2024-01": {
-      "Airoha": 1,
-      "_total": 4,
-      "Nordic": 1,
-      "Realtek/Realsil": 2
-    },
-    "2024-04": {
-      "Airoha": 1,
-      "_total": 10,
-      "Nordic": 6,
-      "Telink": 2,
-      "Realtek/Realsil": 1
-    },
-    "2024-07": {
-      "Airoha": 1,
-      "_total": 5,
-      "Silicon Labs": 1,
-      "Realtek/Realsil": 3
-    },
-    "2022-01": {
-      "Airoha": 2,
-      "_total": 4,
-      "Nordic": 2
-    },
-    "2021-12": {
-      "Airoha": 2,
-      "_total": 7,
-      "Nordic": 3,
-      "Telink": 1,
-      "Realtek/Realsil": 1
-    },
-    "2022-02": {
-      "Airoha": 1,
-      "_total": 3,
-      "Nordic": 1,
-      "Realtek/Realsil": 1
-    },
-    "2026-02": {
-      "Nordic": 1,
-      "_total": 6,
-      "Realtek/Realsil": 5
-    },
-    "2026-01": {
-      "Nordic": 13,
-      "_total": 20,
-      "Realtek/Realsil": 7
-    },
-    "2025-08": {
-      "Nordic": 6,
-      "_total": 13,
-      "Telink": 4,
-      "Realtek/Realsil": 3
-    },
-    "2025-06": {
-      "Nordic": 2,
-      "_total": 16,
-      "Silicon Labs": 7,
-      "Telink": 2,
-      "Realtek/Realsil": 5
-    },
-    "2025-04": {
-      "Nordic": 10,
-      "_total": 26,
-      "Silicon Labs": 1,
-      "Telink": 6,
-      "Realtek/Realsil": 9
-    },
-    "2024-11": {
-      "Nordic": 7,
-      "_total": 13,
-      "Silicon Labs": 3,
-      "Telink": 1,
-      "Realtek/Realsil": 2
-    },
-    "2023-11": {
-      "Nordic": 6,
-      "_total": 12,
-      "Telink": 3,
-      "Realtek/Realsil": 3
-    },
-    "2024-05": {
-      "Nordic": 2,
-      "_total": 4,
-      "Telink": 2
-    },
-    "2024-08": {
-      "Nordic": 1,
-      "_total": 6,
-      "Silicon Labs": 2,
-      "Realtek/Realsil": 3
-    },
-    "2023-07": {
-      "Nordic": 1,
-      "_total": 4,
-      "Telink": 2,
-      "Realtek/Realsil": 1
-    },
-    "2023-06": {
-      "Nordic": 4,
-      "_total": 6,
-      "Silicon Labs": 1,
-      "Realtek/Realsil": 1
-    },
-    "2024-02": {
-      "Nordic": 1,
-      "_total": 4,
-      "Silicon Labs": 2,
-      "Realtek/Realsil": 1
-    },
-    "2023-04": {
-      "Nordic": 5,
-      "_total": 6,
-      "Realtek/Realsil": 1
-    },
-    "2023-01": {
-      "Nordic": 1,
-      "_total": 2,
-      "Realtek/Realsil": 1
-    },
-    "2022-12": {
-      "Nordic": 4,
-      "_total": 8,
-      "Silicon Labs": 2,
-      "Telink": 1,
-      "Realtek/Realsil": 1
-    },
-    "2022-09": {
-      "Nordic": 5,
-      "_total": 10,
-      "Silicon Labs": 1,
-      "Telink": 2,
-      "Realtek/Realsil": 2
-    },
-    "2022-11": {
-      "Nordic": 2,
-      "_total": 3,
-      "Realtek/Realsil": 1
-    },
-    "2022-10": {
-      "Nordic": 1,
-      "_total": 2,
-      "Telink": 1
-    },
-    "2022-04": {
-      "Nordic": 1,
-      "_total": 1
-    },
-    "2021-11": {
-      "Nordic": 5,
-      "_total": 10,
-      "Silicon Labs": 2,
-      "Telink": 1,
-      "Realtek/Realsil": 2
-    },
-    "2022-07": {
-      "Nordic": 1,
-      "_total": 4,
-      "Realtek/Realsil": 3
-    },
-    "2021-08": {
-      "Nordic": 1,
-      "_total": 2,
-      "Silicon Labs": 1
-    },
-    "2025-03": {
-      "Silicon Labs": 4,
-      "_total": 9,
-      "Realtek/Realsil": 5
-    },
-    "2024-06": {
-      "Silicon Labs": 2,
-      "_total": 2
-    },
-    "2023-09": {
-      "Silicon Labs": 1,
-      "_total": 5,
-      "Telink": 2,
-      "Realtek/Realsil": 2
-    },
-    "2025-11": {
-      "Telink": 1,
-      "_total": 4,
-      "Realtek/Realsil": 3
-    },
-    "2024-03": {
-      "Telink": 2,
-      "_total": 2
-    },
-    "2023-02": {
-      "Telink": 1,
-      "_total": 1
-    },
-    "2023-03": {
-      "Telink": 1,
-      "_total": 2,
-      "Realtek/Realsil": 1
-    },
-    "2022-05": {
-      "Telink": 1,
-      "_total": 2,
-      "Realtek/Realsil": 1
-    },
-    "2021-10": {
-      "Realtek/Realsil": 1,
-      "_total": 1
-    },
-    "2021-07": {
-      "Realtek/Realsil": 1,
-      "_total": 1
-    },
-    "2021-09": {
-      "Realtek/Realsil": 1,
-      "_total": 1
-    },
-    "2023-05": {
-      "Realtek/Realsil": 1,
-      "_total": 1
-    }
-  }
+  ]
 }

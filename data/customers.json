@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-07-29T00:02:46.118Z",
+  "fetchedAt": "2026-08-29T04:11:20.200Z",
   "dateRange": {
-    "from": "2021-07-28",
-    "to": "2026-07-29"
+    "from": "2021-08-29",
+    "to": "2026-08-29"
   },
-  "totalCustomers": 837,
+  "totalCustomers": 844,
   "customers": [
     {
       "company": "Amazon.com Services LLC",
@@ -441,15 +441,18 @@
         "Telink"
       ],
       "products": [
+        "BenQ BT Remote",
         "Remote Control",
         "BenQ HDMI Media Streaming Remote"
       ],
       "applications": [
+        "Bluetooth & Voice & IR remote control",
         "Remote Control",
         "Bluetooth RCU",
         "Bluetooth voice remote control"
       ],
       "designs": [
+        "Realtek Bluetooth BLE5.3 Low Energy Application (2022A)",
         "TLSR 82xx component",
         "Airoha/Mediatek single mode 5.0 stack",
         "Realtek BLE 5.3 SoC (Bee3)"
@@ -667,6 +670,8 @@
         "Wireless Headset",
         "HyperX Cloud III S Wireless Gaming Headset",
         "HyperX Cloud Jet Dual Wireless Gaming Headset",
+        "HyperX Pulsefire Haste 3 Wireless Gaming Mouse",
+        "HyperX Pulsefire Haste 3 Pro Wireless Gaming Mouse",
         "HyperX Pulsefire Haste 2 S Wireless Gaming Mouse",
         "HyperX Pulsefire Saga Pro Wireless Gaming Mouse",
         "HyperX Pulsefire Haste 2 Pro 4k Wireless Gaming Mouse",
@@ -675,12 +680,10 @@
         "HyperX Pulsefire Haste 2 Wireless Gaming Mouse",
         "HyperX Alloy Rise 75 Wireless Gaming Keyboard",
         "HP Keyboard",
-        "HP 975 Dual-Mode Wireless Keyboard",
-        "Wireless Keyboard",
-        "HP 970 Programmable Wireless Keyboard",
         "HyperX Clutch Talon Wireless Xbox Controller",
         "HyperX Clutch Wireless Gaming Controller",
-        "HP HyperX Embedded Wireless Module"
+        "HP HyperX Embedded Wireless Module",
+        "OMEN Transcend 14 inch Gaming Laptop PC"
       ],
       "applications": [
         "Wireless Headset",
@@ -690,19 +693,19 @@
         "Wireless Gaming Mouse",
         "Wireless Keyboard",
         "HP TPN-C162K Bluetooth Keyboard",
-        "Product e is designed as a dual mode (Bluetooth LE and 2.4G Short Range Device) wireless mouse that matches to HP’s high end platforms for worldwide regions.",
-        "Product e is designed as a dual mode (Bluetooth LE and 2.4G Short Range Device) wireless mouse that matches to HP’s high end platforms for worldwide regions.\n",
-        "Wireless Gaming Controller"
+        "Wireless Gaming Controller",
+        "Wireless Gaming Controller/ Windows, Android Controller",
+        "Embedded wireless module supports Bluetooth functions."
       ],
       "designs": [
         "MT2833",
         "Airoha_Hummingbird_Duo_5.3",
         "Realtek Bluetooth 5.3 Solution",
         "Realtek Bluetooth BT5.4 Controller Solution",
+        "Zephyr_OS_Host_6.0",
         "nRF52 Series with S140 v7.0.1 q-c",
         "Airoha/Mediatek single mode 5.0 stack",
         "nRF52 Series with S132 v7.0.1 q-c",
-        "S140 v6 52840 EP ",
         "RTL8762D BLE5.1",
         "RTL NGFF standard card",
         "Realtek Bluetooth 5 Dual Mode Solution",
@@ -953,6 +956,7 @@
         "RAZER/Wireless Headset",
         "RAZER/Gaming Headset ",
         "RAZER/Wireless Earphones",
+        "RAZER/Gaming  Mouse",
         "RAZER/Gaming Mouse",
         "Wireless Mouse",
         "RAZER /Gaming Mouse ",
@@ -999,6 +1003,7 @@
       ],
       "products": [
         "SANWA SUPPLY Bluetooth Headphone",
+        "Bluetooth ring mouse",
         "SANWA SUPPLY WIRELESS MOUSE ",
         "SANWA SUPPLY WIRELESS MOUSE",
         "SANWA SUPPLY Wireless Mouse",
@@ -1016,6 +1021,7 @@
       ],
       "applications": [
         "Bluetooth Headphone",
+        "Input divice",
         "WIRELESS MOUSE ",
         "WIRELESS MOUSE",
         "Wireless Mouse",
@@ -1023,11 +1029,11 @@
         "2.4G + Bluetooth connection mouse",
         "COMBO WIRELESS MOUSE",
         "Bluetooth Wireless Dual Mode Mouse",
-        "Bluetooth Keyboard",
-        "Bluetooth v5.0 USB Dongle"
+        "Bluetooth Keyboard"
       ],
       "designs": [
         "Realtek Bluetooth 5.1 Audio Solution",
+        "Telink Bluetooth LE 5.3 Solutions",
         "Telink BLE Controller",
         "Telink Bluetooth 5 LE Host",
         "Telink Bluetooth LE Host",
@@ -1036,7 +1042,6 @@
         "Telink BLE Host 5.2",
         "Telink BLE Controller Subsystem",
         "nRF51 with S13x 2.0.0",
-        "Telink Bluetooth LE 5.3 Solutions",
         "nRF52810 with S112 v6.1.1",
         "Realtek Bluetooth 5 Dual Mode Solution",
         "nRF Connect SDK Host Subsystem qc",
@@ -1120,7 +1125,6 @@
         "TURTLE BEACH Afterglow Wave Headset for Xbox",
         "Wireless Mouse",
         "ROCCAT Wireless Gaming Mouse",
-        "Wireless Gaming Mouse",
         "Wireless Keyboard"
       ],
       "applications": [
@@ -1130,7 +1134,6 @@
         "Afterglow Wave Headset for Xbox",
         "Wireless Mouse",
         "Wireless Gaming Mouse supports Bluetooth functions",
-        "Wireless Gaming Mouse",
         "Wireless Keyboard"
       ],
       "designs": [
@@ -1168,14 +1171,14 @@
         "Xiaomi Mechanical Keyboard 71 Pro",
         "Xiaomi Sports Walkie-Talkie",
         "小米运动对讲机",
+        "小米 蓝牙遥控器",
+        "Xiaomi Bluetooth Remote",
         "Bluetooth Voice Remote",
         "Xiaomi Bluetooth® Voice Remote",
         "Bluetooth remote control",
         "Bluetooth Remote",
-        "BLE Module",
-        "AI空间交互传感器",
-        "AI Spatial Interaction Sensor",
-        "小米智能开关2（单开）"
+        "Xiaomi Door and Window Sensor 3",
+        "BLE Module"
       ],
       "applications": [
         "This product is a dual mode mouse capable of 2.4G and Bluetooth wireless connection.",
@@ -1193,6 +1196,7 @@
         "BLE5.3 Controller BQB",
         "Telink Enhanced 5.2  BLE Host Subsystem",
         "tlk_bt_host_stack_CoreSpec5.2_20210517",
+        "Telink Bluetooth LE Host",
         "Telink BLE Controller Subsystem",
         "Telink Bluetooth 5 LE Host",
         "nRF52 Series with S140 v7.0.1 q-c",
@@ -1202,7 +1206,6 @@
         "Telink advanced Bluetooth mesh SDK",
         "Telink BLE Controller",
         "nRF52 with S132 v6.1.x",
-        "Telink Bluetooth LE Host",
         "Realtek_Mesh profile",
         "Telink BLE Host 5.2",
         "nRF52 Series with S132 v7.0.1 q-c",
@@ -1423,17 +1426,17 @@
         "Sandstrom Slim Bluetooth Mouse, SBTMPI27",
         "Sandstrom Slim Bluetooth Mouse, SBTMCI27",
         "Sandstrom Slim Bluetooth Mouse, SBTMBL27",
+        "Currys Group Limited Bluetooth Keyboard",
+        "Bluetooth Combo ( mouse + keyboard)",
         "Sandstrom SPBTM25 Bluetooth mouse with dual channels",
+        "Bluetooth Combo ( Mouse + Keyboard)",
         "Sandstrom SDUALM24 Dual Mode Wireless Mouse  ",
         "Sandstrom SDUALM24E Dual Mode Wireless Mouse",
         "Logik LDUALM24K Dual mode wireless mouse ",
         "Sandstrom SDUALM26 Dual mode silent wireless mouse",
-        "Currys Group Limited Bluetooth Keyboard",
         "Sandstrom Slim Wireless Keyboard (BT + 2.4GHz dual mode)",
         "Sandstrom Dual Mode Wireless Keyboard",
-        "SDUALKB25",
-        "SDUALKB25E",
-        "Sandstrom Dual Mode Rechargeable Wireless Keyboard"
+        "SDUALKB25"
       ],
       "applications": [
         "Hybrid Noise Cancelling Wireless Headphone GTCNCPM21 v2 (New solution from 2023)",
@@ -1445,7 +1448,7 @@
         "Bluetooth mouse with dual channels for Nordic market - Brush Colour",
         "Bluetooth mouse with dual channels for Nordic market - Citrus Colour",
         "Bluetooth mouse with dual channels for Nordic market - Indigo Colour",
-        "Dual mode ( 2.4G + BT) wireless mouse"
+        "Compact Bluetooth round key keyboard"
       ],
       "designs": [
         "Realtek Bluetooth 5.1 Audio Solution",
@@ -1619,7 +1622,8 @@
         "Automotive Rearview MIrror with Auto Dimming and HomeLink",
         "Automotive Rearview Mirror with Auto Dimming and HomeLink",
         "HomeLink Default Receiver for Manufacturing",
-        "Automotive Rearview Display with HomeLink"
+        "Automotive Rearview Display with HomeLink",
+        "Automotive Rearview Mirror with Auto Dimming and HomeLink\t"
       ],
       "designs": [
         "Realtek Bluetooth BLE5.3 Low Energy Application (2022A)",
@@ -1641,7 +1645,9 @@
         "Module",
         "Wi-Fi and Bluetooth Module",
         "Smart Control Panel L",
-        "Smart Kit"
+        "Smart Kit",
+        "Dual Brand Wireless Bluetooth Bridge Gateway",
+        "Smart Camera"
       ],
       "applications": [
         "Mainboard",
@@ -1649,7 +1655,9 @@
         "Module",
         "Wi-Fi and Bluetooth Module",
         "Smart Control Panel L",
-        "Smart Kit"
+        "Smart Kit",
+        "Dual Brand Wireless Bluetooth Bridge Gateway",
+        "Smart Camera"
       ],
       "designs": [
         "EFR32xG21 - RFPHY Component - 5.3",
@@ -1875,12 +1883,14 @@
         "Lighting Control System「waybee」",
         "Lighting Control System \"waybee\"",
         "GX53 LED bulbs",
-        "E11 LED bulbs"
+        "E11 LED bulbs",
+        "Repeater"
       ],
       "applications": [
         "Commercial lighting control system",
         "GX53 LED bulbs with wireless lighting control",
-        "E11 LED bulbs with wireless lighting control"
+        "E11 LED bulbs with wireless lighting control",
+        "Repeater for FRee system"
       ],
       "designs": [
         "Telink Bluetooth LE Controller v6.1",
@@ -1946,15 +1956,15 @@
         "Realtek/Realsil"
       ],
       "products": [
-        "SL Series Console Platform",
-        "SL Series Console Platform_BLE"
+        "SL Series Console Platform_BLE",
+        "SL Series Console Platform"
       ],
       "applications": [
         "Control and display device for commercial cardio fitness equipment"
       ],
       "designs": [
-        "RTL NGFF standard card",
-        "nRF52840 with S140 v6.1.1"
+        "nRF52840 with S140 v6.1.1",
+        "RTL NGFF standard card"
       ],
       "country": "United States",
       "continent": "North America",
@@ -2354,6 +2364,7 @@
         "Fast 3897LG",
         "FAST 5697",
         "TMO-G5MSG",
+        "FAST383",
         "DIW252",
         "DIW252V 4iG",
         "HOT Streamer V5",
@@ -2390,15 +2401,15 @@
       "products": [
         "SATECHI Slim EX Wireless Mouse",
         "OntheGo Bluetooth Mouse",
-        "SATECHI Slim EX1 Wireless Keyboard",
         "SATECHI Slim EX3 Wireless Keyboard",
+        "SATECHI Slim EX1 Wireless Keyboard",
         "OntheGo Bluetooth Keyboard with Stand"
       ],
       "applications": [
         "Slim EX Wireless Mouse",
         "OntheGo Bluetooth Mouse",
-        "Slim EX1 Wireless Keyboard",
         "Slim EX3 Wireless Keyboard",
+        "Slim EX1 Wireless Keyboard",
         "OntheGo Bluetooth Keyboard with Stand"
       ],
       "designs": [
@@ -2532,6 +2543,7 @@
         "Nimble Key Fob",
         "Nimble Tag",
         "GP eTag Duo",
+        "Mbest Smart Finder",
         "O2 tag",
         "smart tag",
         "DuoTag",
@@ -2863,7 +2875,8 @@
         "UGREEN AC1300 Wi-Fi 5 Wireless Bluetooth PCIe Adapter",
         "UGREEN AX900 Wi-Fi 6 Bluetooth USB Adapter",
         "UGREEN AX900 Wi-Fi 6 蓝牙USB 无线网卡",
-        "UGREEN Bluetooth Adapter"
+        "UGREEN Bluetooth Adapter",
+        "UGREEN Digital Pencil P7"
       ],
       "applications": [
         "多模无线键盘",
@@ -2872,7 +2885,8 @@
         "AC1300 Wi-Fi 5 Wireless Bluetooth PCIe Adapter",
         "AX900 Wi-Fi 6 Bluetooth USB Adapter",
         "AX900 Wi-Fi 6 蓝牙USB 无线网卡",
-        "Bluetooth Adapter"
+        "Bluetooth Adapter",
+        "UGREEN Digital Pencil P7"
       ],
       "designs": [
         "Telink Bluetooth 5 LE Host",
@@ -2882,7 +2896,8 @@
         "Relatek BlueZ Host Stack BT5.4",
         "Realtek Bluetooth BT5.4 Controller",
         "RealBlue DuaMode Host Stack BT5",
-        "Realtek Bluetooth 5.1 solution"
+        "Realtek Bluetooth 5.1 solution",
+        "Telink Enhanced 5.2  BLE Host Subsystem"
       ],
       "country": "China",
       "continent": "Asia",
@@ -3478,6 +3493,24 @@
       "subRegion": "North America"
     },
     {
+      "company": "ALPHA Corporation",
+      "icVendors": [
+        "Nordic"
+      ],
+      "products": [
+        "ed Lock Connect-2"
+      ],
+      "applications": [
+        "Housing electronic lock with PIN, RFID (2 lock type)"
+      ],
+      "designs": [
+        "52xxx series controller for ncs 3.2.x"
+      ],
+      "country": "Japan",
+      "continent": "Asia",
+      "subRegion": "Japan"
+    },
+    {
       "company": "AlphaTheta Corporation",
       "icVendors": [
         "Airoha"
@@ -3496,41 +3529,23 @@
       "subRegion": "Japan"
     },
     {
-      "company": "American Lighting Inc",
+      "company": "Ambient GmbH & Co. KG",
       "icVendors": [
-        "Telink"
+        "Silicon Labs"
       ],
       "products": [
-        "Spektrum+ LED String Light",
-        "Spektrum+ A19 LED Bulb",
-        "Spektrum+ Inline Controller",
-        "Spektrum+ Controller",
-        "Spektrum+ Handheld Remote",
-        "Spektrum+ BR30 LED Light",
-        "Spektrum+ LED Downlight",
-        "Spektrum+ LED Landscape",
-        "Spektrum+ LED Wall Sconce"
+        "LockitBT (ACN-LB)"
       ],
       "applications": [
-        "BLE MESH STD LED 5MM, 70 LED, 6x6x6, 120V, Rectified, RGBW, 22AWG GR, FUSED STK PLG, FRM SKT\n",
-        "A19 BLE Mesh RGBTW E26\n",
-        "Simple 5CH BLE SIG MESH module 5 in 1: DIM/CCT/RGB/RGBW/RGB+CCT12-24VDC4A/CH\n",
-        "5CH BLE SIG MESH module 5 in 1: DIM/CCT/RGB/RGBW/RGB+CCT12-24VDC4A/CH\n",
-        "5CH BLE SIG MESH REMOTE module 5 in 1: DIM/CCT/RGB/RGBW/RGB+CCT\n",
-        "BR30 BLE Mesh RGBTW E26\n",
-        "4 inch BLE Mesh RGBTW Downlight E26 Torsion clips",
-        "6 inch BLE Mesh RGBTW Downlight E26 Torsion clips\n",
-        "BLE MESH RGBTW 3-piece landscape light kit\n",
-        "BLE MESH RGBTW 1-piece landscape light\n"
+        "Timecode and sync generator with Bluetooth LE interface for remote control via the LockitRemote app."
       ],
       "designs": [
-        "Telink BLE Host 5.2",
-        "Telink BLE Controller",
-        "Telink advanced Bluetooth mesh SDK"
+        "Wireless Simplicity Channel Sounding Link Layer and Host based on Core Specification 6.0",
+        "RF-PHY Component of the EFR32BG24 and EFR32MG24 SoCs, covering related modules and development tools"
       ],
-      "country": "United States",
-      "continent": "North America",
-      "subRegion": "North America"
+      "country": "Germany",
+      "continent": "Europe",
+      "subRegion": "Europe"
     },
     {
       "company": "Amira Health Inc.",
@@ -3595,6 +3610,24 @@
       "country": "United Kingdom",
       "continent": "Asia",
       "subRegion": "India"
+    },
+    {
+      "company": "ANNAX GmbH",
+      "icVendors": [
+        "Nordic"
+      ],
+      "products": [
+        "Auracast-Modul BLE GMI-Module"
+      ],
+      "applications": [
+        "Auracast Streaming Module for Passenger Information Systems"
+      ],
+      "designs": [
+        "nRF5340 core-complete controller ncs 3.2.x"
+      ],
+      "country": "Germany",
+      "continent": "Europe",
+      "subRegion": "Europe"
     },
     {
       "company": "Annex Products Pty Ltd",
@@ -3790,6 +3823,24 @@
       "designs": [
         "Telink Bluetooth 5 LE Host",
         "BLE5.3 Controller BQB"
+      ],
+      "country": "China",
+      "continent": "Asia",
+      "subRegion": "China"
+    },
+    {
+      "company": "Arrow Home Group Co., Ltd.",
+      "icVendors": [
+        "Telink"
+      ],
+      "products": [
+        "Remote control"
+      ],
+      "applications": [
+        "Remote control"
+      ],
+      "designs": [
+        "TLSR 82xx component"
       ],
       "country": "China",
       "continent": "Asia",
@@ -4157,28 +4208,6 @@
       "subRegion": "North America"
     },
     {
-      "company": "AXTRO PTE. LTD.",
-      "icVendors": [
-        "Realtek/Realsil"
-      ],
-      "products": [
-        "AXTRO Fit 3 Fitness Tracker",
-        "AXTRO Fit 4 Fitness Tracker",
-        "AXTRO Fit 5 Fitness Tracker"
-      ],
-      "applications": [
-        "The AXTRO Fit 3 is an all-day fitness tracker with\nsteps, heart rate, blood oxygen (SpO2), and sleep tracking features.",
-        "The AXTRO Fit 4 is an all-day fitness tracker with steps, heart rate, blood oxygen (SpO2), and sleep tracking features.",
-        "The AXTRO Fit 5 is an all-day fitness tracker with steps, heart rate, blood oxygen (SpO2), and sleep tracking features."
-      ],
-      "designs": [
-        "Realtek BLE 5.3 SoC (Bee3)"
-      ],
-      "country": "Singapore",
-      "continent": "Asia",
-      "subRegion": "India"
-    },
-    {
       "company": "Bang & Olufsen",
       "icVendors": [
         "Airoha"
@@ -4401,6 +4430,28 @@
       "subRegion": "China"
     },
     {
+      "company": "Beijing Yueme Technology Co.,Ltd.",
+      "icVendors": [
+        "Telink"
+      ],
+      "products": [
+        "荣耀亲选 悦喔 无线耳鼠Pro",
+        "无线耳鼠",
+        "Wireless Earbuds Mouse"
+      ],
+      "applications": [
+        "这是一款蓝牙无线连接带有充电功能的荣耀亲选便携办公鼠标。",
+        "这是一款蓝牙无线连接的便携办公鼠标",
+        "Portable office mouse with Bluetooth wireless connectivity"
+      ],
+      "designs": [
+        "Telink Bluetooth LE 5.3 Solutions"
+      ],
+      "country": "China",
+      "continent": "Asia",
+      "subRegion": "China"
+    },
+    {
       "company": "Beijing Zizai Technology Co., LTD.",
       "icVendors": [
         "Nordic"
@@ -4529,6 +4580,27 @@
       "country": "Germany",
       "continent": "Europe",
       "subRegion": "Europe"
+    },
+    {
+      "company": "Biceek Inc",
+      "icVendors": [
+        "Nordic"
+      ],
+      "products": [
+        "Biceek Bike Finder ",
+        "Smart Lock"
+      ],
+      "applications": [
+        " a tracker for locating movable items, featuring a replaceable battery for long-term, hassle-free use",
+        "A smart bicycle lock specifically designed for location tracking"
+      ],
+      "designs": [
+        "nRF Connect SDK Host component v3.1.x",
+        "SoftDevice Controller for nRF54Lxx with CS"
+      ],
+      "country": "United States",
+      "continent": "North America",
+      "subRegion": "North America"
     },
     {
       "company": "BioMech Sensor LLC",
@@ -5241,6 +5313,28 @@
       "subRegion": "Japan"
     },
     {
+      "company": "CAPTEMP, LDA",
+      "icVendors": [
+        "Nordic"
+      ],
+      "products": [
+        "G-LogBOX",
+        "KEA Tracker",
+        "AiroLOG"
+      ],
+      "applications": [
+        "IIoT wireless data logger with Bluetooth Low Energy connectivity, based on Nordic nRF52832. Designed for environmental and industrial parameter monitoring.",
+        "IoT wireless asset tracking device with Bluetooth Low Energy connectivity, based on Nordic nRF52832. Designed for industrial monitoring and logistics applications.",
+        "IIoT wireless air quality and environmental monitoring device with Bluetooth Low Energy connectivity, based on Nordic nRF52832."
+      ],
+      "designs": [
+        "52xxx series controller for ncs 3.2.x"
+      ],
+      "country": "Portugal",
+      "continent": "Europe",
+      "subRegion": "Europe"
+    },
+    {
       "company": "CARECOM CO., LTD.",
       "icVendors": [
         "Nordic"
@@ -5478,17 +5572,14 @@
         "Nordic"
       ],
       "products": [
-        "Ceres Tag Animal Traceability Device",
-        "Ceres Tag Smart Ear Tag"
+        "Ceres Tag Animal Traceability Device"
       ],
       "applications": [
-        "Animal Traceability Device supports Bluetooth functions.",
-        "Smart Ear Tag supports Bluetooth Functions"
+        "Animal Traceability Device supports Bluetooth functions."
       ],
       "designs": [
         "NCS_SD_controller_multirole_TCRL_2022_1 2.2.0 nRF52  qc",
-        "sdk_nrf_host_2.2.0_qc",
-        "Zephyr_controller_2.2_5.1_nrf52 qc"
+        "sdk_nrf_host_2.2.0_qc"
       ],
       "country": "Australia",
       "continent": "North America",
@@ -6373,24 +6464,6 @@
       "subRegion": "China"
     },
     {
-      "company": "Device Solutions Inc",
-      "icVendors": [
-        "Nordic"
-      ],
-      "products": [
-        "GATEWAY"
-      ],
-      "applications": [
-        "Cellio Gateway"
-      ],
-      "designs": [
-        "nRF52 Series with S140 v7.0.1 q-c"
-      ],
-      "country": "United States",
-      "continent": "North America",
-      "subRegion": "North America"
-    },
-    {
       "company": "DEXATEK Technology LTD",
       "icVendors": [
         "Nordic"
@@ -6729,18 +6802,14 @@
         "Airoha"
       ],
       "products": [
-        "True wireless earbuds and charging case",
-        "DEWALT TRUE WIRELESS EARBUDS ",
-        "DEWALT TRUE WIRELESS EARBUDS"
+        "True wireless earbuds and charging case"
       ],
       "applications": [
-        "DEWALT ANC True wireless earbuds and charging case with Bluetooth function",
-        "DEWALT TRUE WIRELESS EARBUDS & CHARGING CASE"
+        "DEWALT ANC True wireless earbuds and charging case with Bluetooth function"
       ],
       "designs": [
         "Airoha BT5.3 Dual Mode Component",
-        "MT2833",
-        "PRU279"
+        "MT2833"
       ],
       "country": "United States",
       "continent": "North America",
@@ -6798,10 +6867,12 @@
         "Realtek/Realsil"
       ],
       "products": [
-        "Head unit_EEBBCDE3"
+        "Head unit_EEBBCDE3",
+        "Head Unit_SS11R1FL"
       ],
       "applications": [
-        "Head unit"
+        "Head unit",
+        "Head Unit"
       ],
       "designs": [
         "Realtek Bluetooth 5.3 Solution"
@@ -6809,6 +6880,27 @@
       "country": "China",
       "continent": "Asia",
       "subRegion": "China"
+    },
+    {
+      "company": "EcoNaviSta,Inc.",
+      "icVendors": [
+        "Nordic"
+      ],
+      "products": [
+        "LifeRhythmNavi multi devices",
+        "LifeRhythmNavi Sensor devices"
+      ],
+      "applications": [
+        "LifeRhythmNavi multi devices",
+        "LifeRhythmNavi Sensor devices"
+      ],
+      "designs": [
+        "SoftDevice Controller for nRF54Lxx base feature set",
+        "NCS host 3.2.x "
+      ],
+      "country": "Japan",
+      "continent": "Asia",
+      "subRegion": "Japan"
     },
     {
       "company": "Ecovacs Robotics Co.,Ltd.",
@@ -7401,6 +7493,13 @@
         "Telink"
       ],
       "products": [
+        "izna OFFICIAL LIGHT STICK",
+        "IVE OFFICIAL LIGHT STICK Ver.2",
+        "AMPERS&ONE OFFICIAL LIGHT STICK",
+        "LUCY OFFICIAL LIGHT STICK",
+        "EVNNE OFFICIAL LIGHT STICK Ver.2",
+        "R2PP BAND",
+        "KO1KEYZ OFFICIAL LIGHT STICK",
         "DAESUNG OFFICIAL LIGHT STICK",
         "ME:I OFFICIAL LIGHT STICK",
         "ME:I-001 RF MODULE",
@@ -7413,32 +7512,25 @@
         "FANLIGHT-014 RF MODULE",
         "INI OFFICIAL LIGHT STICK Ver.2 ",
         "FANLIGHT-013 RF MODULE",
-        "DXTEEN OFFICIAL LIGHT STICK",
-        "IS:SUE OFFICIAL LIGHT STICK ",
-        "BIBI OFFICIAL LIGHT STICK",
-        "P1Harmony OFFICIAL LIGHT STICK Ver.2",
-        "JEON SOMI OFFICIAL LIGHT STICK",
-        "NTX OFFICIAL LIGHT STICK",
-        "The Rose Official Rostar Lightstick v2",
-        "N.Flying OFFICIAL LIGHT STICK Ver.2"
+        "DXTEEN OFFICIAL LIGHT STICK"
       ],
       "applications": [
+        "izna OFFICIAL LIGHT STICK",
+        "IVE OFFICIAL LIGHT STICK Ver.2",
+        "AMPERS&ONE OFFICIAL LIGHT STICK",
+        "LUCY OFFICIAL LIGHT STICK",
+        "EVNNE OFFICIAL LIGHT STICK Ver.2",
+        "R2PP BAND",
+        "KO1KEYZ OFFICIAL LIGHT STICK",
         "DAESUNG OFFICIAL LIGHT STICK",
         "ME:I OFFICIAL LIGHT STICK",
-        "ME:I-001 RF MODULE",
-        "TAEYANG OFFICIAL LIGHT STICK",
-        "FANLIGHT7 RF MODULE",
-        "FANLIGHT9 RF MODULE",
-        "PARK BO GUM OFFICIAL LIGHT STICK",
-        "FANLIGHT-005 RF MODULE",
-        "Yves OFFICIAL LIGHT STICK",
-        "FANLIGHT-014 RF MODULE"
+        "ME:I-001 RF MODULE"
       ],
       "designs": [
-        "Telink BLE Host 5.2",
-        "Telink BLE Controller",
         "Telink Bluetooth LE Profile",
-        "Telink Bluetooth LE Host"
+        "Telink Bluetooth LE Host",
+        "Telink BLE Host 5.2",
+        "Telink BLE Controller"
       ],
       "country": "South Korea",
       "continent": "Asia",
@@ -7451,44 +7543,44 @@
       ],
       "products": [
         "Bluetooth modules",
-        "Fanstel BT40F",
-        "Fanstel BT40",
-        "Fanstel BT40E",
-        "Fanstel BLG40FB16",
-        "Fanstel BC40C",
-        "Fanstel BC40M",
-        "Fanstel BC40P",
-        "Fanstel LN60E40F",
-        "Fanstel LN60E40E",
-        "Fanstel LEW40E5P",
-        "Fanstel LEW40E6P",
-        "Fanstel BLG40F",
-        "Bluetooth module",
         "Fanstel BT840N",
         "Fanstel BM840",
         "Fanstel BM840P",
         "Fanstel BT840",
         "Fanstel BT840F",
-        "Fanstel BT840E"
+        "Fanstel BT840E",
+        "Fanstel BT840X",
+        "Fanstel BT840XE",
+        "Fanstel BT840XEE",
+        "Fanstel BC840",
+        "Fanstel BC840M",
+        "Fanstel BC840E",
+        "Fanstel BM833",
+        "Fanstel BM833F",
+        "Fanstel BM833E",
+        "Fanstel BC833M",
+        "Fanstel BC833E",
+        "Fanstel BWG840F",
+        "Fanstel BWG840E"
       ],
       "applications": [
         "Bluetooth 6.0 modules",
-        "BLE 5.3 module with an integrated antenna",
-        "BLE module with an integrated antenna",
-        "BLE module with an u.FL connector",
-        "Medical IoT gateway",
-        "BLE 5.3 module with a chip antenna",
-        "Micro BLE 5.3 module with an integrated antenna",
-        "Micro BLE 5.3 module with pads for external antenna connection.",
-        "BLE and LTE M/NB-IoT combo module for M.2 connector",
-        "BLE and LTE M/NB IoT combo module for M.2 connector"
+        "Bluetooth module with a power amplifier, integrated antenna",
+        "Bluetooth module with an integrated antenna",
+        "Bluetooth module with pads for external antenna connection",
+        "Bluetooth module with an integrated high performance antenna",
+        "BLE 5.3 module with an u.FL connector",
+        "BLE 5.3 module with a power amplifier and integrated antenna",
+        "BLE 5.3 module with a power amplifier and an u.FL connector",
+        "BLE 5.3 module with a power amplifier, an u.FL , and an MCX connector",
+        "Micro BLE 5.3 module with an integrated antenna"
       ],
       "designs": [
         "nRF Connect SDK Host component v3.1.x",
         "SoftDevice Controller for nRF54Lxx with CS",
-        "Zephyr Host 1.13",
         "NCS Host Subsystem for 1.9.1",
-        "NCS1.9.0_SD_controller_multirole_coded_periodic 52 series qc"
+        "NCS1.9.0_SD_controller_multirole_coded_periodic 52 series qc",
+        "Zephyr Host 1.13"
       ],
       "country": "United States",
       "continent": "North America",
@@ -7563,38 +7655,38 @@
         "Nordic"
       ],
       "products": [
+        "Digital micrometer 0800",
+        "Digital thread micrometer 0803",
+        "Digital inside micrometer with jaws 0804",
+        "Digital inside micrometer with jaws 0804 slim design",
+        "Digital inside micrometer special design 0804",
+        "Digital inside micrometer 0804",
+        "Digital micrometer 0818 with disc type anvils",
         "Digital micrometer with interchangeable anvils 0823",
         "Digital precision micrometer for internal gear measurements 0824",
+        "Digital precision inside  micrometer for measuring keyway width 0827",
+        "Digital micrometer 0830",
+        "Digital inside micrometer 0826 (modular) - measuring head",
         "Digital inside micrometer 0826 (modular)",
         "Digital precision micrometer 0826 for internal thread measurements (modular) - measuring head",
         "Digital precision micrometer 0826 for internal thread measurements (modular)",
-        "Digital micrometer 0800",
-        "Digital thread micrometer 0803",
-        "Digital micrometer for external gear 0806",
-        "Digital micrometer with blades 0811 and 0812",
-        "Digital micrometer with deep brackets 0814",
-        "Digital external precision micrometer 0815",
-        "Digital micrometer 0818 with disc type anvils",
-        "Digital inside micrometer 0826 (modular) - measuring head",
-        "Digital micrometer 0800 with interchangeable anvils",
-        "Digital micrometer 0800 with adjustable anvil",
-        "Digital micrometer 0800 with movable anvil",
-        "Digital micrometer 0800, special design",
-        "Digital inside micrometer with jaws 0804",
-        "Digital inside micrometer with jaws 0804 slim design",
-        "Digital inside micrometer special design 0804"
+        "Digital micrometer 0818 with disc type anvils, special design",
+        "Digital micrometer 0830, special design",
+        "Digital micrometer 0831",
+        "Digital micrometer 0832",
+        "Digital micrometer 0833"
       ],
       "applications": [
-        "Digital inside micrometer with interchangeable anvils with 25 mm direct measuring range and 2 mm spindle thread pitch, with ratchet and Bluetooth ®",
-        "Digital precision micrometer 0824 for internal gear measurements with 25 mm direct measuring range and 2 mm spindle thread pitch and Bluetooth ®",
-        "Modular internal micrometer 0826 with digital display, defined measuring force, and expandable measuring range of up to 5000mm",
-        "Modular measuring gauge for measuring internal threads using removable thread anvils measuring range expandable through gauge block extensions.",
         "Digital micrometer 0800 with non-rotating lead screw, 30 mm direct measuring range and Bluetooth ®",
         "Digital precision micrometer 0803 for testing external threads using interchangable measuring inserts.",
-        "Digital precision micrometer 0806 for external gear measurements. Used to determine the diametric measurement through balls for external gears.",
-        "Digital precision micrometer with blades to measure thickness and length",
-        "Digital micrometer 0814 with non-rotating lead screw, 30 mm direct measuring range and protection class IP 65  and Bluetooth ®",
-        "Digital Precision Micrometer 0815 to measure workpieces having odd-numbered slots"
+        "Digital internal micrometer 0804 with jaws, non-rotating lead screw, 30 mm direct measuring range and Bluetooth ®",
+        "Digital internal micrometer 0804 with jaws, non-rotating lead screw, 30 mm direct measuring range, interchangeable inserts, with tubular steel bracket   and Bluetooth ®",
+        "Digital internal micrometer 0804 with jaws, non-rotating lead screw, 30 mm direct measuring range, slim design and Bluetooth ®",
+        "Digital internal micrometer 0804 with non-rotating lead screw, 30 mm direct measuring range, special design and Bluetooth ®",
+        "Digital internal micrometer 0804 with non-rotating lead screw, 30 mm direct measuring range and Bluetooth ®",
+        "Digital micrometer for measuring gear tooth widths with 30 mm direct measuring range and 2 mm spindle thread pitch.",
+        "Digital inside micrometer with interchangeable anvils with 25 mm direct measuring range and 2 mm spindle thread pitch, with ratchet and Bluetooth ®",
+        "Digital precision micrometer 0824 for internal gear measurements with 25 mm direct measuring range and 2 mm spindle thread pitch and Bluetooth ®"
       ],
       "designs": [
         "nRF52840 with S140 v6.1.1"
@@ -7670,12 +7762,15 @@
         "Nordic"
       ],
       "products": [
+        "FINTIE Wireless Keyboard Case with adjustable stand for Alexa Tablet 11",
         "Fintie Wireless Keyboard"
       ],
       "applications": [
+        "Wireless Keyboard Case with adjustable stand for Alexa tablet 11",
         "Wireless Keyboard"
       ],
       "designs": [
+        "nRF52 Series with S132 v7.0.1 q-c",
         "nRF52810 with S112 v6.1.1"
       ],
       "country": "United States",
@@ -7949,6 +8044,31 @@
       "country": "United States",
       "continent": "North America",
       "subRegion": "North America"
+    },
+    {
+      "company": "Fronius International GmbH",
+      "icVendors": [
+        "Silicon Labs"
+      ],
+      "products": [
+        "RC Panel Basic / BT",
+        "RC Pedal HD / BT",
+        "RC Pedal TIG / BT",
+        "BT Adapter TMC"
+      ],
+      "applications": [
+        "BT Remote Control for Welding Machines",
+        "BT Heavy Duty Foot Remote Control for Welding Machines",
+        "BT Foot Remote Control for Welding Machines",
+        "Torch Bus Bluetooth Adapter"
+      ],
+      "designs": [
+        "Wireless Simplicity Host based on Core Specification 6.0",
+        "EFR32BG22, EFR32MG22, BGM220P, BGX220P, MGM220P with Wireless Simplicity Channel Sounding Link Layer and Host based on Core Specification 6.0 based on SiSDK 2024.12 and above using BLE SDK 9.0.0 and above"
+      ],
+      "country": "Austria",
+      "continent": "Europe",
+      "subRegion": "Europe"
     },
     {
       "company": "Frontier Pursuits Technology, LLC",
@@ -8832,10 +8952,12 @@
         "Smart Health Bracelet",
         " Smart Health Core",
         "QALO Sport Loop 1",
-        "ACTXA SPARK BAND"
+        "ACTXA SPARK BAND",
+        "Smart Recovery Ring"
       ],
       "applications": [
-        "SmartWatch"
+        "SmartWatch",
+        "Smart Health Ring"
       ],
       "designs": [
         "nRF52840 with S140 v6.1.1"
@@ -9064,29 +9186,31 @@
       "products": [
         "GE Appliances, Gateway for Water Leak Detector",
         "Fisher & Paykel Wi-Fi/BLE Combo Module for Smart Appliances",
+        "GE Appliances, Wi-Fi/BLE Combo Module for Smart Appliances",
+        "Haier, Wi-Fi/BLE Combo Module for Smart Appliances",
+        "GE Appliances, Wi-Fi/Bluetooth Combo Module for Smart Appliances",
+        "Fisher & Paykel, Wi-Fi/Bluetooth Combo Module for Smart Appliances",
+        "Haier, Wi-Fi/Bluetooth Combo Module for Smart Appliances",
+        "GE Appliances, Wi-Fi/Bluetooth Combo ACM (Appliance Connect Module)",
         "GEA Global Stand-alone Module",
         "GEA Global Solder-down Module",
         "Haier Global Solder-down Module",
         "Fisher & Paykel Global Solder-down Module",
         "Haier Global Stand-alone Module",
         "Fisher & Paykel Global Stand-alone Module",
-        "GE Appliances, Wi-Fi/Bluetooth Combo Module for Smart Appliances",
-        "Fisher & Paykel, Wi-Fi/Bluetooth Combo Module for Smart Appliances",
-        "GE Appliances, Wi-Fi/Bluetooth Combo ACM (Appliance Connect Module)",
-        "Haier, Wi-Fi/Bluetooth Combo Module for Smart Appliances",
         "BLE Module"
       ],
       "applications": [
         "Gateway for GEA Water Leak Detector (BLE Mesh) using SmartHQ mobile app",
         "Fisher & Paykel Wi-Fi/BLE Combo Module for SmartHQ Mobile App",
-        "GEA Global Wi-Fi/BLE Combo Module for SmartHQ Mobile App",
-        "Haier Global Wi-Fi/BLE Combo Module for SmartHQ Mobile App",
-        "Fisher & Paykel Global Wi-Fi/BLE Combo Module for SmartHQ Mobile App",
-        "Wi-Fi and Bluetooth Module for GE Appliances SmartHQ App",
+        "Wi-Fi/BLE Combo Module for SmartHQ Mobile App",
         "Wi-Fi and Bluetooth GEA2 Module for GE Appliances SmartHQ App",
-        "Wi-Fi and Bluetooth Combo Module for Haier Appliances",
-        "Wi-Fi and Bluetooth Combo Module for Fisher & Paykel Appliances",
-        "This product is based on WCATC002 module. It includes a plastic housing. Of course, the hardware and software are perfectly the same as WCATC002."
+        "Wi-Fi and Bluetooth Combo Module with USB Type-A Connector for SmartHQ App",
+        "Wi-Fi and Bluetooth Module for GE Appliances SmartHQ App, Connect Plus Module",
+        "This product is based on WCATC002 module. It includes a plastic housing.",
+        "Wi-Fi and Bluetooth Combo Module with Right Angle Connector for SmartHQ App",
+        "GEA Global Wi-Fi/BLE Combo Module for SmartHQ Mobile App",
+        "Haier Global Wi-Fi/BLE Combo Module for SmartHQ Mobile App"
       ],
       "designs": [
         "Realtek_Mesh profile",
@@ -9430,28 +9554,6 @@
       "subRegion": "North America"
     },
     {
-      "company": "Hefei Madao Information Technology Co.,Ltd",
-      "icVendors": [
-        "Telink"
-      ],
-      "products": [
-        "Bluetooth mouse(iFLYTEK)",
-        "Bluetooth mouse(M&G)",
-        "Bluetooth mouse(Jarvisen)",
-        "荣耀亲选 悦喔AI鼠标"
-      ],
-      "applications": [
-        "Bluetooth mouse"
-      ],
-      "designs": [
-        "Telink BLE Controller Subsystem",
-        "Telink BLE Host 5.2"
-      ],
-      "country": "China",
-      "continent": "Asia",
-      "subRegion": "China"
-    },
-    {
       "company": "HerdDogg, Inc",
       "icVendors": [
         "Nordic"
@@ -9577,17 +9679,21 @@
       "products": [
         "Hisense TV Remote Controller",
         "TV Remote Controller",
-        "TV Remote Controller "
+        "TV Remote Controller ",
+        "Toshiba 65Q60SUF Smart TV Products"
       ],
       "applications": [
         "TV Remote Controller, intergrated with function of keyboard, and voice control.",
         "TV Remote Controller, intergrated with function of key board, and voice control.",
         "TV Remote Controller, intergrated with function of key board, and voice control",
-        "TV Remote Controller,intergrated with function of key board,and voice control."
+        "TV Remote Controller,intergrated with function of key board,and voice control.",
+        "Smart TV Products"
       ],
       "designs": [
         "Realtek BLE 5.4 Application Solution",
-        "Realtek Bluetooth BLE5.3 Low Energy Application (2022A)"
+        "Realtek Bluetooth BLE5.3 Low Energy Application (2022A)",
+        "Realtek Bluetooth BT6.0 Controller Solution",
+        "Realtek Host Stack BT6.0 for Linux-based OS"
       ],
       "country": "China",
       "continent": "Asia",
@@ -9792,7 +9898,8 @@
         "HONOR Pad X9a Smart Bluetooth Keyboard",
         "荣耀平板Z5 第二代智能蓝牙键盘",
         "HONOR Pad X8a & X8b Smart Bluetooth Keyboard",
-        "HONOR Pad V9 Smart Bluetooth Keyboard"
+        "HONOR Pad V9 Smart Bluetooth Keyboard",
+        "荣耀MagicPad3 Pro 12.3分体式智能触控键盘"
       ],
       "applications": [
         "Input Devices",
@@ -9836,24 +9943,6 @@
       "subRegion": "India"
     },
     {
-      "company": "Hoyer Handel GmbH",
-      "icVendors": [
-        "Realtek/Realsil"
-      ],
-      "products": [
-        "Silvercrest Speaker Buddy"
-      ],
-      "applications": [
-        "BT Speaker for Kids"
-      ],
-      "designs": [
-        "Realtek BT5 BLE chipset"
-      ],
-      "country": "Germany",
-      "continent": "Europe",
-      "subRegion": "Europe"
-    },
-    {
       "company": "Hubble Network Inc.",
       "icVendors": [
         "Nordic"
@@ -9895,12 +9984,14 @@
         "Telink"
       ],
       "products": [
+        "Fire tv Remote control",
         "GSD Bluetooth Remote Control"
       ],
       "applications": [
         "Bluetooth Remote Control"
       ],
       "designs": [
+        "Telink Bluetooth LE Host v6.1",
         "BLE5.3 Controller BQB",
         "Telink Bluetooth LE Profile"
       ],
@@ -10724,32 +10815,6 @@
       ],
       "designs": [
         "nRF52810 with S112 v6.1.1"
-      ],
-      "country": "China",
-      "continent": "Asia",
-      "subRegion": "China"
-    },
-    {
-      "company": "Jiangsu Yuyue Medical Equipment & Supply Co., Ltd",
-      "icVendors": [
-        "Realtek/Realsil"
-      ],
-      "products": [
-        "electronic sphygmomanometer",
-        "Yuyue Electronic Blood Pressure Monitor",
-        "Yuyue Blood Glucose Meter"
-      ],
-      "applications": [
-        "The main function of electronic sphygmomanometer is to measure blood pressure and pulse of human body.\n  The electronic blood pressure monitor consists of a host, a cuff, a rechargeable battery (optional), and a power adapter (optional).\nThe host machine is used to complete the charging and discharging of the cuff, data collection and processing, display and storage of measurement results.",
-        "This is an Electronic Blood Pressure Monitor with Yuyue Bluetooth show more",
-        "This is a Blood Glucose Meter with Yuyue Bluetooth Module",
-        "This is an Electronic Blood Pressure Monitor with Yuyue Bluetooth ",
-        "This is a Blood Glucose Meter with Yuyue Bluetooth Module ",
-        "This is an Electronic Blood Pressure Monitor with Yuyue Bluetooth .",
-        "This is an Electronic Blood Pressure Monitor with Yuyue Bluetooth."
-      ],
-      "designs": [
-        "Realtek BT5 BLE chipset"
       ],
       "country": "China",
       "continent": "Asia",
@@ -11663,14 +11728,17 @@
         "Realtek/Realsil"
       ],
       "products": [
+        "LG Uplus Corp Remote Controller",
         "Remote controller"
       ],
       "applications": [
+        "Remote Controller",
         "LG U+ OTT3 Remote controller",
         "LG U+ OTT Remote controller",
         "LG U+ OTT2 Remote controller"
       ],
       "designs": [
+        "Realtek Bluetooth BLE5.3 Low Energy Application (2022A)",
         "Realtek BLE 5.4 Application Solution",
         "Realtek BLE 5.3 SoC (Bee3)"
       ],
@@ -11852,7 +11920,8 @@
         "BNSF LEGACY C44-9W #705"
       ],
       "applications": [
-        "Model Train"
+        "Model Train",
+        "2733291"
       ],
       "designs": [
         "nRF52 Series with S112 v7.0.1 q-c"
@@ -11921,7 +11990,8 @@
         "RGBCW Smart MR16 Bulb, AMP Brand",
         "RGBCW Smart MR16 Bulb, VOLT Brand",
         "RGBCW G4 Smart Bulb, AMP Brand",
-        "RGBCW G4 Smart Bulb, VOLT Brand"
+        "RGBCW G4 Smart Bulb, VOLT Brand",
+        "Amp iQ Smart Contemporary Pathlight"
       ],
       "applications": [
         "16W RGBCW Smart Spotlight  for landscape lighting",
@@ -12332,11 +12402,23 @@
       ],
       "products": [
         "MES Bluetooth PIR Sensor",
-        "MES Bluetooth Microwave Sensor"
+        "MES Bluetooth Microwave Sensor",
+        "Mes AC Powered BLE Node",
+        "MES Bluetooth Switch",
+        "MES BLE Range Extender",
+        "MES BLE Gateway",
+        "MES BLE Wall Outlet"
       ],
       "applications": [
         "Network Lighting Control Sensor",
-        "Network lighting Control Sensor Using Microwave Sensor"
+        "Network lighting Control Sensor Using Microwave Sensor",
+        "PIR MOTION SENSOR",
+        "SMART NODE",
+        "MICROWAVE MOTION SENSOR",
+        "WIRELESS BLUETOOTH SWITCH",
+        "WIRELESS BLUETOOTH RANGE EXTENDER",
+        "WIRELESS BLUETOOTH GATEWAY",
+        "BLUETOOTH WALL OUTLET"
       ],
       "designs": [
         "Mesh - MMDL, MBTM, DFUM",
@@ -13800,6 +13882,25 @@
       "subRegion": "Europe"
     },
     {
+      "company": "Nureva Inc.",
+      "icVendors": [
+        "Nordic"
+      ],
+      "products": [
+        "Nureva HDX series - System hub"
+      ],
+      "applications": [
+        "Nureva HDX series is a plug and play, pro audio solution for larger meeting rooms and classrooms. System hub provides Bluetooth functionality."
+      ],
+      "designs": [
+        "LE Audio profiles and services",
+        "nRF5340 core-complete controller ncs 3.2.x"
+      ],
+      "country": "Canada",
+      "continent": "North America",
+      "subRegion": "North America"
+    },
+    {
       "company": "nuval GmbH",
       "icVendors": [
         "Telink"
@@ -14610,12 +14711,22 @@
       ],
       "products": [
         "Lockly smart Lock",
-        "Bluetooth module"
+        "Bluetooth module",
+        "Lyro™ by Lockly Senzaa Smart Lock Deadbolt Edition",
+        "Lyro™ by Lockly Passo Air Smart Lock Latch Edition",
+        "PGD899R",
+        "PBL7DM",
+        "PBL6LM"
       ],
       "applications": [
         "Lockly Fortis Series Smart Lock Deadbolt Edition With Doorbell and Matter Compatible",
         "Bluetooth module",
-        "Lockly Fortis Series Smart Lock Latch Edition With Doorbell and Matter Compatible"
+        "Lockly Fortis Series Smart Lock Latch Edition With Doorbell and Matter Compatible",
+        "Lyro™ by Lockly Senzaa Smart Lock Deadbolt Edition  With face ID and Matter Compatible",
+        "Lyro™ by Lockly Passo Air Smart Lock Latch Edition  With face ID and Matter Compatible",
+        "Lockly Smart Lock",
+        "Lyro™ by Lockly Smart Lock Deadbolt Edition",
+        "Lyro™ by Lockly Smart Lock Latch Edition"
       ],
       "designs": [
         "SoftDevice Controller for nRF54Lxx base feature set"
@@ -14764,6 +14875,33 @@
       "subRegion": "Japan"
     },
     {
+      "company": "Produal Oy",
+      "icVendors": [
+        "Nordic"
+      ],
+      "products": [
+        "MyTool Connect - Bluetooth dongle",
+        "Proxima CU",
+        "Proxima Wireless Transmitter",
+        "Proxima Wireless Base Station",
+        "Wireless Proxima Input Module"
+      ],
+      "applications": [
+        "Bluetooth Commissioning Tool for Produal Devices",
+        "Multifunctional control unit",
+        "Wireless Transmitter",
+        "Wireless Base Station for Wireless transmitters",
+        "Wireless input module"
+      ],
+      "designs": [
+        "nRF52 with S132 5.1.0 end product",
+        "nRF52 Series with S132 v7.0.1 q-c"
+      ],
+      "country": "Finland",
+      "continent": "Asia",
+      "subRegion": "India"
+    },
+    {
       "company": "PROZIS.COM, S.A.",
       "icVendors": [
         "Nordic"
@@ -14838,8 +14976,7 @@
         "Model Number: KFR-35GW/17EAA81U1"
       ],
       "designs": [
-        "Realtek BLE 5.3 SoC (Bee3)",
-        "Ameba BLE5 2020 "
+        "Realtek BLE 5.3 SoC (Bee3)"
       ],
       "country": "China",
       "continent": "Asia",
@@ -15235,13 +15372,17 @@
         "L1 WiFi Water Leak and Freeze Detector",
         "L2 WiFi Water Sensor and Switch",
         "FUJI X2S Thermostat",
-        "Citadel "
+        "Citadel ",
+        "IXQ2"
       ],
       "applications": [
         "L1 WiFi Water Leak and Freeze Detector",
         "L2 WiFi Water Sensor and Switch",
         "Connected Smart Thermostat",
-        "Smoke and CO alarm"
+        "Smoke and CO alarm",
+        "Display unit",
+        "Display Unit Bulk US Boiler",
+        "Display Unit Burner Controller"
       ],
       "designs": [
         "Realtek BLE 5.3 SoC (Bee3)",
@@ -15648,12 +15789,12 @@
       ],
       "products": [
         "Samsung Smart Keyboard",
-        "Samsung LED TV",
-        "Q5F",
         "U8000H",
         "U8100H",
         "50M60H",
         "M60H",
+        "Samsung LED TV",
+        "Q5F",
         "Samsung LED TV F6000",
         "F6000",
         "LH40B",
@@ -15670,11 +15811,11 @@
       ],
       "applications": [
         "Smart Keyboard is a physical keyboard that connects to Mobile, TAB, Laptop and Computers. It can be paired with 3 devices at a time and switch connection based on key press.",
-        "Samsung TV with Bluetooth & Wifi",
-        "Samsung LED TV Q5F",
         "Samsung LED TV U8000H",
         "Samsung MINI LED TV M60H",
         "43M60H FHD  TV",
+        "Samsung TV with Bluetooth & Wifi",
+        "Samsung LED TV Q5F",
         "Samsung LED TV F6000",
         "Samsung LED TV LH40B",
         "Samsung LED TV H5000",
@@ -15774,7 +15915,9 @@
       ],
       "products": [
         "TABLET",
-        "SEAC Tablet"
+        "SEAC Tablet",
+        "SEAC TABLET",
+        "SEAC SCREEN CONNECT"
       ],
       "applications": [
         "Diving computer"
@@ -16209,13 +16352,17 @@
       ],
       "products": [
         "SKYWORTH Smart TV",
-        "METZ LED TV",
-        "SKYWORTH TV",
         "SKYWORTH",
-        "Philips"
+        "Philips",
+        "Metz",
+        "Coocaa",
+        "Panasonic",
+        "METZ LED TV",
+        "SKYWORTH TV"
       ],
       "applications": [
         "Smart TV",
+        "Smart TV ",
         "Smart LED TV",
         "SKYWORTH TV"
       ],
@@ -16297,6 +16444,28 @@
       ],
       "designs": [
         "nRF52 Series with S132 v7.0.1 q-c"
+      ],
+      "country": "China",
+      "continent": "Asia",
+      "subRegion": "China"
+    },
+    {
+      "company": "Shenzhen DO Intelligent Technology Co., Ltd",
+      "icVendors": [
+        "Nordic"
+      ],
+      "products": [
+        "IDO Smart Ring",
+        "Pulse Band",
+        "TR5"
+      ],
+      "applications": [
+        "Smart Ring",
+        "Pulse Band",
+        "TR5"
+      ],
+      "designs": [
+        "NCS Host v3.0.0"
       ],
       "country": "China",
       "continent": "Asia",
@@ -16421,32 +16590,12 @@
       "subRegion": "China"
     },
     {
-      "company": "Shenzhen little bean Culture education Technology Co., Ltd.",
-      "icVendors": [
-        "Realtek/Realsil"
-      ],
-      "products": [
-        "The Very Hungry Caterpillar Talking Pen",
-        "aeby reading pen",
-        "sammy reading pen",
-        "Talking Pen"
-      ],
-      "applications": [
-        "Acousto-optic toys"
-      ],
-      "designs": [
-        "Realtek BT5 BLE chipset"
-      ],
-      "country": "China",
-      "continent": "Asia",
-      "subRegion": "China"
-    },
-    {
       "company": "Shenzhen MinewSemi Co., Ltd.",
       "icVendors": [
         "Nordic"
       ],
       "products": [
+        "MinewSemi Bluetooth low energy module",
         "MINEWSEMI Bluetooth low energy module"
       ],
       "applications": [
@@ -16676,14 +16825,33 @@
         "Nordic"
       ],
       "products": [
-        "Bluetooth NLC Controller",
-        "Wireless NLC Controller"
+        "SUNRICHER SunSmart NLC Mesh Subsystem",
+        "Wireless NLC Sensor",
+        "Wireless NLC Controller",
+        "Wireless NLC Switch",
+        "Wireless NLC Driver",
+        "Wireless NLC Gateway",
+        "Wireless NLC Dongle",
+        "Wireless NLC Socket",
+        "Wireless NLC Thermostat",
+        "Wireless NLC Water immersion sensor",
+        "Bluetooth NLC Controller"
       ],
       "applications": [
-        "Bluetooth NLC Controller",
-        "BLE Controller"
+        "Implementation of Bluetooth Mesh 1.1 models and protocols, including compliance with Mesh 1.1.1, along with NLC profiles for smart lighting control applications.",
+        "Open-standard SIG Mesh protocol with integrated occupancy and daylight sensing – automatically turns lights on/off with presence and adjusts brightness based on ambient light.",
+        "Open-standard SIG Mesh protocol supporting grouping, dimming, and scene switching for flexible deployment and freedom of choice.",
+        "Open-standard SIG Mesh protocol in a Power Pack form factor, designed for standard junction box mounting – purpose-built for zone-based retrofit projects for quick and easy installation.",
+        "Open-standard SIG Mesh protocol in a Power Pack form factor, designed for standard junction box mounting – integrates fire alarm linkage and emergency lighting control.",
+        "Open-standard SIG Mesh protocol in a Power Pack form factor, designed for standard junction box mounting – purpose-built for zone-based retrofit projects, featuring an RJ45 port for external sensor connection, enabling expanded sensing capabilities with quick and easy installation.",
+        "Open-standard SIG Mesh protocol supporting forward/reverse phase-cut dimming, designed to fit inside standard switch junction boxes for seamless smart retrofitting of conventional lighting; integrates energy monitoring for real-time power consumption tracking and data-driven management.",
+        "Open-standard SIG Mesh protocol with relay ON/OFF switching control, designed to fit inside standard switch junction boxes for seamless smart retrofitting of conventional lighting; integrates energy monitoring for real-time power consumption tracking and data-driven management.",
+        "Open-standard SIG Mesh protocol supporting forward/reverse phase-cut dimming in a side-mount form factor, designed for installation on luminaire side panels or junction boxes for smart retrofitting of conventional lighting.",
+        "SIG Mesh protocol, battery-powered for wire-free installation – supports 4 customizable scenes for one-touch personalized lighting control."
       ],
       "designs": [
+        "Mesh for ncs 3.2",
+        "SoftDevice Controller for nRF54Lxx base feature set",
         "nRF52 Series with S113 v7.0.1 q-c"
       ],
       "country": "China",
@@ -16843,7 +17011,9 @@
         "T1",
         "T4",
         "Tracking Card",
-        "Smart Finders"
+        "Smart Finders",
+        "SPOTMINDERS",
+        "Luxford Tech"
       ],
       "applications": [
         "Smart Finder",
@@ -17078,12 +17248,15 @@
         "Realtek/Realsil"
       ],
       "products": [
+        "WIFI Module",
         "WIFI/Bluetooth Module"
       ],
       "applications": [
+        "WIFI Module",
         "enables short-range wireless data transmission between bt devices"
       ],
       "designs": [
+        "Realtek Bluetooth 5.2 Controller solution",
         "Realtek 5.3 controller component"
       ],
       "country": "China",
@@ -17255,26 +17428,6 @@
       "subRegion": "Europe"
     },
     {
-      "company": "Siteco GmbH",
-      "icVendors": [
-        "Nordic"
-      ],
-      "products": [
-        "Street-Remote"
-      ],
-      "applications": [
-        "Bluetooth Low Energy 5.0",
-        "Retrofit / Refurbishment insert based on Street-Remote"
-      ],
-      "designs": [
-        "nRF SDK for Mesh",
-        "nRF52 Series with S112 v7.0.1 q-c"
-      ],
-      "country": "Germany",
-      "continent": "Europe",
-      "subRegion": "Europe"
-    },
-    {
       "company": "SK Broadband",
       "icVendors": [
         "Realtek/Realsil"
@@ -17392,6 +17545,24 @@
       "subRegion": "China"
     },
     {
+      "company": "SMIHO CO., LIMITED",
+      "icVendors": [
+        "Nordic"
+      ],
+      "products": [
+        "Bluetooth module"
+      ],
+      "applications": [
+        "Bluetooth module"
+      ],
+      "designs": [
+        "nRF52 Series with S140 v7.0.1 q-c"
+      ],
+      "country": "Hong Kong",
+      "continent": "Asia",
+      "subRegion": "China"
+    },
+    {
       "company": "SNIFF LOGIC LTD",
       "icVendors": [
         "Nordic"
@@ -17497,7 +17668,9 @@
         "Sonesse 28 WF Zigbee Unit",
         "Sonesse 28 WF Zigbee Pack",
         "SONESSE 30 ZIGBEE HP 2/25 WEID",
-        "SONESSE 30 ZIGBEE 2/25"
+        "SONESSE 30 ZIGBEE 2/25",
+        "Roll Up2 Short 30 ZIGBEE",
+        "Roll Up2 Short 30 ZIGBEEHP"
       ],
       "applications": [
         "A connected and quiet motorization for interior window covering market.",
@@ -18442,6 +18615,24 @@
       "subRegion": "India"
     },
     {
+      "company": "Tandem Diabetes Care",
+      "icVendors": [
+        "Nordic"
+      ],
+      "products": [
+        "Tandem Mobi System"
+      ],
+      "applications": [
+        "ambulatory infusion pump"
+      ],
+      "designs": [
+        "nRF52 Series with S132 v7.0.1 q-c"
+      ],
+      "country": "United States",
+      "continent": "North America",
+      "subRegion": "North America"
+    },
+    {
       "company": "taskit GmbH",
       "icVendors": [
         "Nordic"
@@ -18536,27 +18727,6 @@
         "nRF52 with S132 5.0.0"
       ],
       "country": "Switzerland",
-      "continent": "Europe",
-      "subRegion": "Europe"
-    },
-    {
-      "company": "Tech4home, Lda",
-      "icVendors": [
-        "Telink"
-      ],
-      "products": [
-        "Notus L",
-        "Remote Control"
-      ],
-      "applications": [
-        "Remote Control Unit designed to work with Linux bluetooth enabled STBs.\nThe device is designed to control the target device using IR&BT.\nThe device is power by 2 x AAA LR03 batteries.\nOther applications are not considered.",
-        "The Remote Control (RCU) interacts with a Set-Top-Box (STB), supporting two-way radio frequency communication and audio transmission. The RCU can transmit voice, it supports Infrared (IR) transmission with a Universal Database (UDB) to control television (TV) / Home-Cinema (HC). It also supports firmware upgrades over the air (OAD)."
-      ],
-      "designs": [
-        "Telink BLE Host 5.2",
-        "Telink BLE Controller"
-      ],
-      "country": "Portugal",
       "continent": "Europe",
       "subRegion": "Europe"
     },
@@ -19548,6 +19718,30 @@
       "subRegion": "Japan"
     },
     {
+      "company": "Unit 1 Gear, Inc.",
+      "icVendors": [
+        "Nordic"
+      ],
+      "products": [
+        "AURA",
+        "NEON",
+        "FARO",
+        "SMART LIGHT"
+      ],
+      "applications": [
+        "Smart Helmet for cycling",
+        "Cycling Smart Helmet",
+        "Smart Helmet for Cycling",
+        "Smart Lights for cycling"
+      ],
+      "designs": [
+        "nRF52 Series with S132 v7.0.1 q-c"
+      ],
+      "country": "United States",
+      "continent": "North America",
+      "subRegion": "North America"
+    },
+    {
       "company": "Universal Biosensors Pty Ltd",
       "icVendors": [
         "Nordic"
@@ -20209,6 +20403,24 @@
       "subRegion": "North America"
     },
     {
+      "company": "Whistler GS LLC",
+      "icVendors": [
+        "Nordic"
+      ],
+      "products": [
+        "Pet Sensor System"
+      ],
+      "applications": [
+        "Regulate some pet behaviors"
+      ],
+      "designs": [
+        "nRF52832 with S132 v6.1.1"
+      ],
+      "country": "United States",
+      "continent": "North America",
+      "subRegion": "North America"
+    },
+    {
       "company": "Wilhelm Koch GmbH",
       "icVendors": [
         "Nordic"
@@ -20374,12 +20586,12 @@
         "SwitchBot Lock Pro ",
         "SwitchBot Standing Circulator Fan",
         "SwitchBot KATA Friends",
+        "SwitchBot Lock Lite",
         "SwitchBot Outdoor Spotlight Cam",
         "SwitchBot Blind Tilt",
         "SwitchBot Indoor/Outdoor Thermo-Hygrometer",
         "SwitchBot Robot Vacuum K10+/Self-Empty Charging Base",
-        "SwitchBot Outdoor Spotlight Cam 2K, SwitchBot Outdoor Spotlight Cam 3MP",
-        "SwitchBot Floor Cleaning Robot S10"
+        "SwitchBot Outdoor Spotlight Cam 2K, SwitchBot Outdoor Spotlight Cam 3MP"
       ],
       "applications": [
         "Ahigh-precision thermometer and hygrometer that supports bluetooth communication and provides local data storage",
