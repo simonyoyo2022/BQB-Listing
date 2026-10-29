@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-09-29T02:23:05.536Z",
+  "fetchedAt": "2026-10-29T01:59:41.798Z",
   "dateRange": {
-    "from": "2021-09-29",
-    "to": "2026-09-29"
+    "from": "2021-10-29",
+    "to": "2026-10-29"
   },
-  "totalProducts": 1645,
+  "totalProducts": 1683,
   "monthlyStats": {
     "2026-08": {
       "Airoha": 1,
@@ -173,10 +173,10 @@
       "Realtek/Realsil": 1
     },
     "2026-09": {
-      "Nordic": 5,
-      "_total": 13,
-      "Telink": 1,
-      "Realtek/Realsil": 7
+      "Nordic": 6,
+      "_total": 17,
+      "Telink": 3,
+      "Realtek/Realsil": 8
     },
     "2026-07": {
       "Nordic": 2,
@@ -304,6 +304,12 @@
       "Nordic": 1,
       "_total": 4,
       "Realtek/Realsil": 3
+    },
+    "2026-10": {
+      "Silicon Labs": 1,
+      "_total": 7,
+      "Telink": 1,
+      "Realtek/Realsil": 5
     },
     "2025-03": {
       "Silicon Labs": 4,
@@ -2677,6 +2683,17 @@
     {
       "company": "Nordic Semiconductor ASA",
       "searchCompany": "Nordic",
+      "productName": "SoftDevice Controller component for nRF Connect SDK v3.3.1",
+      "description": "LE Controller for nRF54Lxx series devices utilizing the Nordic SoftDevice controller design based on the nRF Connect SDK tag 3.3.1, 3.3.2, 3.3.3, 3.3.4 and 3.4.x. Refer to the relevant nRF Connect SDK documentation at docs.nordicsemi.com for specific applicability of this controller and the role support available for each nRF54Lxx device in the series. This design supports Channel Sounding and CTE TX features.",
+      "modelNumber": "nRF54Lxx with CS and CTE",
+      "listingId": 349992,
+      "listingDate": "2026-09-30T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Nordic Semiconductor ASA",
+      "searchCompany": "Nordic",
       "productName": "SoftDevice Controller component superset for nRF Connect SDK v3.3.1 - no PC1",
       "description": "LE component for utilizing the Nordic SoftDevice controller design based on the nRF Connect SDK v3.3.1. Refer to the relevant nRF Connect SDK documentation at docs.nordicsemi.com for specific applicability of this controller and the role support available for each applicable Nordic device. This version includes support for Channel Sounding and Power Class 1. The RFPHY layer is not included in this component. This subset removes the power class 1 feature support from the Link Layer.",
       "modelNumber": "SDC stack SDK 3.3.1",
@@ -4345,6 +4362,281 @@
       "listingDate": "2022-01-28T00:00:00",
       "year": "2022",
       "quarter": "2022-Q1"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Core controller configuration for xG27 and xG29 series with SiSDK 2025.12 and above",
+      "description": "Core controller configuration for xG27 and xG29 series with SiSDK 2025.12 and above",
+      "modelNumber": "Core controller configuration for xG27 and xG29 series with SiSDK 2025.12 and above",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32MG29 Series 2 Wireless SoC - EFR32MG29B140F1024IM40",
+      "description": "Core controller configuration for xG29 series supporting Bluetooth Low Energy technology, optimized for low power IoT and personal medical applications.",
+      "modelNumber": "EFR32MG29B140F1024IM40",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32MG29 Series 2 Wireless SoC - EFR32MG29B230F1024CM40",
+      "description": "Core controller configuration for xG29 series supporting Bluetooth Low Energy technology, optimized for low power IoT and personal medical applications.",
+      "modelNumber": "EFR32MG29B230F1024CM40",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG29 Series 2 Wireless SoC - EFR32BG29B140F1024IM40",
+      "description": "Core controller configuration for xG29 series supporting Bluetooth Low Energy technology, optimized for low power IoT and personal medical applications.",
+      "modelNumber": "EFR32BG29B140F1024IM40",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG29 Series 2 Wireless SoC - EFR32BG29B230F1024CM40",
+      "description": "Core controller configuration for xG29 series supporting Bluetooth Low Energy technology, optimized for low power IoT and personal medical applications.",
+      "modelNumber": "EFR32BG29B230F1024CM40",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG29 Series 2 Wireless SoC - EFR32BG29B221F1024CJ45",
+      "description": "Core controller configuration for xG29 series supporting Bluetooth Low Energy technology, optimized for low power IoT and personal medical applications.",
+      "modelNumber": "EFR32BG29B221F1024CJ45",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG29 Series 2 Wireless SoC - EFR32BG29B220F1024CJ45",
+      "description": "Core controller configuration for xG29 series supporting Bluetooth Low Energy technology, optimized for low power IoT and personal medical applications.",
+      "modelNumber": "EFR32BG29B220F1024CJ45",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "EFR32xG29 Wireless 2.4 GHz 8 dBm Buck (QFN40) Radio Board",
+      "description": "Development Board with ordering code of xG29-RB4412A and board ID of BRD4412A, having the EFR32MG29B140F1024IM40 on-board for evaluation and application development.",
+      "modelNumber": "xG29-RB4412A",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "EFR32xG29 Wireless 2.4 GHz 6 dBm Boost (QFN40) Radio Board",
+      "description": "Development Board with ordering code of xG29-RB4413A and board ID of BRD4413A, having the EFR32MG29B230F1024CM40 on-board for evaluation and application development.",
+      "modelNumber": "xG29-RB4413A",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "EFR32BG29 Bluetooth LE 4 dBm Boost WLCSP Radio Board",
+      "description": "Development Board with ordering code of  BG29-RB4420A and board ID of BRD4420A, having the EFR32BG29B220F1024CJ45 on-board for evaluation and application development.",
+      "modelNumber": "BG29-RB4420A",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs MGM270S SiP module  - MGM270SC32SNA2",
+      "description": "Core controller configuration for MGM270S SiP supporting Bluetooth Low Energy technology, optimized for low power IoT and personal medical applications.",
+      "modelNumber": "MGM270SC32SNA2",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs Radio Board with MGM270S SiP module  - xGM270S-RB4356A",
+      "description": "Core controller configuration for MGM270S SIP supporting Bluetooth Low Energy technology, optimized for low power IoT and personal medical applications.",
+      "modelNumber": "xGM270S-RB4356A",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG27 Series 2 Wireless SoC - EFR32BG27C320F768GJ39",
+      "description": "Core controller configuration for xG27 series supporting Bluetooth Low Energy technology, optimized for low power IoT and personal medical applications.",
+      "modelNumber": "EFR32BG27C320F768GJ39-B",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32MG27 Series 2 Wireless SoC - EFR32MG27C140F768IM40",
+      "description": "Core controller configuration for xG27 series supporting Bluetooth Low Energy technology, optimized for low power IoT and personal medical applications.",
+      "modelNumber": "EFR32MG27C140F768IM40-B",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32MG27 Series 2 Wireless SoC - EFR32MG27C140F768IM32",
+      "description": "Core controller configuration for xG27 series supporting Bluetooth Low Energy technology, optimized for low power IoT and personal medical applications.",
+      "modelNumber": "EFR32MG27C140F768IM32-B",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32MG27 Series 2 Wireless SoC - EFR32MG27C230F768IM32",
+      "description": "Core controller configuration for xG27 series supporting Bluetooth Low Energy technology, optimized for low power IoT and personal medical applications.",
+      "modelNumber": "EFR32MG27C230F768IM32-B",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32MG27 Series 2 Wireless SoC - EFR32MG27C230F768IM40",
+      "description": "Core controller configuration for xG27 series supporting Bluetooth Low Energy technology, optimized for low power IoT and personal medical applications.",
+      "modelNumber": "EFR32MG27C230F768IM40-B",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG27 Series 2 Wireless SoC - EFR32BG27C230F768IM40",
+      "description": "Core controller configuration for xG27 series supporting Bluetooth Low Energy technology, optimized for low power IoT and personal medical applications.",
+      "modelNumber": "EFR32BG27C230F768IM40-B",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG27 Series 2 Wireless SoC - EFR32BG27C230F768IM32",
+      "description": "Core controller configuration for xG27 series supporting Bluetooth Low Energy technology, optimized for low power IoT and personal medical applications.",
+      "modelNumber": "EFR32BG27C230F768IM32-B",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG27 Series 2 Wireless SoC - EFR32BG27C140F768IM40",
+      "description": "Core controller configuration for xG27 series supporting Bluetooth Low Energy technology, optimized for low power IoT and personal medical applications.",
+      "modelNumber": "EFR32BG27C140F768IM40-B",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs EFR32BG27 Series 2 Wireless SoC - EFR32BG27C140F768IM32",
+      "description": "Core controller configuration for xG27 series supporting Bluetooth Low Energy technology, optimized for low power IoT and personal medical applications.",
+      "modelNumber": "EFR32BG27C140F768IM32-B",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs MGM270S SiP module  - MGM270SC22SNA4",
+      "description": "Core controller configuration for MGM270S SiP supporting Bluetooth Low Energy technology, optimized for low power IoT and personal medical applications.",
+      "modelNumber": "MGM270SC22SNA4",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs MGM270S SiP module  - MGM270SC22SNA4R",
+      "description": "Core controller configuration for MGM270S SiP supporting Bluetooth Low Energy technology, optimized for low power IoT and personal medical applications.",
+      "modelNumber": "MGM270SC22SNA4R",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs BGM270S SiP module  - BGM270SC22SNA4",
+      "description": "Core controller configuration for BGM270S SiP supporting Bluetooth Low Energy technology, optimized for low power IoT and personal medical applications.",
+      "modelNumber": "BGM270SC22SNA4",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Silicon Laboratories",
+      "searchCompany": "Silicon Labs",
+      "productName": "Silicon Labs BGM270S SiP module  - BGM270SC22SNA4R",
+      "description": "Core controller configuration for BGM270S SiP supporting Bluetooth Low Energy technology, optimized for low power IoT and personal medical applications.",
+      "modelNumber": "BGM270SC22SNA4R",
+      "listingId": 351884,
+      "listingDate": "2026-10-20T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
     },
     {
       "company": "Silicon Laboratories",
@@ -12456,6 +12748,39 @@
     {
       "company": "Telink Semiconductor (Shanghai) Co., Ltd",
       "searchCompany": "Telink",
+      "productName": "Telink Bluetooth Audio Profile",
+      "description": "Telink Bluetooth Audio Profile",
+      "modelNumber": "Telink Bluetooth Audio Profile",
+      "listingId": 349277,
+      "listingDate": "2026-10-08T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Telink Semiconductor (Shanghai) Co., Ltd",
+      "searchCompany": "Telink",
+      "productName": "Telink Bluetooth LE Profile - subset1",
+      "description": "Derived from the Telink Bluetooth LE Profile (DN D065556), this subset removes HOGP, CPP, LLS and OTS.",
+      "modelNumber": "Telink Bluetooth LE Profile - subset1",
+      "listingId": 349061,
+      "listingDate": "2026-09-30T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Telink Semiconductor (Shanghai) Co., Ltd",
+      "searchCompany": "Telink",
+      "productName": "Telink loT Module Series - subset1",
+      "description": "Derived from the Telink loT Module Series (DN Q379428), this subset removes HOGP, CPP and LLS.",
+      "modelNumber": "Telink loT Module Series - subset1",
+      "listingId": 349590,
+      "listingDate": "2026-09-30T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Telink Semiconductor (Shanghai) Co., Ltd",
+      "searchCompany": "Telink",
       "productName": "Telink loT Module Series",
       "description": "Telink loT Module Series",
       "modelNumber": "Telink loT Module Series",
@@ -14227,6 +14552,72 @@
     {
       "company": "Realtek Semiconductor Corporation",
       "searchCompany": "Realtek",
+      "productName": "Realtek BlueZ Host Stack V6.0",
+      "description": "Realtek BlueZ Host Stack V6.0 is a design of Linux based Bluetooth protocol stack,and solution to provide supports on various product portfolio and verticals. This outstanding Realtek BlueZ Host Stack enables profiles and functionality with streamlined user interface features which deploys the Bluetooth 6.0 features",
+      "modelNumber": "RTL8851BU",
+      "listingId": 349935,
+      "listingDate": "2026-10-08T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek BlueZ Host Stack V6.0",
+      "description": "Realtek BlueZ Host Stack V6.0 is a design of Linux based Bluetooth protocol stack,and solution to provide supports on various product portfolio and verticals. This outstanding Realtek BlueZ Host Stack enables profiles and functionality with streamlined user interface features which deploys the Bluetooth 6.0 features",
+      "modelNumber": "RTL8733BU",
+      "listingId": 349935,
+      "listingDate": "2026-10-08T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek BlueZ Host Stack V6.0",
+      "description": "Realtek BlueZ Host Stack V6.0 is a design of Linux based Bluetooth protocol stack,and solution to provide supports on various product portfolio and verticals. This outstanding Realtek BlueZ Host Stack enables profiles and functionality with streamlined user interface features which deploys the Bluetooth 6.0 features",
+      "modelNumber": "RTL8851FU",
+      "listingId": 349935,
+      "listingDate": "2026-10-12T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek BlueZ Host Stack V6.0",
+      "description": "Realtek BlueZ Host Stack V6.0 is a design of Linux based Bluetooth protocol stack,and solution to provide supports on various product portfolio and verticals. This outstanding Realtek BlueZ Host Stack enables profiles and functionality with streamlined user interface features which deploys the Bluetooth 6.0 features",
+      "modelNumber": "RTL8851FU",
+      "listingId": 350873,
+      "listingDate": "2026-10-08T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 5 BR/EDR solution",
+      "description": "Realtek Bluetooth 5 BR/EDR solution",
+      "modelNumber": "RT8723D Series",
+      "listingId": 350233,
+      "listingDate": "2026-09-29T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 5 BR/EDR solution",
+      "description": "Realtek Bluetooth 5 BR/EDR solution",
+      "modelNumber": "RTL8821CS",
+      "listingId": 350233,
+      "listingDate": "2026-09-30T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
       "productName": "Realtek Bluetooth BT6.0 LE Core Controller Solution",
       "description": "Realtek Bluetooth 6.0 Controller Solution supports multiple RFPHYs, and latest Bluetooth Core Spec protocol for various applicaitons.",
       "modelNumber": "RTL8762C",
@@ -15349,6 +15740,17 @@
     {
       "company": "Realtek Semiconductor Corporation",
       "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 5.1 LE Solution",
+      "description": "Realtek Bluetooth 5.1 LE Solution",
+      "modelNumber": "RTL8752C",
+      "listingId": 294320,
+      "listingDate": "2026-10-08T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
       "productName": "Realtek Bluetooth BT5.3 Controller Solution (2022A)",
       "description": "Realtek Bluetooth BT5.3 Controller Solution (LE, LE 2M, SMI)",
       "modelNumber": "RTL8763EAU",
@@ -16412,6 +16814,17 @@
       "listingDate": "2026-08-10T00:00:00",
       "year": "2026",
       "quarter": "2026-Q3"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek BLE 5.4 Application Solution",
+      "description": "Realtek Bluetooth 5 Low Energy Solution integrates RealBlue BLE stack to supporting BLE GATT Stack base Profile for verticals as sporting and fitness, Phone accessory, wearable, Remote Controller, smart home sensor, Mesh, IOT device applicationshow less",
+      "modelNumber": "RTL8777GKF",
+      "listingId": 213908,
+      "listingDate": "2026-10-13T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
     },
     {
       "company": "Realtek Semiconductor Corporation",
@@ -17901,6 +18314,138 @@
     {
       "company": "Realtek Semiconductor Corporation",
       "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 5.3 controller Solution",
+      "description": "Realtek Bluetooth 5.3 solution support BLE\naudio, multiple RFPHYs and IAL be ready for\nnext Bluetooth audio generation",
+      "modelNumber": "RTL8723",
+      "listingId": 136352,
+      "listingDate": "2021-11-26T00:00:00",
+      "year": "2021",
+      "quarter": "2021-Q4"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 5.3 controller Solution",
+      "description": "Realtek Bluetooth 5.3 solution support BLE\naudio, multiple RFPHYs and IAL be ready for\nnext Bluetooth audio generation",
+      "modelNumber": "RTL8852",
+      "listingId": 136352,
+      "listingDate": "2021-11-26T00:00:00",
+      "year": "2021",
+      "quarter": "2021-Q4"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 5.3 controller Solution",
+      "description": "Realtek Bluetooth 5.3 solution support BLE\naudio, multiple RFPHYs and IAL be ready for\nnext Bluetooth audio generation",
+      "modelNumber": "RTL8822",
+      "listingId": 136352,
+      "listingDate": "2021-11-26T00:00:00",
+      "year": "2021",
+      "quarter": "2021-Q4"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 5.3 controller Solution",
+      "description": "Realtek Bluetooth 5.3 solution support BLE\naudio, multiple RFPHYs and IAL be ready for\nnext Bluetooth audio generation",
+      "modelNumber": "RTL8821",
+      "listingId": 136352,
+      "listingDate": "2021-11-26T00:00:00",
+      "year": "2021",
+      "quarter": "2021-Q4"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 5.3 controller Solution",
+      "description": "Realtek Bluetooth 5.3 solution support BLE\naudio, multiple RFPHYs and IAL be ready for\nnext Bluetooth audio generation",
+      "modelNumber": "RTL8851",
+      "listingId": 136352,
+      "listingDate": "2021-11-26T00:00:00",
+      "year": "2021",
+      "quarter": "2021-Q4"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 5.3 controller Solution",
+      "description": "Realtek Bluetooth 5.3 solution support BLE\naudio, multiple RFPHYs and IAL be ready for\nnext Bluetooth audio generation",
+      "modelNumber": "RTL8761",
+      "listingId": 136352,
+      "listingDate": "2021-11-26T00:00:00",
+      "year": "2021",
+      "quarter": "2021-Q4"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 5.3 controller Solution",
+      "description": "Realtek Bluetooth 5.3 solution support BLE\naudio, multiple RFPHYs and IAL be ready for\nnext Bluetooth audio generation",
+      "modelNumber": "RTL8773F",
+      "listingId": 136352,
+      "listingDate": "2021-11-26T00:00:00",
+      "year": "2021",
+      "quarter": "2021-Q4"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 5.3 controller Solution",
+      "description": "Realtek Bluetooth 5.3 solution support BLE\naudio, multiple RFPHYs and IAL be ready for\nnext Bluetooth audio generation",
+      "modelNumber": "RTL8773E",
+      "listingId": 136352,
+      "listingDate": "2021-11-26T00:00:00",
+      "year": "2021",
+      "quarter": "2021-Q4"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 5.3 controller Solution",
+      "description": "Realtek Bluetooth 5.3 solution support BLE\naudio, multiple RFPHYs and IAL be ready for\nnext Bluetooth audio generation",
+      "modelNumber": "RTL8773D",
+      "listingId": 136352,
+      "listingDate": "2021-11-26T00:00:00",
+      "year": "2021",
+      "quarter": "2021-Q4"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 5.3 controller Solution",
+      "description": "Realtek Bluetooth 5.3 solution support BLE\naudio, multiple RFPHYs and IAL be ready for\nnext Bluetooth audio generation",
+      "modelNumber": "RTL8763E",
+      "listingId": 136352,
+      "listingDate": "2021-11-26T00:00:00",
+      "year": "2021",
+      "quarter": "2021-Q4"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 5.3 controller Solution",
+      "description": "Realtek Bluetooth 5.3 solution support BLE\naudio, multiple RFPHYs and IAL be ready for\nnext Bluetooth audio generation",
+      "modelNumber": "RTL8763D",
+      "listingId": 136352,
+      "listingDate": "2021-11-26T00:00:00",
+      "year": "2021",
+      "quarter": "2021-Q4"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
+      "productName": "Realtek Bluetooth 5.3 controller Solution",
+      "description": "Realtek Bluetooth 5.3 solution support BLE audio, multiple RFPHYs and IAL be ready for next Bluetooth audio generation",
+      "modelNumber": "RTL8761CTV",
+      "listingId": 136352,
+      "listingDate": "2026-10-12T00:00:00",
+      "year": "2026",
+      "quarter": "2026-Q4"
+    },
+    {
+      "company": "Realtek Semiconductor Corporation",
+      "searchCompany": "Realtek",
       "productName": "Realtek BLE 5.3 Application Solution",
       "description": "Realtek Bluetooth 5 Low Energy Solution integrates RealBlue BLE stack to supporting BLE GATT Stack base Profile for verticals as sporting and fitness, Phone accessory, wearable, Remote Controller, smart home sensor, Mesh, IOT device application",
       "modelNumber": "RTL8762C",
@@ -18095,127 +18640,6 @@
       "listingDate": "2022-08-26T00:00:00",
       "year": "2022",
       "quarter": "2022-Q3"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "Realtek Bluetooth 5.3 controller Solution",
-      "description": "Realtek Bluetooth 5.3 solution support BLE\naudio, multiple RFPHYs and IAL be ready for\nnext Bluetooth audio generation",
-      "modelNumber": "RTL8723",
-      "listingId": 136352,
-      "listingDate": "2021-11-26T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q4"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "Realtek Bluetooth 5.3 controller Solution",
-      "description": "Realtek Bluetooth 5.3 solution support BLE\naudio, multiple RFPHYs and IAL be ready for\nnext Bluetooth audio generation",
-      "modelNumber": "RTL8852",
-      "listingId": 136352,
-      "listingDate": "2021-11-26T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q4"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "Realtek Bluetooth 5.3 controller Solution",
-      "description": "Realtek Bluetooth 5.3 solution support BLE\naudio, multiple RFPHYs and IAL be ready for\nnext Bluetooth audio generation",
-      "modelNumber": "RTL8822",
-      "listingId": 136352,
-      "listingDate": "2021-11-26T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q4"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "Realtek Bluetooth 5.3 controller Solution",
-      "description": "Realtek Bluetooth 5.3 solution support BLE\naudio, multiple RFPHYs and IAL be ready for\nnext Bluetooth audio generation",
-      "modelNumber": "RTL8821",
-      "listingId": 136352,
-      "listingDate": "2021-11-26T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q4"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "Realtek Bluetooth 5.3 controller Solution",
-      "description": "Realtek Bluetooth 5.3 solution support BLE\naudio, multiple RFPHYs and IAL be ready for\nnext Bluetooth audio generation",
-      "modelNumber": "RTL8851",
-      "listingId": 136352,
-      "listingDate": "2021-11-26T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q4"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "Realtek Bluetooth 5.3 controller Solution",
-      "description": "Realtek Bluetooth 5.3 solution support BLE\naudio, multiple RFPHYs and IAL be ready for\nnext Bluetooth audio generation",
-      "modelNumber": "RTL8761",
-      "listingId": 136352,
-      "listingDate": "2021-11-26T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q4"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "Realtek Bluetooth 5.3 controller Solution",
-      "description": "Realtek Bluetooth 5.3 solution support BLE\naudio, multiple RFPHYs and IAL be ready for\nnext Bluetooth audio generation",
-      "modelNumber": "RTL8773F",
-      "listingId": 136352,
-      "listingDate": "2021-11-26T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q4"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "Realtek Bluetooth 5.3 controller Solution",
-      "description": "Realtek Bluetooth 5.3 solution support BLE\naudio, multiple RFPHYs and IAL be ready for\nnext Bluetooth audio generation",
-      "modelNumber": "RTL8773E",
-      "listingId": 136352,
-      "listingDate": "2021-11-26T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q4"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "Realtek Bluetooth 5.3 controller Solution",
-      "description": "Realtek Bluetooth 5.3 solution support BLE\naudio, multiple RFPHYs and IAL be ready for\nnext Bluetooth audio generation",
-      "modelNumber": "RTL8773D",
-      "listingId": 136352,
-      "listingDate": "2021-11-26T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q4"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "Realtek Bluetooth 5.3 controller Solution",
-      "description": "Realtek Bluetooth 5.3 solution support BLE\naudio, multiple RFPHYs and IAL be ready for\nnext Bluetooth audio generation",
-      "modelNumber": "RTL8763E",
-      "listingId": 136352,
-      "listingDate": "2021-11-26T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q4"
-    },
-    {
-      "company": "Realtek Semiconductor Corporation",
-      "searchCompany": "Realtek",
-      "productName": "Realtek Bluetooth 5.3 controller Solution",
-      "description": "Realtek Bluetooth 5.3 solution support BLE\naudio, multiple RFPHYs and IAL be ready for\nnext Bluetooth audio generation",
-      "modelNumber": "RTL8763D",
-      "listingId": 136352,
-      "listingDate": "2021-11-26T00:00:00",
-      "year": "2021",
-      "quarter": "2021-Q4"
     },
     {
       "company": "Realsil Microelectronics (Suzhou) Co.,Ltd.",
